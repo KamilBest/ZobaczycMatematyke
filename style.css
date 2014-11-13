@@ -11,7 +11,7 @@ div{
 .head-background{
 	position: relative;
 	
-	background-image: url(chalk_board.png);
+	background-image: url(images/chalk_board.png);
 	height:95vh;
 	width:100%;
 	background-position: 50% 0%;
@@ -61,13 +61,13 @@ div{
 }
 .slide-icon{
 	position: relative;
-	background-image: url("arrow.svg");
+	background-image: url(images/arrow.svg);
 	background-size: cover;
 	width: 65px;
 	height: 65px;
 }
 .slide-icon:hover{
-	background-image: url("arrow_red.svg");
+	background-image: url(images/arrow_red.svg);
 }
 .separation{
 	width:100%;
@@ -193,11 +193,11 @@ span{
 
 @font-face {
 	font-family: "myfont";
-	src:url("Czionki/myfont.eot");
-	src:url("Czionki/myfont.eot?#iefix") format("embedded-opentype"),
-		url("Czionki/myfont.woff") format("woff"),
-		url("Czionki/myfont.ttf") format("truetype"),
-		url("Czionki/myfont.svg#myfont") format("svg");
+	src:url("fonts/myfont.eot");
+	src:url("fonts/myfont.eot?#iefix") format("embedded-opentype"),
+		url("fonts/myfont.woff") format("woff"),
+		url("fonts/myfont.ttf") format("truetype"),
+		url("fonts/myfont.svg#myfont") format("svg");
 	font-weight: normal;
 	font-style: normal;
 
