@@ -22,7 +22,6 @@ body {
 	display: table-cell;
 	vertical-align: middle; /* wypośrodkowywanie treści w pionie */
 }
-
 #heading h1{
 	font-size:5em;
 	font-family: raleway;
@@ -31,7 +30,6 @@ body {
 	text-align: center;
 	margin: auto;
 }
-
 #heading h3 {
 	font-size:2em;
 	font-family: raleway, sans-serif;
@@ -39,7 +37,6 @@ body {
 	color:#FFF;
 	text-align:center;
 	margin:auto;
-
 }
 
 /*Down slider from arrow to next slide,
