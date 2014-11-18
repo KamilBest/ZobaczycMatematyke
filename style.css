@@ -71,6 +71,7 @@ background shape, color and location of icon*/
 	width:100%;
 	height:100vh;
 	display: table;
+    background: #fff;
 }
 .about_site{
 	height:200px;
@@ -101,8 +102,9 @@ background shape, color and location of icon*/
 
 /*Appereance of h3*/
 #features h3{
-	color:#fff;
-	font-size:2em;
+	color:#7BBF4B;
+	font-size:3em;
+    font-weight: 900;
 	font-weight: 600;
 }
 
@@ -150,7 +152,7 @@ span{
 	top: 0;
 	left: 0;
 	/*squares color*/
-	background: #7BBF4B;
+	background: #2C5744;
 	padding: 50px 0;
 	/*text, icons color*/
 	color: #fff;
@@ -159,7 +161,7 @@ span{
 /*Appereance after change for description*/
 #services .service .service-description {
 	left: 100%;
-	background: #D91A2A;
+	background: #7BBF4B;
 	color: white;
 	padding: 50px;
 }
@@ -167,6 +169,7 @@ span{
 /*Setting cursor for hand before change to description*/
 #services .service .service-description:hover { 
 	cursor: pointer; 
+    
 }
 
 /*ICON FONT BEGIN*/
@@ -295,7 +298,7 @@ span{
 font-family: 'Exo 2', sans-serif; 
 	text-align: center;
 	color: #999;
-	background: #2C5744;
+	background: #333;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -308,7 +311,8 @@ font-family: 'Exo 2', sans-serif;
 /*setting cursor for hand and color of description and icon, after change to description*/
 #services .service .service-icon:hover {
 	cursor: pointer;
-	color: #D91A2A;
+	color: #7BBF4B;
+    
 }
 
 /*animation after click or hover icon element, time of changing color of icon and text*/
@@ -317,6 +321,7 @@ font-family: 'Exo 2', sans-serif;
 	-webkit-transition: all 0.1s linear;
 	-moz-transition: all 0.1s linear;
 	transition: all 0.1s linear;
+    
 }
 
 /*increase distance from bottom when hovered*/
