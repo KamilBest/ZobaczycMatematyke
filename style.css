@@ -43,28 +43,30 @@ body {
 background shape, color and location of icon*/
 .slide-down{
     position: absolute;
-    left: calc(50% - 30px);
-    top: calc(100% - 30px);
+    left: calc(50% - 20px);
+    top: calc(100% - 32.5px);
     border-radius: 50%;
     background: #fff;
-}
-.slide-icon{
-    position: relative;
-    background-image: url(images/arrow.svg);
-    background-size: cover;
     width: 65px;
     height: 65px;
 }
-.slide-icon:hover{
-    background-image: url(images/arrow_red.svg);
+.slide-down:hover{
+    background: #7BBF4B;
+    cursor: pointer;
+}
+.icon-scroll{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    font-size: 3em;
+    text-align: center;
+    left:12.5%;
+    top:15%;
+    color:#2C5744;
+    font-family: raleway, sans-serif;
+    text-decoration: none;
 }
 /*White separator under arrow*/
-.separation{
-    width:100%;
-    height:5vh;
-    background: #fff;
-
-}
 
 /*Container for second slide, paragraph about site*/
 #container
@@ -73,7 +75,6 @@ background shape, color and location of icon*/
     height:100vh;
     display: table;
     background: #fff;
-    margin-right: 1000px;
 }
 .about_site{
 
@@ -84,16 +85,19 @@ background shape, color and location of icon*/
 }
 .about_site h3{
     font-size:2em;
-    font-weight: 200;
     font-family:raleway, sans-serif;
     color:#2E2E2E;
     text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .about_site p{
     font-size: 1.3em;
     font-family: raleway, sans-serif;
     color:#2E2E2E;
     text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 /*Size of features element*/
@@ -105,20 +109,18 @@ background shape, color and location of icon*/
 
 /*Appereance of h3*/
 #features h3{
-    color:#2E2E2E;
+    color:#7BBF4B;
     font-size:3.5em;
     font-weight: 900;
     font-weight: bold;
     text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.6) 3px 3px 3px;
 
     /*text stroke*/
-    -webkit-text-stroke: 2px #7BBF4B;
 }
 
 /*alignment all elements in features*/
 .alignment{
-    height:60vh;
+    height:100vh;
     width: auto;
     margin: auto;
     display:table-cell;
@@ -130,15 +132,47 @@ span{
     font-size:4em;
 }
 
-/*Size of squares*/
+/*Size of squares  WYZNACZYĆ MAX I MIN ROZMIARY*/
 #services .service {
-    width: 35vh;
-    float:center;
-    min-height: 200px;
+    width: 28vh;
+    height: 28vh;
     overflow: hidden;
     position: relative;
     display:inline-block;
+    font-size: 1em;
 }
+/*ELEMENT IN FEATURES drawing board*/
+
+
+.board{
+    width: 28vh;
+    float:center;
+    height: 28vh;
+    position: relative;
+    display:inline-block;
+    z-index:1;
+}
+#chalkboard{
+    background: #2C5744;
+    width: 100%;
+    height: 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: none;
+}
+.chalk{
+	width:40px;
+	height:50px;	background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/chalk.png);
+	position:relative;
+	padding:0;
+	margin:0;
+	bottom:-150px;
+	left:50px;
+	cursor:none;
+	z-index:3;
+	}
 
 /*Appereance in mobile version*/
 @media screen and (max-width: 600px) {
@@ -171,7 +205,8 @@ span{
     left: 100%;
     background: #7BBF4B;
     color: white;
-    padding: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /*Setting cursor for hand before change to description*/
@@ -312,7 +347,7 @@ span{
 
 /*max-width, setting view for other resolutions*/
 #services {
-    max-width: 850px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
