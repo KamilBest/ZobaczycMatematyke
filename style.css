@@ -153,9 +153,12 @@ span{
     z-index:1;
 }
 #chalkboard{
+    width: 28vh;
+    height: 28vh;
     background: #2C5744;
     width: 100%;
     height: 100%;
+    /*position of drawing with chalk*/
 	position: absolute;
     top: 0;
     left: 0;
@@ -164,12 +167,13 @@ span{
 }
 .chalk{
 	width:40px;
-	height:50px;	background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/chalk.png);
-	position:relative;
+	height:50px;
+    background-image:url(images/chalk.png);
+	position:absolute;
 	padding:0;
 	margin:0;
-	bottom:-150px;
-	left:50px;
+	bottom:0px;
+	left:0px;
 	cursor:none;
 	z-index:3;
 	}
