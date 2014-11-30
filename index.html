@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl_PL">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SchematHornera</title>
-        <meta name="Author" content=""/>
+        <meta name="Zobaczyć matematykę" content="">
+        <meta name="Kamil Best" content=""/>
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="onepage-scroll.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
+
         <script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
+        <!--ONE PAGE SCROOL (APPLE LIKE)-->
+        <link rel="stylesheet" type="text/css" href="onepage-scroll.css">
         <script type="text/javascript" src="onepagescroll.js"></script>
-        <script src="chalk.js"></script>
-
-        <script src="http://use.edgefonts.net/coda:n4,n8:all;raleway:n1,n7,n4,n5,n3,n8,n9,n2,n6:all.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+        <!--ONE PAGE SCROOL (APPLE LIKE)-->
     </head>
     <body>
         <div class="main">
             <section id="scroll">
-                <div class="head-background">
-                    <div id="heading">
+                <div id="head-background">
+                    <nav class="menu" id="theMenu">
+                        <div class="menu-wrap">
+                            <h1 class="logo"><a href="index.html#home">Schemat Hornera</a>
+                            </h1>
+                            <i class="fa fa-times menu-close"></i>
+
+                            <a href="#home" class="smoothScroll">Strona główna</a>
+                            <a href="#about" class="smoothScroll">Autor</a>
+                            <a href="#portfolio" class="smoothScroll">Równania i nierówności</a>
+                            <a href="#services" class="smoothScroll">Dzielenie</a>
+                            <a href="#contact" class="smoothScroll">Rozwiązywacz równań</a>
+                            <a href="#contact" class="smoothScroll">Sprawdź się</a>
+                            <a href="#contact" class="smoothScroll">Inne zastosowanie</a>
+                        </div>
+
+                        <!-- Menu button -->
+                        <div id="menuToggle">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </nav>
+                    <div class="heading">
                         <h1>SCHEMAT<br>HORNERA</h1>
                         <h3>UCZ SIĘ W NOWYM STYLU.</h3>
                     </div>
                     <div class="slide-down">
-                        <a href="#" class="icon-scroll"></a>
+                        <a href="#container" id="top" class="icon-scroll"></a>
                     </div>
                     <div class="separation">
                     </div>
@@ -52,9 +78,11 @@
                                 </section>
                                 <section class="service">
                                     <div class="service-icon"><span class="icon-author"></span><br/>Autor</div>
-                                    <div class="service-description">
-                                        <h4>AUTOR</h4>
-                                        <p>Dowiedz się, kto jest autorem.</p></div>
+                                    <a href="autor.html">
+                                        <div class="service-description">
+                                            <h4>AUTOR</h4>
+                                            <p>Dowiedz się, kto jest autorem.</p></div>
+                                    </a>
                                 </section>
                                 <section class="service">
                                     <div class="service-icon"><span class="icon-equal"></span><br/>Równania</div>
@@ -81,21 +109,36 @@
                                         <h4>ZAGRAJ</h4>
                                         <p>Sprawdź się w dzieleniu wielomianu przez dwumian.</p></div>
                                 </section>
-                                 <section class="service">
+                                <section class="service">
                                     <div class="service-icon"><span class="icon-abacus"></span><br/>Przelicz</div>
                                     <div class="service-description">
                                         <h4>INFORMATYKA</h4>
                                         <p>Przelicz liczbę na wybrany system liczbowy.</p></div>
                                 </section>
-                                 <section class="board">
+                                <section class="service empty-field">
 
+                                    <div class="contents">
+                                        <span>?</span>
+
+                                        <div class="chalk"></div>
+
+                                        <ul>
+                                            <strong>Co tu znajdziesz?</strong>
+                                            <li>Teoria</li>
+                                            <li>Praktyka</li>
+                                            <li>Gry</li>
+                                            <li>Ciekawostki</li>
+
+                                        </ul>
+                                    </div>
                                 </section>
-                                         <section id="scroll"></section>
+                                <section id="scroll"></section>
 
-                            </div> <!-- END #services -->
+                                <!-- END #services -->
+                            </div>
                         </div>
+                        </section>
+
                     </div>
-                </section>
-                </div>
-            </body>
-        </html>
+                </body>
+            </html>
