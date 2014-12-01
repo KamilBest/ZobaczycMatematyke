@@ -1,42 +1,162 @@
-
+/*My Icon font*/
 @font-face {
-    font-family: "Sketchy";
-    src:url("fonts/Sketchy.ttf");
+    font-family: "myfont";
+    src:url("fonts/myfont.eot");
+    src:url("fonts/myfont.eot?#iefix") format("embedded-opentype"),
+        url("fonts/myfont.woff") format("woff"),
+        url("fonts/myfont.ttf") format("truetype"),
+        url("fonts/myfont.svg#myfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    font-family: "myfont" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1; /*space between lines in description*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "myfont" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1; /*odstęp między tekstem a ikoną*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*Delete unusable at the end*/
+.icon-scroll:before {
+    content: "a";
+}
+.icon-multiply:before {
+    content: "b";
+}
+.icon-menu:before {
+    content: "d";
+}
+.icon-author:before {
+    content: "c";
+}
+.icon-abacus:before {
+    content: "e";
+}
+.icon-author1:before {
+    content: "f";
+}
+.icon-what:before {
+    content: "g";
+}
+.icon-basic:before {
+    content: "h";
+}
+.icon-theory:before {
+    content: "i";
+}
+.icon-calculator:before {
+    content: "j";
+}
+.icon-checkbox:before {
+    content: "k";
+}
+.icon-checkbox2:before {
+    content: "l";
+}
+.icon-checkbox1:before {
+    content: "m";
+}
+.icon-equal:before {
+    content: "n";
+}
+.icon-multiply-1:before {
+    content: "o";
+}
+.icon-logo:before {
+    content: "p";
+}
+.icon-logo-hover:before {
+    content: "q";
+}
+.icon-growing:before {
+    content: "r";
+}
+.icon-divide:before {
+    content: "s";
+}
+.icon-menu1:before {
+    content: "t";
+}
+
+/*OTHER FONTS*/
+@font-face {
+    font-family: "sketchy";
+    src:url("fonts/sketchy.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-bold";
-    src:url("fonts/Raleway-Bold.ttf");
+    src:url("fonts/raleway-bold.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-regular";
-    src:url("fonts/Raleway-Regular.ttf");
+    src:url("fonts/raleway-regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-thin";
-    src:url("fonts/Raleway-Thin.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family:"uni_sans_heavy";
-    src:url("fonts/uni_sans_heavy.otf");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family:"uni_sans_thin";
-    src:url("fonts/uni_sans_thin.otf");
+    src:url("fonts/raleway-thin.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@font-face {
+    font-family:"open-sans-light";
+    src:url("fonts/open-sans-light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:"open-sans-regular";
+    src:url("fonts/open-sans-regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:"open-sans-semibold";
+    src:url("fonts/open-sans-semibold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:"open-sans-bold";
+    src:url("fonts/open-sans-bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:"open-sans-extrabold";
+    src:url("fonts/open-sans-extrabold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GENERAL STYLES
+*/
 
 body {
     background: #fff;
@@ -83,18 +203,16 @@ body {
 }
 
 .menu h1.logo a {
-    font-family:  "font_awesome" ;
-    font-size: 1.8em;
-    font-weight: 900;
+    font-family:   "open-sans-extrabold" ;
+    font-size: 17px;
+    font-weight: 800;
     letter-spacing: 0.15em;
-    line-height: 40px;
+    line-height: 1.4;
+    padding: 8px 6px 4px 10px;
+    text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-.menu h1.logo a:hover {
-    color: #D91A2A;
+    color: #fff;
+    margin-top: 50px;
 }
 
 .menu img.logo {
@@ -103,20 +221,23 @@ body {
 }
 
 .menu a {
-     font-family: "uni_sans_thin" ;
-    margin-left: 20px;
-    color: #fff;
+     font-family: "open-sans-regular";
+    color: #B5B5B5;
     display: block;
-    font-size: 1em;
+    padding-left: 15px;
+    font-size: 14px;
     font-weight: 900;
     line-height: 40px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
+    border-bottom: solid 1px rgba(255,255,255,0.2);
 }
 
 .menu a:hover {
-    color: #0583F2;
+    color: #fff;
+    background:   rgba(0,255,0,0.15);
+;
 }
 
 .menu a:active {
