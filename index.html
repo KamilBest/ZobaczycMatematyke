@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Strona o schemacie Hornera">
@@ -32,7 +32,10 @@ STYLESHEETS
         <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
         <link rel="stylesheet" href="css/back-to-top.css"> <!-- Gem style -->
         <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
+        
+        <!-- DOT_NAVIGATION -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/dot-nav.css"> <!-- Resource style -->
 
         <!-- WEB FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
@@ -55,18 +58,41 @@ STYLESHEETS
 <!-- RESPONSIVE FIXES -->
         <link rel="stylesheet" href="css/responsive.css">
 
-
-        <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
-
         <!-- JQUERY -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     </head>
 
-    <body>
+    <body style="overflow-y:hidden;">
+        <nav id="cd-vertical-nav">
+		<ul>
+			<li>
+				<a href="#home" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Początek</span>
+				</a>
+			</li>
+			<li>
+				<a href="#brief1" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Wstęp</span>
+				</a>
+			</li>
+			<li>
+				<a href="#features" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Zawartość</span>
+				</a>
+			</li>
+			<li>
+				<a href="#brief2" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Autor</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
         <!-- =========================
 PRE LOADER       
 ============================== -->
@@ -81,7 +107,7 @@ PRE LOADER
 HEADER   
 ============================== -->
         <!-- content here -->
-        <header class="header" data-stellar-background-ratio="0.5" id="home">
+        <header class="header change-dot" data-stellar-background-ratio="0.5" id="home">
 
             <!-- COLOR OVER IMAGE -->
             <div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
@@ -170,7 +196,7 @@ HEADER
 WSTĘP 
 BRIEF LEFT SECTION 
 ============================== -->
-        <section class="app-brief deep-dark-bg" id="brief1">
+        <section class="app-brief deep-dark-bg change-dot" id="brief1">
 
             <div class="container">
 
@@ -218,7 +244,7 @@ BRIEF LEFT SECTION
 ODNOŚNIKI DO PODSTRON
 FEATURES 
 ============================== -->
-        <section class="features" id="features">
+        <section class="features change-dot" id="features">
 
             <div class="container">
 
@@ -417,7 +443,7 @@ TESTIMONIALS
 AUTOR SECTION
 BRIEF RIGHT SECTION 
 ============================== -->
-        <section class="app-brief" id="brief2">
+        <section class="app-brief change-dot" id="brief2">
 
             <div class="container">
 
@@ -462,6 +488,8 @@ BRIEF RIGHT SECTION
 SCRIPTS 
 ============================== -->
         <script         src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/dot-nav.js"></script> <!-- Resource jQuery -->
         <script src="js/back-to-top.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smoothscroll.js"></script>

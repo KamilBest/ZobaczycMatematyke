@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-	var contentSections = $('.cd-section'),
+	var contentSections = $('.change-dot'),
 		navigationItems = $('#cd-vertical-nav a');
 
 	updateNavigation();
