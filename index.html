@@ -53,7 +53,7 @@ STYLESHEETS
         <link rel="stylesheet" href="css/styles.css">
 
         <!-- COLORS -->
-        <link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ 
+        <link rel="stylesheet" href="css/colors.css"> <!-- DEFAULT COLOR/
 
 <!-- RESPONSIVE FIXES -->
         <link rel="stylesheet" href="css/responsive.css">
@@ -129,10 +129,10 @@ HEADER
                         </div>
 
                         <!-- NAVIGATION LINKS -->
-                        <div class="navbar-collapse collapse" id="horner-nav">
+                        <div class="navbar-collapse collapse" id="kane-navigation">
                             <ul class="nav navbar-nav navbar-right main-navigation">
                                 <li>
-                                    <a href="#home">Strona główna</a></li>
+                                    <a href="#home">Schemat Hornera</a></li>
                                 <li><a href="#features">Autor</a></li>
                                 <li><a href="#brief1">Równania i nierowności</a></li>
                                 <li><a href="#brief2">Dzielenie</a></li>
@@ -172,7 +172,7 @@ HEADER
 
                                 <!-- BUTTON -->
                                 <div class="buttons" id="download-button">
-                                    <a href="#features" class="btn btn-default btn-lg standard-button"><i class="arrow_carrot-2down"></i>Przejdź dalej</a>
+                                    <a href="#brief1" class="btn btn-default btn-lg standard-button"><i class="arrow_carrot-2down"></i>Przejdź dalej</a>
 
                                 </div>
                                 	
@@ -460,9 +460,15 @@ BRIEF RIGHT SECTION
                         </div>
 
                         <p>
- Brytyjski matematyk. W wieku 14 lat był asystentem nauczyciela w szkole w Bristolu, następnie w 1809 założył własną szkołę w Bath. Znany jest przede wszystkim z podanego przez siebie schematu pozwalającego łatwo obliczać wartość wielomianu. W 1834 opatentował zoetrop.
-                            <!-- dodać tooltip wyjaśniający co to jest zeotrop -->
+ Brytyjski matematyk. W wieku 14 lat był asystentem nauczyciela w szkole w Bristolu, następnie w 1809 założył własną szkołę w Bath.
+ Schemat pozwalający łatwo obliczać wartość wielomianu jest przypisywany Hornerowi, jednak był już znany Newtonowi, Ruffiniemu i matematykom chińskim w XII wieku. W 1834 opatentował
+<a class='tooltip' href='#'>This is a tooltip
+   <span class="custom">zoetrop</span>
+</a>
                         </p>
+
+
+
 
                     </div>
                     <!-- /ENDBRIEF -->
@@ -482,6 +488,7 @@ BRIEF RIGHT SECTION
             <!-- /END CONTAINER -->
 
         </section>
+        <a href="#0" class="cd-top">Top</a>
         <!-- /END SECTION -->
 
         <!-- =========================
@@ -489,7 +496,7 @@ SCRIPTS
 ============================== -->
         <script         src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/dot-nav.js"></script> <!-- Resource jQuery -->
+        <script src="js/dot-nav.js"></script>
         <script src="js/back-to-top.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smoothscroll.js"></script>
@@ -503,7 +510,6 @@ SCRIPTS
         <script src="js/retina.min.js"></script>
         <script src="js/jquery.nav.js"></script>
         <script src="js/matchMedia.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
         <script src="js/jquery.fitvids.js"></script>
         <script src="js/custom.js"></script>
 

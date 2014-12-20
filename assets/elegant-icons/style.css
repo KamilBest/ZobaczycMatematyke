@@ -1193,3 +1193,7 @@ text-shadow: none;
 h3 {
     
 }
+
+.popover-show {
+    cursor: pointer;
+}

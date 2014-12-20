@@ -14,25 +14,11 @@ html * {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 100%;
-  font-family: "Ubuntu", sans-serif;
-  color: #3e3947;
-  background-color: white;
-}
-
-body, html {
-  height: 100%;
-}
-
 a {
   color: #3e3947;
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
 
 /* -------------------------------- 
 
@@ -106,20 +92,6 @@ Main components
   }
 }
 
-.cd-scroll-down {
-  position: absolute;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 20px;
-  width: 38px;
-  height: 44px;
-  background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
-}
 
 /* No Touch devices */
 .cd-nav-trigger {
@@ -128,7 +100,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   position: fixed;
-  right: 40px;
+  right: 20px;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -173,13 +145,18 @@ Main components
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
   background-color: white;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    left: 3px;
 }
+
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
   top: 8px;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   background-color: #81D727;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
@@ -194,7 +171,7 @@ Main components
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
-  padding: .4em .5em;
+  padding: .0em .1em;
   color: white;
   font-size: 14px;
   font-size: 0.875rem;
@@ -218,7 +195,7 @@ Main components
   right: 5%;
   height: 44px;
   width: 44px;
-  border-radius: 0.25em;
+  border-radius: 1em;
   background: rgba(255, 255, 255, 0.9);
 }
 .touch .cd-nav-trigger span {
@@ -226,7 +203,7 @@ Main components
   height: 4px;
   width: 4px;
   background-color: #3e3947;
-  border-radius: 50%;
+  border-radius: 100%;
   left: 50%;
   top: 50%;
   bottom: auto;
