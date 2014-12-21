@@ -234,9 +234,7 @@ ol {
     padding-left: 0 !important;
 }
 
-li {
-    list-style: none;
-}
+
 
 
 /* PRE LOADER */
@@ -266,7 +264,9 @@ li {
             background-size: cover;
     margin: -20px 0 0 -20px;
 }
-
+.def{
+    margin-top: 50px;
+}
 
 /*---------------------------------------
    Typography                
@@ -449,6 +449,8 @@ header {
 
 header .color-overlay {
     min-height: 100vh;
+     -webkit-background-size: cover;
+            background-size: cover;
 }
 
 header .full-screen {
@@ -536,7 +538,7 @@ header .intro-section .buttons {
     min-height: 100vh;
     padding-top: 80px;
     padding-bottom: 30px;
-    background: #232323;
+    background: #161616;
 }
 
 .features .features-left {

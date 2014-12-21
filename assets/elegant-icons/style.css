@@ -1197,3 +1197,11 @@ h3 {
 .popover-show {
     cursor: pointer;
 }
+
+#definicja {
+    background: #232323;
+    min-height: 70vh;
+    width: 100%;
+}
+
+

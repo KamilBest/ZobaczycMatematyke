@@ -1,517 +1,578 @@
 <!doctype html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Strona o schemacie Hornera">
-        <meta name="keywords" content="Schemat Hornera, Horner, Schemat, Matematyka, Zadania">
-        <meta name="author" content="Kamil Best">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- SITE TITLE -->
-        <title>Schemat Hornera</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona o schemacie Hornera">
+    <meta name="keywords" content="Schemat Hornera, Horner, Schemat, Matematyka, Zadania">
+    <meta name="author" content="Kamil Best">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- =========================
+    <!-- SITE TITLE -->
+    <title>Schemat Hornera</title>
+
+    <!-- =========================
 FAV AND TOUCH ICONS  
 ============================== -->
-        <link rel="icon" href="images/favicon2.png">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="icon" href="images/favicon2.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-        <!-- =========================
+    <!-- =========================
 STYLESHEETS   
 ============================== -->
-        <!-- BOOTSTRAP -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <!-- FONT ICONS -->
-        <link rel="stylesheet" href="assets/elegant-icons/style.css">
-        <link rel="stylesheet" href="assets/app-icons/styles.css">
-        <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
-        <!-- BACK TO TOP -->
-        <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-        <link rel="stylesheet" href="css/back-to-top.css"> <!-- Gem style -->
-        <script src="js/modernizr.js"></script> <!-- Modernizr -->
-        
-        <!-- DOT_NAVIGATION -->
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/dot-nav.css"> <!-- Resource style -->
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="assets/elegant-icons/style.css">
+    <link rel="stylesheet" href="assets/app-icons/styles.css">
+    <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+    <!-- BACK TO TOP -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/back-to-top.css">
+    <!-- Gem style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
 
-        <!-- WEB FONTS -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+    <!-- DOT_NAVIGATION -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/dot-nav.css">
+    <!-- Resource style -->
 
-        <!-- CAROUSEL AND LIGHTBOX -->
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/nivo-lightbox.css">
-        <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+    <!-- WEB FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
 
-        <!-- ANIMATIONS -->
-        <link rel="stylesheet" href="css/animate.min.css">
+    <!-- CAROUSEL AND LIGHTBOX -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo_themes/default/default.css">
 
-        <!-- CUSTOM STYLESHEETS -->
-        <link rel="stylesheet" href="css/styles.css">
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="css/animate.min.css">
 
-        <!-- COLORS -->
-        <link rel="stylesheet" href="css/colors.css"> <!-- DEFAULT COLOR/
+    <!-- CUSTOM STYLESHEETS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- COLORS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- DEFAULT COLOR/
 
 <!-- RESPONSIVE FIXES -->
-        <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-        <!-- JQUERY -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- JQUERY -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    </head>
+</head>
 
-    <body style="overflow-y:hidden;">
-        <nav id="cd-vertical-nav">
-		<ul>
-			<li>
-				<a href="#home" data-number="1">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Początek</span>
-				</a>
-			</li>
-			<li>
-				<a href="#brief1" data-number="2">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Wstęp</span>
-				</a>
-			</li>
-			<li>
-				<a href="#features" data-number="3">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Zawartość</span>
-				</a>
-			</li>
-			<li>
-				<a href="#brief2" data-number="4">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Autor</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
+<body style="overflow-y:hidden;">
+    <nav id="cd-vertical-nav">
+        <ul>
+            <li>
+                <a href="#home" data-number="1">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Początek</span>
+                </a>
+            </li>
+            <li>
+                <a href="#brief1" data-number="2">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Wstęp</span>
+                </a>
+            </li>
+            <li>
+                <a href="#definicja" data-number="3">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Definicja</span>
+                </a>
+            </li>
+            <li>
+                <a href="#features" data-number="4">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Co tu znajdziesz?</span>
+                </a>
+            </li>
+            <li>
+                <a href="#brief2" data-number="5">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Autor</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-        <!-- =========================
-PRE LOADER       
+    <!-- =========================
+PRELOADER
 ============================== -->
-        <div class="preloader">
-            <div class="status">&nbsp;</div>
-        </div>
-
-        <!-- PAGINATION -->
-
-
-        <!-- =========================
+    <div class="preloader">
+        <div class="status">&nbsp;</div>
+    </div>
+    <!-- =========================
 HEADER   
 ============================== -->
-        <!-- content here -->
-        <header class="header change-dot" data-stellar-background-ratio="0.5" id="home">
+    <!-- content here -->
+    <header class="header change-dot" data-stellar-background-ratio="0.5" id="home">
 
-            <!-- COLOR OVER IMAGE -->
-            <div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+        <!-- COLOR OVER IMAGE -->
+        <div class="color-overlay">
+            <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
 
-
-                <!-- STICKY NAVIGATION -->
-                <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-
-                            <!-- LOGO ON STICKY NAV BAR -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#horner-nav">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#"><img src="images/logo2.svg" alt="Strona główna"></a>
-                        </div>
-
-                        <!-- NAVIGATION LINKS -->
-                        <div class="navbar-collapse collapse" id="kane-navigation">
-                            <ul class="nav navbar-nav navbar-right main-navigation">
-                                <li>
-                                    <a href="#home">Schemat Hornera</a></li>
-                                <li><a href="#features">Autor</a></li>
-                                <li><a href="#brief1">Równania i nierowności</a></li>
-                                <li><a href="#brief2">Dzielenie</a></li>
-                                <li><a href="#services">kalkulator</a></li>
-                                <li><a href="#screenshot-section">zagraj</a></li>
-                                <li><a href="#download">inne</a></li>
-                            </ul>
-                        </div>
-                    </div> <!-- /END CONTAINER -->
-                </div> <!-- /END STICKY NAVIGATION -->
-
-                <!-- CONTAINER -->
+            <!-- STICKY NAVIGATION -->
+            <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
                 <div class="container">
+                    <div class="navbar-header">
 
-                    <!-- LOGO ON HEADER -->
-                    <div class="only-logo">
-                        <div class="navbar">
-                            <div class="navbar-header">
-                                <img src="images/logo.svg" class="logo" alt="logo">
-                            </div>
-                        </div>
-                    </div> <!-- /END LOGO ON HEADER -->
-
-
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-
-                            <!-- HEADING AND BUTTONS -->
-                            <div class="intro-section">
-
-                                <!-- WELCOM MESSAGE -->
-                                <i class="icon-collapse"></i>
-                                <h1 class="intro">Poznaj schemat Hornera.</h1>
-                                <hr>
-                                <h5>Nauka w nowym stylu.</h5>
-
-
-                                <!-- BUTTON -->
-                                <div class="buttons" id="download-button">
-                                    <a href="#brief1" class="btn btn-default btn-lg standard-button"><i class="arrow_carrot-2down"></i>Przejdź dalej</a>
-
-                                </div>
-                                	
-                                <!-- /END BUTTONS -->
-
-                            </div>
-                            <!-- /END HEADNING AND BUTTONS -->
-
-                        </div>
+                        <!-- LOGO ON STICKY NAV BAR -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home">
+                            <img src="images/logo2.svg" alt="Strona główna">
+                        </a>
                     </div>
-                    <!-- /END ROW -->
 
+                    <!-- NAVIGATION LINKS -->
+                    <div class="navbar-collapse collapse" id="kane-navigation">
+                        <ul class="nav navbar-nav navbar-right main-navigation">
+                            <li>
+                                <a href="#definicja">Definicja</a>
+                            </li>
+                            <li><a href="#brief2">Autor</a>
+                            </li>
+                            <li><a href="#">Równania i nierowności</a>
+                            </li>
+                            <li><a href="#">Dzielenie</a>
+                            </li>
+                            <li><a href="#">kalkulator</a>
+                            </li>
+                            <li><a href="#">zagraj</a>
+                            </li>
+                            <li><a href="#">inne</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- /END CONTAINER -->
             </div>
-            <!-- /END COLOR OVERLAY -->
-        </header>
-        <!-- /END HEADER -->
+            <!-- /END STICKY NAVIGATION -->
 
-        <!--
+            <!-- CONTAINER -->
+            <div class="container">
+
+                <!-- LOGO ON HEADER -->
+                <div class="only-logo">
+                    <div class="navbar">
+                        <div class="navbar-header">
+                            <img src="images/logo.svg" class="logo" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <!-- /END LOGO ON HEADER -->
+
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <!-- HEADING AND BUTTONS -->
+                        <div class="intro-section">
+
+                            <!-- WELCOM MESSAGE -->
+                            <i class="icon-collapse"></i>
+                            <h1 class="intro">Poznaj schemat Hornera.</h1>
+                            <hr>
+                            <h5>Nauka w nowym stylu.</h5>
+
+
+                            <!-- BUTTON -->
+                            <div class="buttons" id="download-button">
+                                <a href="#brief1" class="btn btn-default btn-lg standard-button"><i class="arrow_carrot-2down"></i>Przejdź dalej</a>
+
+                            </div>
+
+                            <!-- /END BUTTONS -->
+
+                        </div>
+                        <!-- /END HEADNING AND BUTTONS -->
+
+                    </div>
+                </div>
+                <!-- /END ROW -->
+
+            </div>
+            <!-- /END CONTAINER -->
+        </div>
+        <!-- /END COLOR OVERLAY -->
+    </header>
+    <!-- /END HEADER -->
+
+    <!--
 WSTĘP 
 BRIEF LEFT SECTION 
 ============================== -->
-        <section class="app-brief deep-dark-bg change-dot" id="brief1">
+    <section class="app-brief deep-dark-bg change-dot" id="brief1">
 
-            <div class="container">
+        <div class="container">
 
-                <div class="row">
+            <div class="row">
 
-                    <!-- PHONES IMAGE -->
-                    <div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-                        <div class="phone-image">
-                            <img src="images/zeszyt2.png" alt="">
-                        </div>
+                <!-- PHONES IMAGE -->
+                <div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                    <div class="phone-image">
+                        <img src="images/zeszyt2.png" alt="">
                     </div>
+                </div>
 
-                    <!-- RIGHT SIDE WITH BRIEF -->
-                    <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <!-- RIGHT SIDE WITH BRIEF -->
+                <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
-                        <!-- SECTION TITLE -->
-                        <h2 class="white-text">Schemat Hornera</h2>
+                    <!-- SECTION TITLE -->
+                    <h2 class="white-text">Schemat Hornera</h2>
 
-                        <div class="colored-line-left">
-                        </div>
-                        <p>
-                            Sposób ten nie jest czymś trudnym, jednak wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz zastosowaniu go w zadaniach.
-                        </p>
-                        <h3>Nie rozumiesz lub po prostu chcesz poznać schemat Hornera?  <br>- Ta strona jest dla Ciebie!
+                    <div class="colored-line-left">
+                    </div>
+                    <p>
+                        Sposób ten nie jest czymś trudnym, jednak wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz zastosowaniu go w zadaniach.
+                    </p>
+                    <h3>Nie rozumiesz lub po prostu chcesz poznać schemat Hornera?  <br>- Ta strona jest dla Ciebie!
                         </h3>
-                        <p>
-                            Znajdziesz tu odpowiedzi na nurtujące Cię pytania, poznasz niezbędną teorię, a także będziesz mógł sprawdzić się w interaktywnej części praktycznej grając.
-                        </p>
+                    <p>
+                        Znajdziesz tu odpowiedzi na nurtujące Cię pytania, poznasz niezbędną teorię, a także będziesz mógł sprawdzić się w interaktywnej części praktycznej grając.
+                    </p>
 
-
-                    </div>
-                    <!-- /END RIGHT BRIEF -->
 
                 </div>
-                <!-- /END ROW -->
+                <!-- /END RIGHT BRIEF -->
 
             </div>
-            <!-- /END CONTAINER -->
+            <!-- /END ROW -->
 
-        </section>
-        <!-- /END SECTION -->
+        </div>
+        <!-- /END CONTAINER -->
+    </section>
+    <!-- /END SECTION -->
+
+    <section class="app-brief change-dot" id="definicja">
+
+        <div class="container">
+
+            <div class="row">
+                <!-- KNOWLEDGE IMAGE -->
+                <div class=" col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                    <div class="horner-image">
+                        <img src="images/knowledge.svg" alt="William George Horner">
+                    </div>
+                </div>
+                <!-- /END PHONES IMAGE -->
+                <!-- BRIEF -->
+                <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+                    <!-- SECTION TITLE -->
+                    <h2 class="white-text">Definicja</h2>
+                    <p class="def">Schemat Hornera &ndash; sposób obliczania wartości wielomianu dla danej wartości argumentu wykorzystujący minimalną liczbę mnożeń, jest to również algorytm dzielenia wielomianu W(x) przez dwumian (x-x0).</p>
+                    <br>
+                    <div class="colored-line-left">
+                    </div>
+                    <br>
+                    <h2 class="white-text">Zastosowanie</h2>
+
+                    <ul class="def" style="list-style-type:disc">
+                        <li>Wyznaczaniu wartości wielomianu.</li>
+                        <li>Sposób na obliczanie równań i nierówności.</li>
+                        <li>Dzielenie wielomianu przez dwumian.</li>
+
+                        <li>Zmiana systemu pozycyjnego liczby (informatyka).</li>
+                    </ul>
 
 
-        <!-- =========================
+
+
+                </div>
+                <!-- /ENDBRIEF -->
+            </div>
+            <!-- /END ROW -->
+
+        </div>
+        <!-- /END CONTAINER -->
+
+    </section>
+    <!-- =========================
 ODNOŚNIKI DO PODSTRON
 FEATURES 
 ============================== -->
-        <section class="features change-dot" id="features">
+    <section class="features change-dot" id="features">
 
-            <div class="container">
+        <div class="container">
 
-                <!-- SECTION HEADER -->
-                <div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+            <!-- SECTION HEADER -->
+            <div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
 
-                    <!-- SECTION TITLE -->
-                    <h2 class="white-text">Co tu znajdziesz?</h2>
-                    <div class="colored-line">
-                    </div>
-                    <div class="section-description">
-                        Kliknij na ikonkę aby przejść do interesującego Cię zagadnienia.
-                    </div>
-                    <div class="colored-line">
-                    </div>
+                <!-- SECTION TITLE -->
+                <h2 class="white-text">Co tu znajdziesz?</h2>
+                <div class="colored-line">
                 </div>
-                <!-- /END SECTION HEADER -->
+                <div class="section-description">
+                    Kliknij na ikonkę aby przejść do interesującego Cię zagadnienia.
+                </div>
+                <div class="colored-line">
+                </div>
+            </div>
+            <!-- /END SECTION HEADER -->
 
 
-                <div class="row">
+            <div class="row">
 
-                    <!-- FEATURES LEFT -->
-                    <div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <!-- FEATURES LEFT -->
+                <div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
-                        <!-- FEATURE -->
-                        <div class="feature">
+                    <!-- FEATURE -->
+                    <div class="feature">
 
-                            <!-- ICON -->
-                            <div class="icon-container">
-                                <div class="icon">
-                                     <span class="icon-what"></span>
-                                </div>
+                        <!-- ICON -->
+                        <a href="#brief1">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-what"></span>
                             </div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <div class="fetaure-details">
-                                <h4 class="main-color">Co to jest?</h4>
-                                <p>
-                                    Poznaj definicję i zastosowanie schematu Hornera.
-                                </p>
-                            </div>
-
                         </div>
-                        <!-- /END SINGLE FEATURE -->
+                        </a>
 
-                        <!-- FEATURE -->
-                        <div class="feature">
-
-                            <!-- ICON -->
-                            <div class="icon-container">
-                                <div class="icon">
-                                    <span class="icon-author"></span>
-                                </div>
-                            </div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <div class="fetaure-details">
-                                <h4 class="main-color">Autor</h4>
-                                <p>
-                                    Dowiedz się czegoś o Williamie George'u Hornerze, twórcy schematu.
-                                </p>
-                            </div>
-
+                        <!-- FEATURE HEADING AND DESCRIPTION -->
+                        <div class="fetaure-details">
+                            <h4 class="main-color">Co to jest?</h4>
+                            <p>
+                                Poznaj definicję i zastosowanie schematu Hornera.
+                            </p>
                         </div>
-                        <!-- /END SINGLE FEATURE -->
-
-                        <!-- FEATURE -->
-                        <div class="feature">
-
-                            <!-- ICON -->
-                            <div class="icon-container">
-                                <div class="icon">
-                                     <span class="icon-calculator"></span>
-                                </div>
-                            </div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <div class="fetaure-details">
-                                <h4 class="main-color">Kalkulator</h4>
-                                <p>
-                                    Sprawdź jaką wartość ma podany wielomian.
-                                </p>
-                            </div>
-
-                        </div>
-                        <!-- /END SINGLE FEATURE -->
 
                     </div>
-                    <!-- /END FEATURES LEFT -->
+                    <!-- /END SINGLE FEATURE -->
 
-                    <!-- PHONE IMAGE -->
-                    <div class="col-md-4 col-sm-4">
-                        <div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
-                            <img src="images/ekran.png" alt="">
-                        </div>
-                    </div>
+                    <!-- FEATURE -->
+                    <div class="feature">
 
-                    <!-- FEATURES RIGHT -->
-                    <div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-                        <!-- FEATURE -->
-                        <div class="feature">
-
-                            <!-- ICON -->
-                            <div class="icon-container">
-                                <div class="icon">
-                                     <span class="icon-equal"></span>
-                                </div>
+                        <!-- ICON -->
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-author"></span>
                             </div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <div class="fetaure-details">
-                                <h4 class="main-color">Równania i nierówności</h4>
-                                <p>
-                                    Naucz się rozwiązywać równania i nierówności schematem Hornera.
-                                </p>
-                            </div>
-
-                        </div>
-                        <!-- /END SINGLE FEATURE -->
-
-                        <!-- FEATURE -->
-                        <div class="feature">
-
-                            <!-- ICON -->
-                            <div class="icon-container">
-                                <div class="icon">
-                                     <span class="icon-divide"></span>
-                                </div>
-                            </div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <div class="fetaure-details">
-                                <h4 class="main-color">Dzielenie</h4>
-                                <p>
-                                    Poznaj metodę dzielenia wielomianu przez dwumian.
-                                </p>
-                            </div>
-
                         </div>
 
-                        <!-- /END SINGLE FEATURE -->
-
-                        <!-- FEATURE -->
-                        <div class="feature">
-
-                            <!-- ICON -->
-                            <div class="icon-container">
-                                <div class="icon">
-                                     <span class="icon-checkbox"></span>
-                                </div>
-                            </div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <div class="fetaure-details">
-                                <h4 class="main-color">Zagraj</h4>
-                                <p>
-                                   Sprawdź, czy potrafisz już dzielić wielomian przez dwumian grając w grę.
-                                </p>
-                            </div>
-
+                        <!-- FEATURE HEADING AND DESCRIPTION -->
+                        <div class="fetaure-details">
+                            <h4 class="main-color">Autor</h4>
+                            <p>
+                                Dowiedz się czegoś o Williamie George'u Hornerze, twórcy schematu.
+                            </p>
                         </div>
-                        <!-- /END SINGLE FEATURE -->
 
                     </div>
-                    <!-- /END FEATURES RIGHT -->
+                    <!-- /END SINGLE FEATURE -->
+
+                    <!-- FEATURE -->
+                    <div class="feature">
+
+                        <!-- ICON -->
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-calculator"></span>
+                            </div>
+                        </div>
+
+                        <!-- FEATURE HEADING AND DESCRIPTION -->
+                        <div class="fetaure-details">
+                            <h4 class="main-color">Kalkulator</h4>
+                            <p>
+                                Sprawdź jaką wartość ma podany wielomian.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- /END SINGLE FEATURE -->
 
                 </div>
-                <!-- /END ROW -->
+                <!-- /END FEATURES LEFT -->
+
+                <!-- PHONE IMAGE -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <img src="images/ekran.png" alt="">
+                    </div>
+                </div>
+
+                <!-- FEATURES RIGHT -->
+                <div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+                    <!-- FEATURE -->
+                    <div class="feature">
+
+                        <!-- ICON -->
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-equal"></span>
+                            </div>
+                        </div>
+
+                        <!-- FEATURE HEADING AND DESCRIPTION -->
+                        <div class="fetaure-details">
+                            <h4 class="main-color">Równania i nierówności</h4>
+                            <p>
+                                Naucz się rozwiązywać równania i nierówności schematem Hornera.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- /END SINGLE FEATURE -->
+
+                    <!-- FEATURE -->
+                    <div class="feature">
+
+                        <!-- ICON -->
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-divide"></span>
+                            </div>
+                        </div>
+
+                        <!-- FEATURE HEADING AND DESCRIPTION -->
+                        <div class="fetaure-details">
+                            <h4 class="main-color">Dzielenie</h4>
+                            <p>
+                                Poznaj metodę dzielenia wielomianu przez dwumian.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- /END SINGLE FEATURE -->
+
+                    <!-- FEATURE -->
+                    <div class="feature">
+
+                        <!-- ICON -->
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-checkbox"></span>
+                            </div>
+                        </div>
+
+                        <!-- FEATURE HEADING AND DESCRIPTION -->
+                        <div class="fetaure-details">
+                            <h4 class="main-color">Zagraj</h4>
+                            <p>
+                                Sprawdź, czy potrafisz już dzielić wielomian przez dwumian grając w grę.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- /END SINGLE FEATURE -->
+
+                </div>
+                <!-- /END FEATURES RIGHT -->
 
             </div>
-            <!-- /END CONTAINER -->
+            <!-- /END ROW -->
 
-        </section>
-        <!-- /END FEATURES SECTION -->
+        </div>
+        <!-- /END CONTAINER -->
+
+    </section>
+    <!-- /END FEATURES SECTION -->
 
 
-        <!-- =========================
- <!-- =========================
+    <!-- =========================
+<!-- =========================
 TŁO ODDZIELAJĄCE
 TESTIMONIALS 
 ============================== -->
-        <section class="testimonials">
+    <section class="testimonials">
 
-            <div class="color-overlay">
+        <div class="color-overlay">
 
-                <div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-                </div>
-                <!-- /END CONTAINER -->
+            <div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
             </div>
-            <!-- /END COLOR OVERLAY -->
-        </section>
-<!-- /END TESTIMONIALS SECTION -->
-        
-<!-- =========================
+            <!-- /END CONTAINER -->
+        </div>
+        <!-- /END COLOR OVERLAY -->
+    </section>
+    <!-- /END TESTIMONIALS SECTION -->
+
+    <!-- =========================
 AUTOR SECTION
 BRIEF RIGHT SECTION 
 ============================== -->
-        <section class="app-brief change-dot" id="brief2">
+    <section class="app-brief change-dot" id="brief2">
 
-            <div class="container">
+        <div class="container">
 
-                <div class="row">
+            <div class="row">
 
-                    <!-- BRIEF -->
-                    <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <!-- BRIEF -->
+                <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
-                        <!-- SECTION TITLE -->
-                        <h2 class="white-text">Autor</h2>
-                        <h3 class="white-text">William George Horner (1786-1837) </h3>
+                    <!-- SECTION TITLE -->
+                    <h2 class="white-text">Autor</h2>
+                    <h3 class="white-text">William George Horner (1786-1837) </h3>
 
-                        <div class="colored-line-left">
-                        </div>
-
-                        <p>
- Brytyjski matematyk. W wieku 14 lat był asystentem nauczyciela w szkole w Bristolu, następnie w 1809 założył własną szkołę w Bath.
- Schemat pozwalający łatwo obliczać wartość wielomianu jest przypisywany Hornerowi, jednak był już znany Newtonowi, Ruffiniemu i matematykom chińskim w XII wieku. W 1834 opatentował
-<a class='tooltip' href='#'>This is a tooltip
-   <span class="custom">zoetrop</span>
-</a>
-                        </p>
-
-
-
-
+                    <div class="colored-line-left">
                     </div>
-                    <!-- /ENDBRIEF -->
 
-                    <!-- HORNER IMAGE -->
-                    <div class=" col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-                        <div class="horner-image">
-                            <img src="images/horner.jpg"  alt="William George Horner">
-                        </div>
-                    </div>
-                    <!-- /END PHONES IMAGE -->
+                    <p>
+                        Brytyjski matematyk. W wieku 14 lat był asystentem nauczyciela w szkole w Bristolu, następnie w 1809 założył własną szkołę w Bath. Schemat pozwalający łatwo obliczać wartość wielomianu jest przypisywany Hornerowi, jednak był już znany Newtonowi, Ruffiniemu i matematykom chińskim w XII wieku. W 1834 opatentował zoetrop.
+                    </p>
+
+
+
 
                 </div>
-                <!-- /END ROW -->
+                <!-- /ENDBRIEF -->
+
+                <!-- HORNER IMAGE -->
+                <div class=" col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                    <div class="horner-image">
+                        <img src="images/horner.jpg" alt="William George Horner">
+                    </div>
+                </div>
+                <!-- /END PHONES IMAGE -->
 
             </div>
-            <!-- /END CONTAINER -->
+            <!-- /END ROW -->
 
-        </section>
-        <a href="#0" class="cd-top">Top</a>
-        <!-- /END SECTION -->
+        </div>
+        <!-- /END CONTAINER -->
 
-        <!-- =========================
+    </section>
+    <a href="#0" class="cd-top">Top</a>
+    <!-- /END SECTION -->
+
+    <!-- =========================
 SCRIPTS 
 ============================== -->
-        <script         src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/dot-nav.js"></script>
-        <script src="js/back-to-top.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/smoothscroll.js"></script>
-        <script src="js/jquery.scrollTo.min.js"></script>
-        <script src="js/jquery.localScroll.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/nivo-lightbox.min.js"></script>
-        <script src="js/simple-expand.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/retina.min.js"></script>
-        <script src="js/jquery.nav.js"></script>
-        <script src="js/matchMedia.js"></script>
-        <script src="js/jquery.fitvids.js"></script>
-        <script src="js/custom.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/dot-nav.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/simple-expand.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/matchMedia.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/custom.js"></script>
+</body>
 
-    </body>
 </html>
