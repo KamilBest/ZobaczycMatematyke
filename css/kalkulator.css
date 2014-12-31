@@ -1,0 +1,53 @@
+/*---------------------------------------
+   SECTION:  brief1
+-----------------------------------------*/
+
+#brief1 {
+    min-height: 100vh;
+    background: #161616;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+#brief1 h2 {
+    margin-bottom: 20px;
+}
+
+#brief1 .left-align {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#brief1 .left-align p {
+    display: block;
+    float: none;
+    margin-top: 50px;
+}
+
+#brief1 .left-align .feature-list {
+    margin-top: 40px;
+}
+
+#brief1 .left-align .feature-list li {
+    margin-bottom: 26px;
+}
+
+#brief1 .left-align .feature-list li i {
+    margin-right: 10px;
+    vertical-align: inherit;
+}
+.polynomial-equation{
+    color:#000;
+}
+#brief1{
+    color:#000;
+}
+#polynomial-solution{
+    color:#000;
+}
+.polynomial-equation input{ width:4em; }
+    #polynomial-solution { font-weight:bold;}
+
+input{
+    color:#000;
+}

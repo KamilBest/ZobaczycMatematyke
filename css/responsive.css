@@ -28,7 +28,7 @@ RESPONSIVE FIXES
         min-height: 800px;
     }
 
-    .app-brief .left-align {
+    .brief-style .left-align {
         text-align: center;
     }
 
@@ -178,7 +178,7 @@ RESPONSIVE FIXES
         margin-top: 15px;
     }
     
-    .testimonials, 
+    .separation_bg_bg,
     .download { 
         background-attachment: inherit !important; 
     }
