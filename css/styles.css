@@ -965,3 +965,71 @@ footer .copyright {
     margin-bottom: 50px;
 }
 
+.phone-image img {
+    margin-top: 85px;
+}
+
+
+
+
+
+#brief2 {
+    display: table;
+    width: 100%;
+}
+
+#brief2 img {
+    
+    
+}
+
+#definition {
+        min-height: 100vh;
+
+}
+
+
+
+.col-md-4 {
+    display: table;
+}
+
+.separation_line div{
+    display: block;
+}
+.sep_line {
+    height: 20px;
+background: url(/images/separation_line.svg) 0 0/650px 20px repeat-x #2e2e2e;
+}
+
+#equations_inequalities {
+    min-height: 200vh;
+}
+
+.math-image {
+   padding:5px;
+    padding-top: 8px;
+}
+
+
+/*POPOVER*/
+.trigger {
+    color:#555;
+    font-weight: bold;
+}
+
+.trigger:link{
+    text-decoration: none;
+    color:#555;
+}
+.trigger:hover{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+
+
+
+

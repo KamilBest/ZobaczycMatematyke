@@ -43,6 +43,10 @@ STYLESHEETS
         <link rel="stylesheet" href="css/dot-nav.css">
         <!-- Resource style -->
 
+        <!--POPOVERS/TOOLTIPS-->
+        <link rel="stylesheet" href="css/minitip.css">
+        
+
         <!-- WEB FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
 
@@ -387,11 +391,11 @@ FEATURES
 
                             <!-- ICON -->
                             <a href="#equations_inequalities">
-                            <div class="icon-container">
-                                <div class="icon">
-                                    <span class="icon-equal"></span>
+                                <div class="icon-container">
+                                    <div class="icon">
+                                        <span class="icon-equal"></span>
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                             <!-- FEATURE HEADING AND DESCRIPTION -->
                             <div class="fetaure-details">
@@ -590,61 +594,65 @@ BRIEF RIGHT SECTION
 
                     <!-- SECTION TITLE -->
                     <h2 class="white-text">Równania</h2>
-                    <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego x = x<sub>0</sub>.
+                    <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego
+                    <div class="wrapper">
+                        x=t.
+                        <div class="tooltip">I am a tooltip!</div>
+                    </div>
+
                     <div class="math-image">
                         <img src="images/equation1.svg"/>
                     </div>
-Powyższy wielomian można przedstawić w postaci:
-                      <div class="math-image">
+                    Powyższy wielomian można przedstawić w postaci:
+                    <div class="math-image">
                         <img src="images/equation2.svg"/>
                     </div>
-zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu dla danego argumentu x = x<sub>0</sub>.
-Często w zadaniach x<sub>0</sub> nie będzie znane, korzystamy wtedy z twierdzenia Bézouta, które znajdziesz w dalszej części.
+                    zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu dla danego argumentu x=t. Często w zadaniach <strong>t</strong> nie będzie znane, korzystamy wtedy z twierdzenia Bézouta, które znajdziesz w dalszej części.
                     </p>
-                    <br>
-                    <div class="colored-line-left">
-                    </div>
-                    <br>
-                    <h3 class="white-text">Obliczanie</h3>
-                    <p class="def">Lorem ipsum dolor....</p>
 
-                <a href="#" onmouseover="tooltip.pop(this, 'Hi there')">Hi</a>
+                <br>
 
+                <div class="colored-line-left">
                 </div>
-                <!-- /ENDBRIEF -->
-                            <div class="col-md-6 right-align wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-                                <h2>opis</h2>
-                                </div>
+                <br>
+                <h3 class="white-text">Obliczanie</h3>
+                <p class="def">Lorem ipsum dolor....</p>
             </div>
-            <!-- /END ROW -->
+            <!-- /ENDBRIEF -->
+            <div class="col-md-6 right-align wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <h2>opis</h2>
             </div>
-        <!-- /END CONTAINER -->
+            </div>
+        <!-- /END ROW -->
+        </div>
+    <!-- /END CONTAINER -->
 
-        </section>
-    <!-- /END equations and inequalities SECTION-->
+    </section>
+<!-- /END equations and inequalities SECTION-->
 
-    <!-- =========================
+<!-- =========================
 SCRIPTS
 ============================== -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/dot-nav.js"></script>
-    <script src="js/back-to-top.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.localScroll.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/nivo-lightbox.min.js"></script>
-    <script src="js/simple-expand.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/retina.min.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/matchMedia.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/custom.js"></script>
-    </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/dot-nav.js"></script>
+<script src="js/back-to-top.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-popover.js" type="text/javascript"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+</body>
 
 </html>
