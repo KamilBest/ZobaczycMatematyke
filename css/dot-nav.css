@@ -17,6 +17,7 @@ html * {
 a {
   color: #3e3947;
   text-decoration: none;
+
 }
 
 
@@ -139,6 +140,7 @@ Main components
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+    background: #161616;
 }
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;

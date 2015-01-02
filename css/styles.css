@@ -657,26 +657,26 @@ header .intro-section .buttons {
 
 
 /*---------------------------------------
-   SECTION:  TESTIMONIALS                 
+   SECTION:  separation_bg
 -----------------------------------------*/
-.testimonials {
+.separation_bg {
     background: url(../images/background.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
 }
 
-.testimonials .color-overlay {
+.separation_bg .color-overlay {
     padding-top: 110px;
     padding-bottom: 110px;
 }
 
-.testimonials .feedback {
+.separation_bg .feedback {
     max-width: 750px;
     margin: auto;
 }
 
-.testimonials .feedback .image {
+.separation_bg .feedback .image {
     font-size: 24px;
     border: 2px solid transparent;
     -webkit-box-shadow: 0px 0px 0px 2px #ffffff;
@@ -690,33 +690,33 @@ header .intro-section .buttons {
     overflow: hidden;
 }
 
-.testimonials .feedback .image img {
+.separation_bg .feedback .image img {
     width: 100%;
     vertical-align: top;
 }
 
-.testimonials .feedback .message {
+.separation_bg .feedback .message {
     font-size: 18px;
     font-style: italic;
     margin-top: 40px;
     margin-bottom: 30px;
 }
 
-.testimonials .feedback .name {
+.separation_bg .feedback .name {
     margin-top: 15px;
     font-weight: 400;
 }
 
-.testimonials .feedback .company-info {
+.separation_bg .feedback .company-info {
     font-size: 12px;
 }
 
-.testimonials .owl-theme .owl-controls .owl-page span {
+.separation_bg .owl-theme .owl-controls .owl-page span {
     background: #ffffff;
     border-radius: 50%;
 }
 
-.testimonials .customNavigation a {
+.separation_bg .customNavigation a {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -994,13 +994,6 @@ footer .copyright {
     display: table;
 }
 
-.separation_line div{
-    display: block;
-}
-.sep_line {
-    height: 20px;
-background: url(/images/separation_line.svg) 0 0/650px 20px repeat-x #2e2e2e;
-}
 
 #equations_inequalities {
     min-height: 200vh;
@@ -1012,24 +1005,31 @@ background: url(/images/separation_line.svg) 0 0/650px 20px repeat-x #2e2e2e;
 }
 
 
-/*POPOVER*/
-.trigger {
-    color:#555;
+.simple-tooltip {
+    color:#aaa;
     font-weight: bold;
+    cursor:help;
 }
-
-.trigger:link{
-    text-decoration: none;
-    color:#555;
-}
-.trigger:hover{
-    text-decoration: none;
+.simple-tooltip:hover {
     color:#fff;
 }
 
+/*==================
+SCHEMAT HORNERA TABELKA
+===================*/
+table {
+    background: #2e2e2e;
+        border: 1px solid #2e2e2e;
 
+}
 
-
+td{
+    height: 40px;
+    border: 1px solid #858585;
+}
+td:hover{
+    background: #4EA628;
+}
 
 
 

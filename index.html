@@ -43,9 +43,8 @@ STYLESHEETS
         <link rel="stylesheet" href="css/dot-nav.css">
         <!-- Resource style -->
 
-        <!--POPOVERS/TOOLTIPS-->
-        <link rel="stylesheet" href="css/minitip.css">
-        
+
+
 
         <!-- WEB FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
@@ -71,6 +70,7 @@ STYLESHEETS
 
         <!-- JQUERY -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     </head>
     <!-- END HEAD -->
 
@@ -161,7 +161,7 @@ HEADER
                                 <li>
                                     <a href="#definition">Definicja</a>
                                 </li>
-                                <li><a href="#author">Autor</a>
+                                <li><a href="#author" title="Autor">Autor</a>
                                 </li>
                                 <li><a href="#equations_inequalities">Równania i nierowności</a>
                                 </li>
@@ -498,7 +498,7 @@ TŁO ODDZIELAJĄCE
 
                         <!-- SECTION TITLE -->
                         <h2 class="white-text">Definicja</h2>
-                        <p class="def">Schemat Hornera &ndash; sposób obliczania wartości wielomianu dla danej wartości argumentu wykorzystujący minimalną liczbę mnożeń, jest to również algorytm dzielenia wielomianu W(x) przez dwumian (x-x0).</p>
+                        <p class="def">Schemat Hornera &ndash; sposób obliczania wartości wielomianu dla danej wartości argumentu wykorzystujący <span class="simple-tooltip" title="W postaci 'zwykłej' jest to ok. O(n^2) mnożeń,w postaci Hornera jest to n mnożeń.">minimalną liczbę mnożeń,</span> jest to również algorytm dzielenia wielomianu W(x) przez dwumian (<span class="simple-tooltip" title="t - zmienna, dla której podany wielomian osiąga jakąś wartość">x=t.</span>)</p>
                         <br>
                         <div class="colored-line-left">
                         </div>
@@ -559,7 +559,8 @@ BRIEF RIGHT SECTION
                     <!-- HORNER IMAGE -->
                     <div class=" col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
                         <div class="horner-image">
-                            <img src="images/horner.jpg" alt="William George Horner">
+                            <span class="simple-tooltip" title="William George Horner">
+                                <img src="images/horner.jpg" alt="William George Horner"></span>
                         </div>
                     </div>
                     <!-- /END PHONES IMAGE -->
@@ -595,10 +596,7 @@ BRIEF RIGHT SECTION
                     <!-- SECTION TITLE -->
                     <h2 class="white-text">Równania</h2>
                     <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego
-                    <div class="wrapper">
-                        x=t.
-                        <div class="tooltip">I am a tooltip!</div>
-                    </div>
+                        <span class="simple-tooltip" title="t - zmienna, dla której podany wielomian osiąga jakąś wartość">x=t.</span>
 
                     <div class="math-image">
                         <img src="images/equation1.svg"/>
@@ -608,7 +606,11 @@ BRIEF RIGHT SECTION
                         <img src="images/equation2.svg"/>
                     </div>
                     zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu dla danego argumentu x=t. Często w zadaniach <strong>t</strong> nie będzie znane, korzystamy wtedy z twierdzenia Bézouta, które znajdziesz w dalszej części.
+
+
                     </p>
+
+
 
                 <br>
 
@@ -621,6 +623,25 @@ BRIEF RIGHT SECTION
             <!-- /ENDBRIEF -->
             <div class="col-md-6 right-align wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
                 <h2>opis</h2>
+                <table class="table">
+                        <tr>
+                            <td></td>
+                            <td>a<sub>0</sub></td>
+                            <td>a<sub>1</sub></td>
+                            <td>...</td>
+                            <td>a<sub>n-1</sub></td>
+                            <td>a<sub>n</sub></td>
+                        </tr>
+                        <tr>
+                            <td>x=t</td>
+                            <td>b<sub>0</sub>=a<sub>0</sub></td>
+                            <td>b<sub>1</sub>=b<sub>0</sub>t+a<sub>1</sub></td>
+                            <td>...</td>
+                            <td>b<sub>n-1</sub>=b<sub>n-2</sub>t+a<sub>n-1</sub></td>
+                            <td>b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub></td>
+
+                        </tr>
+                </table>
             </div>
             </div>
         <!-- /END ROW -->
