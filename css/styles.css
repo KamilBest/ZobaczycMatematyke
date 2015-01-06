@@ -205,6 +205,7 @@ body {
 a {
     -webkit-transition: all ease 0.25s;
             transition: all ease 0.25s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -1009,6 +1010,7 @@ footer .copyright {
     color:#aaa;
     font-weight: bold;
     cursor:help;
+    background: #000;
 }
 .simple-tooltip:hover {
     color:#fff;
@@ -1017,19 +1019,77 @@ footer .copyright {
 /*==================
 SCHEMAT HORNERA TABELKA
 ===================*/
+sub{
+    font-size: 0.9em;
+}
 table {
-    background: #2e2e2e;
-        border: 1px solid #2e2e2e;
+margin-top:50px;
+ border: 1px solid #161616;
 
+}
+horners_method{
+    display: table;
 }
 
 td{
-    height: 40px;
-    border: 1px solid #858585;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    width: 120px;
+    border: 1px solid #161616;
+    color:#161616;
 }
 td:hover{
-    background: #4EA628;
+    background: #E8F326;
+    cursor: pointer;
+}
+
+/*górny i dolny wiersz tabeli*/
+.up {
+    background: #81D727;
+    font-weight: bold;
+}
+
+.down {
+    background: #fff;
+}
+
+.trigger {
+    color:#161616;
+
+}
+
+.popover {
+    color:#161616;
+}
+.popover-title{
+    font-weight: bold;
+    background: #81D727;
 }
 
 
 
+
+
+
+
+/*wyjaśnienie schematu, obrazek z przykładem*/
+.method_explanation {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    float:left;
+
+}
+
+.x-value {
+    margin-bottom: -30px;
+}
+
+.explanation {
+font-size: 0.9em;
+}
+.explanation span{
+    color:#E8F326;
+    cursor:pointer;
+}
