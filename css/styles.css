@@ -97,47 +97,47 @@
     content: "t";
 }
 
-/*OTHER FONTS*/
+/*OTHERfonts*/
 @font-face {
     font-family: "sketchy";
-    src:url("fonts/sketchy.ttf");
+    src:url("/fonts/sketchy.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-bold";
-    src:url("fonts/raleway-bold.ttf");
+    src:url("/fonts/raleway-bold.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-regular";
-    src:url("fonts/raleway-regular.ttf");
+    src:url("/fonts/raleway-regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-thin";
-    src:url("fonts/raleway-thin.ttf");
+    src:url("/fonts/raleway-thin.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:"open-sans-light";
-    src:url("fonts/open-sans-light.ttf");
+    src:url("/fonts/open-sans-light.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"open-sans-regular";
-    src:url("fonts/open-sans-regular.ttf");
+    src:url("/fonts/open-sans-regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"open-sans-semibold";
-    src:url("fonts/open-sans-semibold.ttf");
+    src:url("/fonts/open-sans-semibold.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -149,13 +149,11 @@
 }
 @font-face {
     font-family:"open-sans-extrabold";
-    src:url("fonts/open-sans-extrabold.ttf");
+    src:url("/fonts/open-sans-extrabold.ttf");
     font-weight: normal;
     font-style: normal;
 }
-/* =======================================================================
-Kane - Responsive App Landing Page 1.7
-======================================================================= */
+
 
 /* --------------------------------------
 =========================================
@@ -258,7 +256,7 @@ ol {
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url(../images/preloader.gif);
+    background-image: url( /images/preloader.gif);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -276,8 +274,8 @@ ol {
 /* FONT FACE LOADER */
 @font-face {
     font-family: 'Lane';
-    src: url('../fonts/lanenar_Lane.eot');
-    src: url('../fonts/lanenar_Lane.eot?#iefix') format('embedded-opentype'), url('../fonts/lanenar_Lane.woff') format('woff'), url('../fonts/lanenar_Lane.ttf') format('truetype'), url('../fonts/lanenar_Lane.svg#Lane') format('svg');
+    src: url('/fonts/lanenar_Lane.eot');
+    src: url('/fonts/lanenar_Lane.eot?#iefix') format('embedded-opentype'), url('/fonts/lanenar_Lane.woff') format('woff'), url('/fonts/lanenar_Lane.ttf') format('truetype'), url('/fonts/lanenar_Lane.svg#Lane') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -286,7 +284,7 @@ ol {
  
     @font-face {
         font-family: 'Lane';
-        src: url('../fonts/lanenar_Lane.svg#Lane') format('svg');
+        src: url('/fonts/lanenar_Lane.svg#Lane') format('svg');
     }
 }
 
@@ -661,7 +659,7 @@ header .intro-section .buttons {
    SECTION:  separation_bg
 -----------------------------------------*/
 .separation_bg {
-    background: url(../images/background.jpg) no-repeat center fixed;
+    background: url( /images/background.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
@@ -834,7 +832,7 @@ header .intro-section .buttons {
 -----------------------------------------*/
 
 .download {
-    background: url('../images/bg-3.jpg') no-repeat center fixed;
+    background: url('/images/bg-3.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
@@ -1027,7 +1025,7 @@ margin-top:50px;
  border: 1px solid #161616;
 
 }
-horners_method{
+.horners_method{
     display: table;
 }
 
@@ -1069,11 +1067,6 @@ td:hover{
 }
 
 
-
-
-
-
-
 /*wyjaśnienie schematu, obrazek z przykładem*/
 .method_explanation {
     margin-top: 25px;
@@ -1093,3 +1086,5 @@ font-size: 0.9em;
     color:#E8F326;
     cursor:pointer;
 }
+
+

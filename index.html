@@ -35,16 +35,12 @@ STYLESHEETS
         <!-- CSS reset -->
         <link rel="stylesheet" href="css/back-to-top.css">
         <!-- Gem style -->
-        <script src="js/modernizr.js"></script>
         <!-- Modernizr -->
 
         <!-- DOT_NAVIGATION -->
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/dot-nav.css">
         <!-- Resource style -->
-
-
-
 
         <!-- WEB FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
@@ -69,7 +65,6 @@ STYLESHEETS
         <link rel="stylesheet" href="css/responsive.css">
 
         <!-- JQUERY -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     </head>
     <!-- END HEAD -->
@@ -131,7 +126,7 @@ PRELOADER
 HEADER
 ============================== -->
         <!-- content here -->
-        <header class="header change-dot" data-stellar-background-ratio="0.5" id="home" style="background:url(../images/background.jpg) no-repeat center top fixed; -webkit-background-size: cover;
+        <header class="header change-dot" data-stellar-background-ratio="0.5" id="home" style="background:url(/images/background.jpg) no-repeat center top fixed; -webkit-background-size: cover;
                                                                                                background-size: cover;">
 
             <!-- COLOR OVER IMAGE -->
@@ -158,6 +153,8 @@ HEADER
                         <!-- NAVIGATION LINKS -->
                         <div class="navbar-collapse collapse" id="top-navigation">
                             <ul class="nav navbar-nav navbar-right main-navigation">
+                                <li><a href="#home">Strona główna</a>
+                                </li>
                                 <li>
                                     <a href="#definition">Definicja</a>
                                 </li>
@@ -167,7 +164,7 @@ HEADER
                                 </li>
                                 <li><a href="#">Dzielenie</a>
                                 </li>
-                                <li><a href="#">kalkulator</a>
+                                <li><a href="kalkulator.html">kalkulator</a>
                                 </li>
                                 <li><a href="#">zagraj</a>
                                 </li>
@@ -661,13 +658,7 @@ BRIEF RIGHT SECTION
                     </td>
                     <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Dłuższa podpowiedź na dole pojawiająca się po kliknięciu i zawierająca tytuł" title="Tytuł dolnego okienka">
                         b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub>
-                        <div class="hide popover_content">
-                            <img src="images/chalk.png"/>
-                            <p class="popover_parahraph">
-                                POPOVER CONTENT WITH LINK<br>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
+
                     </td>
                 </tr>
             </table>
@@ -686,13 +677,12 @@ BRIEF RIGHT SECTION
 <!-- =========================
 SCRIPTS
 ============================== -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/jquery-2.1.1.js"></script>
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/vendor/jquery-2.1.1.js"></script>
 <script src="js/popover.js"></script>
 <script src="js/dot-nav.js"></script>
 <script src="js/back-to-top.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-popover.js" type="text/javascript"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/jquery.localScroll.min.js"></script>

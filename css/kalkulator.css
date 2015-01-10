@@ -1,53 +1,96 @@
 /*---------------------------------------
-   SECTION:  brief1
+SECTION:  znajdz_pierwiastki
 -----------------------------------------*/
 
-#brief1 {
+#znajdz_pierwiastki {
     min-height: 100vh;
-    background: #161616;
     padding-top: 100px;
     padding-bottom: 80px;
+    display: table;
+    width: 100%;
 }
 
-#brief1 h2 {
+#znajdz_pierwiastki h2 {
     margin-bottom: 20px;
 }
 
-#brief1 .left-align {
+#znajdz_pierwiastki .left-align {
     text-align: left;
     margin-bottom: 50px;
 }
 
-#brief1 .left-align p {
+#znajdz_pierwiastki .left-align p {
     display: block;
     float: none;
     margin-top: 50px;
 }
 
-#brief1 .left-align .feature-list {
+#znajdz_pierwiastki .left-align .feature-list {
     margin-top: 40px;
 }
 
-#brief1 .left-align .feature-list li {
+#znajdz_pierwiastki .left-align .feature-list li {
     margin-bottom: 26px;
 }
 
-#brief1 .left-align .feature-list li i {
+#znajdz_pierwiastki .left-align .feature-list li i {
     margin-right: 10px;
     vertical-align: inherit;
 }
 .polynomial-equation{
-    color:#000;
+    color:#fff;
 }
-#brief1{
-    color:#000;
-}
-#polynomial-solution{
-    color:#000;
-}
-.polynomial-equation input{ width:4em; }
-    #polynomial-solution { font-weight:bold;}
 
-input{
-    color:#000;
+#polynomial-solution{
+    color:#81D727;
+}
+.polynomial-equation input{
+    width:5em;
+    color:#161616;
+}
+
+}
+
+
+
+#zmien_system{
+    min-height: 100vh;
+    display: table;
+        color:#fff;
+    width: 100%;
+    display: table;
+
+}
+#zmien_system {
+    color:#fff;
+}
+
+
+td{
+    background: #81D727;
+
+}
+
+input:checked{
+    color:#161616;
+}
+
+
+.center-block {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.padding {
+    padding-bottom: 30px;
+}
+
+.instruction {
+    color:#81D727;
+    cursor: pointer;
+}
+.instruction:hover{
+    color:#E8F326;
+
 }

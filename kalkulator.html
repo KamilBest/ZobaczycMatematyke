@@ -34,8 +34,6 @@ STYLESHEETS
     <!-- CSS reset -->
     <link rel="stylesheet" href="css/back-to-top.css">
     <!-- Gem style -->
-    <script src="js/modernizr.js"></script>
-    <!-- Modernizr -->
 
     <!-- DOT_NAVIGATION -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
@@ -66,7 +64,8 @@ STYLESHEETS
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- JQUERY -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
 
 </head>
 <!--
@@ -82,13 +81,19 @@ BODY
             <li>
                 <a href="#home" data-number="1">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Lorem ipsum</span>
+                    <span class="cd-label">Początek</span>
                 </a>
             </li>
             <li>
-                <a href="#brief1" data-number="2">
+                <a href="#znajdz_pierwiastki" data-number="2">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Lorem ipsum</span>
+                    <span class="cd-label">Obliczanie pierwiastków</span>
+                </a>
+            </li>
+            <li>
+                <a href="#zmien_system" data-number="3">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Zamiana systemu liczby</span>
                 </a>
             </li>
 
@@ -105,7 +110,7 @@ PRELOADER
 HEADER
 ============================== -->
     <!-- content here -->
-    <header  class="header change-dot"  data-stellar-background-ratio="0.5" id="home" style="background:url(../images/calculator.jpg) no-repeat center top fixed; -webkit-background-size: cover;
+    <header  class="header change-dot"  data-stellar-background-ratio="0.5" id="home" style="background:url(/images/calculator.jpg) no-repeat center top fixed; -webkit-background-size: cover;
             background-size: cover;">
 
 
@@ -133,21 +138,16 @@ HEADER
                     <!-- NAVIGATION LINKS -->
                     <div class="navbar-collapse collapse" id="kane-navigation">
                         <ul class="nav navbar-nav navbar-right main-navigation">
+                             </li>
+                            <li><a href="index.html">Strona główna</a>
+                            </li>
                             <li>
-                                <a href="#definicja">Lorem ipsum</a>
+                                <a href="#znajdz_pierwiastki">Obliczanie pierwiastków</a>
                             </li>
-                            <li><a href="#brief2">Lorem ipsum</a>
+                            <li><a href="#zmien_system">zmiana systemu liczby</a>
                             </li>
-                            <li><a href="#">Lorem ipsum</a>
-                            </li>
-                            <li><a href="#">Lorem ipsum</a>
-                            </li>
-                            <li><a href="#">Lorem ipsum</a>
-                            </li>
-                            <li><a href="#">Lorem ipsum</a>
-                            </li>
-                            <li><a href="#">Lorem ipsum</a>
-                            </li>
+
+
                         </ul>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ HEADER
 
                             <!-- BUTTON -->
                             <div class="buttons" id="download-button">
-                                <a href="#brief1" class="btn btn-default btn-lg standard-button"><i class="arrow_carrot-2down"></i>Przejdź dalej</a>
+                                <a href="#znajdz_pierwiastki" class="btn btn-default btn-lg standard-button"><i class="arrow_carrot-2down"></i>Przejdź dalej</a>
 
                             </div>
 
@@ -206,14 +206,17 @@ HEADER
 
     <!--
 WSTĘP
-BRIEF LEFT SECTION
+Obliczanie pierwiastkow SECTION
 ============================== -->
-    <section class="app-brief deep-dark-bg change-dot" id="brief1">
+    <section class="app-brief deep-dark-bg change-dot" id="znajdz_pierwiastki">
+        <div class="center-block">
+        <h2 class="white-text ">Obliczanie pierwiastków wielomianu.</h2>
+        <p class="white-text padding"> podaj współczynniki wielomianu:</p>
+
 <script>
     function solveCubicEquation(a, b, c, d) {
         var zero = 0.0000001,
             //JavaScript fail to evaluate cube root from negative number - NaN
-            //http://www.ecma-international.org/ecma-262/5.1/#sec-15.8.2.13
             cbrt = function (a) {
                 return a >= 0 ? Math.pow(a, 1 / 3) : -Math.pow(-a, 1 / 3);
             };
@@ -280,20 +283,94 @@ BRIEF LEFT SECTION
 
 <div class="polynomial-equation">
     <input type="number" value="1" /> x<sup>3</sup> + <input type="number" value="3" /> x<sup>2</sup> + <input type="number" value="0" /> x + <input type="number" value="-4" /> = 0
-    <input type="button" value="Oblicz" onclick="solvePolynomialEquation();" />
-    <div>Rozwiązania: <span id="polynomial-solution">    </span></div>
+    <input type="button" value="Oblicz" onclick="solvePolynomialEquation();" /> <span class="icon-what instruction trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Obliczanie prostych wielomianów 3 stopnia. </br>
+        Rozwiązania są oddzielone przecinkami.</br>
+        Czasami może wystąpić problem z zaokrągleniem liczb, dlatego np. liczba 1.0000000000000004 może oznaczać 1.</br>
+        Symbol NaN oznacza, że wprowadzone dane nie są liczbą." title="Uwagi"></span>
+    <div class="padding">Rozwiązania: <span id="polynomial-solution"></br>   </span></div>
+
 </div>
+        </div>
+      </section>
+
+<!-- ZMIEN SYSTEM LICZBOWY SECTION -->
+        <section class="app-brief dark-bg change-dot" id="zmien_system">
+<div align="center">
+      <form name="frmhorner" class="center-block">
+        <h2 id="data_out" class="white-text">
+          Zamiana systemu pozycyjnego liczb
+        </h2>
+
+        <div align="center">
+          <table border="0" cellpadding="4"
+                 style="border-collapse: collapse">
+            <tr>
+              <td align="right">podstawa (2...10) =</td>
+              <td>
+<input value="5" name="inp_p" size="20" style="text-align: center;color:#161616" type="number">
+              </td>
+            </tr>
+            <tr>
+              <td align="right">liczba w systemie dziesiętnym</td>
+              <td>
+<input value="23314" name="inp_s" size="20" style="text-align: center; color:#161616;" type="number">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p style="TEXT-ALIGN: center">
+          <input onclick="main();"
+                 type="button"
+                 value="Oblicz wartość liczby"
+                 name="B1"
+                 style="color:#161616"
+                 >
+
+        </p>
+        <p id="out_t" style="TEXT-ALIGN: center">...</p>
+      </form>
+
+<script language=javascript>
+
+// Wyznaczanie wartości liczby zapisanej
+// w systemie pozycyjnym o podstawie
+// p równej od 2 do 10
+
+
+function main()
+{
+  var s,p,L,c,i,t;
+
+  p = parseInt(document.frmhorner.inp_p.value);
+  s = document.frmhorner.inp_s.value;
+  t = "<font color=Red><b>Złe dane</b></font>";
+  if(!isNaN(p) && !(s=="") || !(p>10))
+  {
+    L = s.charCodeAt(0) - 48;
+    for(i = 1; i < s.length; i++)
+    {
+      c = s.charCodeAt(i) - 48;
+      L = L * p + c;
+    };
+    t = s + "<sub>(" + p + ")</sub> = " + L + "<sub>(10)</sub>";
+  };
+  document.getElementById("out_t").innerHTML = t;
+}
+</script>
+    </div>
+
     </section>
     <!-- /END SECTION -->
 
     <!-- =========================
 SCRIPTS
 ============================== -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery-2.1.1.js"></script>
     <script src="js/dot-nav.js"></script>
+    <script src="js/popover.js"></script>
     <script src="js/back-to-top.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.localScroll.min.js"></script>
