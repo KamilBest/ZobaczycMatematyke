@@ -1205,3 +1205,36 @@ h3 {
 }
 
 
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.question_mark {
+    padding: 1px;
+    color:#fff;
+}
+.question_mark:hover{
+        color:#E8F326;
+
+}
+
+#equations_normal {
+    min-height: 100vh;
+    display: table;
+    width: 100%;
+}
+
+#equation_tables {
+    min-height: 200vh;
+}
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.result {
+    font-size: 1.5em;
+    font-weight: bold;
+}

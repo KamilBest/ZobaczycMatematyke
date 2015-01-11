@@ -108,9 +108,15 @@ STYLESHEETS
                     </a>
                 </li>
                 <li>
-                    <a href="#equations_inequalities" data-number="6">
+                    <a href="#equations_normal" data-number="6">
                         <span class="cd-dot"></span>
-                        <span class="cd-label">Równania i nierówności</span>
+                        <span class="cd-label">Równania - teoria</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#equation_tables" data-number="7">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Równania - tabelki</span>
                     </a>
                 </li>
             </ul>
@@ -167,8 +173,6 @@ HEADER
                                 <li><a href="kalkulator.html">kalkulator</a>
                                 </li>
                                 <li><a href="#">zagraj</a>
-                                </li>
-                                <li><a href="#">inne</a>
                                 </li>
                             </ul>
                         </div>
@@ -257,11 +261,9 @@ WPROWADZENIE
                         </div>
                         <p>
                             Sposób ten nie jest czymś trudnym, jednak wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz z zastosowaniem go w zadaniach.
-                        </p>
-                        <h3>Nie rozumiesz lub po prostu chcesz poznać schemat Hornera?  <br>- Ta strona jest dla Ciebie!
-                        </h3>
-                        <p>
-                            Znajdziesz tu odpowiedzi na nurtujące Cię pytania, poznasz niezbędną teorię, a także będziesz mógł sprawdzić się grając.
+</br>
+</br>
+W zadaniach maturalnych często występują zadania, w których należy zastosować ten schemat. Dzięki tej stronie nie będziesz miał problemu z ich rozwiązywaniem.
                         </p>
 
 
@@ -495,7 +497,7 @@ TŁO ODDZIELAJĄCE
 
                         <!-- SECTION TITLE -->
                         <h2 class="white-text">Definicja</h2>
-                        <p class="def">Schemat Hornera &ndash; sposób obliczania wartości wielomianu dla danej wartości argumentu wykorzystujący <span class="simple-tooltip" title="W postaci 'zwykłej' jest to ok. O(n^2) mnożeń,w postaci Hornera jest to n mnożeń.">minimalną liczbę mnożeń,</span> jest to również algorytm dzielenia wielomianu W(x) przez dwumian (<span class="simple-tooltip" title="t - argument, dla której podany wielomian osiąga jakąś wartość">x=t.</span>)</p>
+                        <p class="def">Schemat Hornera - jest to sposób obliczania wartości wielomianu dla danej wartości argumentu <span class="simple-tooltip" title="t - argument, dla której podany wielomian osiąga jakąś wartość"> x=t.</span> wykorzystujący <span class="simple-tooltip" title="W postaci 'zwykłej' jest to ok. O*(n^2) mnożeń,w postaci Hornera jest to n mnożeń.">minimalną liczbę mnożeń,</span> jest to również algorytm dzielenia wielomianu W(x) przez  <span class="simple-tooltip" title="Dwumian - wyrażenie algebraiczne składające się z dwóch jednomianów połączonych znakiem dodawania lub odejmowania. (np. x-3)">dwumian x-t</span></p>
                         <br>
                         <div class="colored-line-left">
                         </div>
@@ -504,6 +506,7 @@ TŁO ODDZIELAJĄCE
 
                         <ul class="def" style="list-style-type:disc">
                             <li>Wyznaczaniu wartości wielomianu.</li>
+                            <li>Rozkład wielomianu.</li>
                             <li>Sposób na obliczanie równań i nierówności.</li>
                             <li>Dzielenie wielomianu przez dwumian.</li>
 
@@ -525,7 +528,6 @@ TŁO ODDZIELAJĄCE
 
         <!-- =========================
 AUTOR SECTION
-BRIEF RIGHT SECTION
 ============================== -->
         <section class="app-brief change-dot dark-bg" id="author">
 
@@ -577,16 +579,9 @@ BRIEF RIGHT SECTION
 -->
         <section class="app-brief change-dot deep-dark-bg" id="equations_inequalities">
 
+<!-- EQUATIONS_NORMAL SECTION -->
+<section id="equations_normal" class="change-dot">
             <div class="container">
-                <!-- KNOWLEDGE IMAGE
-<div class="row">
-<div class=" col-md-6 wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-<div class="horner-image">
-<img src="images/knowledge.svg" alt="William George Horner">
-</div>
-</div>
--->
-                <!-- /END IMAGE -->
                 <!-- BRIEF -->
                 <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
@@ -602,7 +597,7 @@ BRIEF RIGHT SECTION
                     <div class="math-image">
                         <img src="images/equation2.svg"/>
                     </div>
-                    zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu dla danego argumentu x=t oraz redukuje ilość potrzebnych mnożeń. Często w zadaniach <strong>t</strong> nie będzie znane, korzystamy wtedy z twierdzenia Bézouta, które znajdziesz w dalszej części.
+                    zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu (w punkcie) dla danego argumentu x=t  oraz redukuje ilość potrzebnych mnożeń.
                     </p>
 
                 </br>
@@ -612,63 +607,116 @@ BRIEF RIGHT SECTION
                         <h3 class="white-text">Przykład i wyjaśnienie</h3>
             <img class="method_explanation" src="images/method_explanation.svg"/>
             <p class="explanation">
-                Obliczanie wartości wielomianu schematem Hornera (x=t=1).
+                Obliczanie wartości wielomianu w punkcie x = t = 1.
                 </br>
                 1) Wyłączamy wspólny czynnik przed nawias, w tym przypadku jest to x.
     </br>
         2) Wyłączamy wspólny czynnik z trzech pierwszych elementów w nawiasie.
 </br>
-3) Podstawiamy za x podaną wartość t, czyli 1.Otrzymujemy wynik.
-</br></br><span class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Lorem ipsum." title="tytil">Co uzyskaliśmy dzięki takiemu wyłączeniu?</span >
-
+3) Podstawiamy za x podaną wartość t, czyli 1.Otrzymujemy wynik.<span class="icon-what trigger question_mark" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Dzięki zastosowaniu schematu Hornera uzyskujemy znaczną redukcję mnożeń. </br> W zwykłej postaci: </br>W(x)=7*x*x*x*x+3*x*x*x+5*x*x+9*x+1,</br> jest to 10 mnożeń i 4 dodawania.
+    </br></br>W postaci Hornera:</br>
+W(x)=((7*x+3)*x+5)*x+9)*x+1,</br> są to 4 mnożenia i 4 dodawania.</br> Postać Hornera dzięki regule przemienności mnożenia możemy zapisać również w ten sposób: </br>W(x)=x*(x*(x*(7*x+3)+5)+9)+1. " title="Korzyści"></span>
             </p>
                  </div>
         <!-- /ENDBRIEF -->
         </div>
     <!-- /END CONTAINER -->
+<!-- /END EQUATIONS NORMAL -->
+</section>
 
+<!-- EQUATION_TABLES SECTION -->
+<section id="equation_tables" class="change-dot">
+<!-- TABELKI -->
     <div class="container">
         <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <hr>
             <h3 class="white-text">Tabelka</h3>
-            <p class="def">Najczęściej jednak używa się zapisu w tabelce, dzięki której możemy obliczyć wartość wielomianu. Podobną tabelkę stosuje się przy dzieleniu wielomianu przez dwumian. Poniższa tabelka przedstawia jak uzupełnia się pola dla wielomianu W<sub>n</sub>(x).</p>
-        <!-- START HORNERS METHOD TABLE -->
-            <table class="horners_method">
+            <p class="def">Najczęściej jednak do obliczania wartości wielomianu o argumencie x=t używa się zapisu w tabelce, dzięki której możemy obliczyć wartość wielomianu. Podobną tabelkę stosuje się przy dzieleniu wielomianu przez dwumian. </br>Poniższa tabelka przedstawia jak uzupełnia się pola dla wielomianu W<sub>n</sub>(x) i argumencie x=t.</p>
+
+      <table class="overall_record">
                 <tr class="up">
                     <td class="empty-cell">Schemat Hornera</td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy najwyższej potędze. </br> Przykład: </br><img src='images/example_equation.svg'></br> a<sub>0</sub>=1, ponieważ współczynnik przy najwyższej potędze, czyli w tym przypadku x<sup>3</sup> wynosi 1." title="a<sub>0</sub>">a<sub>0</sub>
+                    <td>a<sub>0</sub>
                     </td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br> Przykład: </br><img src='images/example_equation.svg'></br> a<sub>1</sub>=-6, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>3</sup>, to x<sup>2</sup>, czyli w tym przypadku -6x<sup>2</sup> wynosi -6." title="a<sub>1</sub>">a<sub>1</sub>
+                    <td>a<sub>1</sub>
                     </td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-placement="top" data-content="Przy większych wielomianach tabelka będzie się stopniowo wydłużała. " title="kolejne potęgi">...</td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Przedostatni element ciągu jest nim, o ile istnieje współczynnik stojący przy x." title="a<sub>n-1</sub>">a<sub>n-1</sub></td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Dłuższa podpowiedź na dole pojawiająca się po kliknięciu i zawierająca tytuł" title="Tytuł dolnego okienka">a<sub>n</sub></td>
+                    <td>...</td>
+                    <td>a<sub>n-1</sub></td>
+                    <td>a<sub>n</sub></td>
                 </tr>
                 <tr class="down">
                     <td class="up">x=t</td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Dłuższa podpowiedź na dole pojawiająca się po kliknięciu i zawierająca tytuł" title="Tytuł dolnego okienka">
+                    <td>
                         b<sub>0</sub>=a<sub>0</sub>
                     </td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Dłuższa podpowiedź na dole pojawiająca się po kliknięciu i zawierająca tytuł" title="Tytuł dolnego okienka">
-                        b<sub>1</sub>=b<sub>0</sub>t+a<sub>1</sub></td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Dłuższa podpowiedź na dole pojawiająca się po kliknięciu i zawierająca tytuł" title="Tytuł dolnego okienka">
+                    <td>                        b<sub>1</sub>=b<sub>0</sub>*t+a<sub>1</sub></td>
+                    <td>
                         ...
                     </td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Dłuższa podpowiedź na dole pojawiająca się po kliknięciu i zawierająca tytuł" title="Tytuł dolnego okienka">
-                        b<sub>n-1</sub>=b<sub>n-2</sub>t+a<sub>n-1</sub>
+                    <td>
+                        b<sub>n-1</sub>=b<sub>n-2</sub>*t+a<sub>n-1</sub>
                     </td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Dłuższa podpowiedź na dole pojawiająca się po kliknięciu i zawierająca tytuł" title="Tytuł dolnego okienka">
-                        b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub>
+                    <td>
+                        b<sub>n</sub>=b<sub>n-1</sub>*t+a<sub>n</sub>
 
                     </td>
                 </tr>
             </table>
              <!-- /END TABLE -->
+<p>Liczby a0,a1,........,an - współczynniki wielomianu.</br>
+	Współczynnik a0  nazywamy wyraz przy najwyższej potędze wielomianu.</br>
+	n- stopień wielomianu.</br>bn jest wartością wielomianu dla argumentu t (wynik) </p>
+ <div class="colored-line-left margin-top">
+                        </div>
 
-            <p>dsagsdggdsgdssdg</p>
+        <ul class="def" style="list-style-type:disc">
+            Jak ułożyć tabelkę?
+            <li>    W górnym wierszu wstawiamy kolejne współczynniki wielomianu zaczynając od największego.</li>
+            <li>    W pierwszej komórce, w dolnym wierszu wstawiamy wartość podanego argumentu t.</li>
+            <li>    W drugiej komórce, w dolnym wierszu przepisujemy wartość współczynnika przy najwyższej potędze (przepisujemy liczbę z góry).</li>
+            <li>    Resztę komórek dolnego wiersza uzupełniamy wykonując obliczenia.</li>
+        </ul>
+        </br>
+ <h3 class="white-text">Przykład</h3>
+<p>Obliczanie wartości wielomianu  <img src='images/example_equation_color.svg'/> dla t=1.</br> (Kliknij na pole, aby dowiedzieć się więcej).</p>
+
+        <!-- START HORNERS METHOD TABLE -->
+            <table class="horners_method">
+                <tr class="up">
+                    <td class="empty-cell">Schemat Hornera</td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>0</sub>=7, ponieważ współczynnik przy najwyższej potędze, czyli w tym przypadku x<sup>4</sup> wynosi 7." title="a<sub>0</sub> - współczynnik przy najwyższej potędze">7
+                    </td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>1</sub>=3, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>4</sup>, to x<sup>3</sup>, czyli w tym przypadku 3x<sup>3</sup> wynosi 3." title="a<sub>1</sub>">3
+                    </td>
+                        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>2</sub>=5, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>3</sup>, to x<sup>2</sup>, czyli w tym przypadku 5x<sup>2</sup> wynosi 5." title="a<sub>2</sub>">5
+                    </td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Przedostatni element ciągu jest nim, (o ile istnieje) współczynnik stojący przy x. </br><img src='images/example_equation_bw.svg'></br> a<sub>n-1</sub>=9, ponieważ współczynnik przy x wynosi 9." title="a<sub>n-1</sub>">9</td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Element nie stojący przy x. </br> Przykład: </br><img src='images/example_equation_bw.svg'> </br> wyraz wolny = 1." title="a<sub>n</sub> - wyraz wolny wielomianu">1</td>
+                </tr>
+                <!-- DOLNY WIERSZ -->
+                <tr class="down">
+                    <td class="up trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="t - argument, dla którego obliczamy wartość wielomianu." title="x=t">x=1</td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Przepisujemy wartość z górnej komórki tabeli." title="b<sub>0</sub>=a<sub>0</sub>">7
+                    </td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1*7+3=10" title="b<sub>1</sub>=b<sub>0</sub>t+a<sub>1</sub>">10
+                        </td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1*10+5" title=" b<sub>n-1</sub>=b<sub>n-2</sub>t+a<sub>n-1</sub>">15
+                    </td>
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Reszta: 1*15+9=24" title="b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub>">24
+                    </td>
+                    <td class="trigger result" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Wynik: 1*24+1=25" title="b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub>">25
+                    </td>
+                </tr>
+            </table>
+             <!-- /END TABLE -->
+
+<p>Wynik:W(1)=25 </br>
+                Jak widać wynik wyszedł taki sam jak poprzednio.
         </div>
     </div>
     <!-- /END CONTAINER -->
-
+<!-- /END EQUATION_TABLES-->
+</section>
 
 
     </section>

@@ -94,3 +94,11 @@ input:checked{
     color:#E8F326;
 
 }
+
+
+
+.graphs {
+    cursor: crosshair;
+ width: 50%;
+    margin: 0 auto;
+}

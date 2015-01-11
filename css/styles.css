@@ -202,7 +202,7 @@ body {
 
 a {
     -webkit-transition: all ease 0.25s;
-            transition: all ease 0.25s;
+    transition: all ease 0.25s;
     cursor: pointer;
 }
 
@@ -225,7 +225,7 @@ textarea:focus, input:focus {
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul,
@@ -260,7 +260,7 @@ ol {
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     margin: -20px 0 0 -20px;
 }
 .def{
@@ -268,7 +268,7 @@ ol {
 }
 
 /*---------------------------------------
-   Typography                
+Typography
 -----------------------------------------*/
 
 /* FONT FACE LOADER */
@@ -281,7 +281,7 @@ ol {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
- 
+
     @font-face {
         font-family: 'Lane';
         src: url('/fonts/lanenar_Lane.svg#Lane') format('svg');
@@ -324,7 +324,7 @@ h5 {
 }
 
 /*---------------------------------------
-   CUSTOM BUTTON              
+CUSTOM BUTTON
 -----------------------------------------*/
 
 .standard-button,
@@ -339,7 +339,7 @@ h5 {
     padding: 16px 25px 16px 25px;
     margin: 5px;
     -webkit-transition: all ease 0.25s;
-            transition: all ease 0.25s;
+    transition: all ease 0.25s;
 }
 
 .standard-button:hover,
@@ -357,7 +357,7 @@ h5 {
 
 
 /*---------------------------------------
-   TEXTS AND BG               
+TEXTS AND BG
 -----------------------------------------*/
 
 .white-text {
@@ -377,7 +377,7 @@ h5 {
 
 
 /*---------------------------------------
-   SECTION HEADER
+SECTION HEADER
 -----------------------------------------*/
 
 .section-header {
@@ -398,7 +398,7 @@ h5 {
 
 
 /*---------------------------------------
-   LINES          
+LINES
 -----------------------------------------*/
 
 .colored-line {
@@ -426,20 +426,20 @@ h5 {
 
 /*---------------------------------------
 =========================================
- **   GO TOP               
+**   GO TOP
 =========================================
 -----------------------------------------*/
 .cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
 }
 .cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .7;
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .7;
 }
 /*---------------------------------------
-   SECTION:  HOME                 
+SECTION:  HOME
 -----------------------------------------*/
 
 header {
@@ -448,8 +448,8 @@ header {
 
 header .color-overlay {
     min-height: 100vh;
-     -webkit-background-size: cover;
-            background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 header .full-screen {
@@ -460,38 +460,38 @@ header .full-screen {
 /* TOP BAR WITH NAVIGATION */
 
 .sticky-navigation {
-  min-height: 60px;
-  background: #111111;
-  border-bottom: 1px solid #fff;
-  padding: 0 !important;
-  margin-bottom: 0 !important;
-  -webkit-backface-visibility: hidden;
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+    min-height: 60px;
+    background: #111111;
+    border-bottom: 1px solid #fff;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    -webkit-backface-visibility: hidden;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
 }
 
 /*POLOŻENIE LOGO NA PASKU NAWIGACJI*/
 .sticky-navigation .navbar-header img {
     position: relative;
     bottom:1.4vh;
-  max-height: 50px; /*Rozmiar logo*/
+    max-height: 50px; /*Rozmiar logo*/
     max-width: 300px;
-  -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 
 .sticky-navigation .main-navigation .current a {
-  color: #FFFFFF;
-  position: relative;
-  outline: none;
+    color: #FFFFFF;
+    position: relative;
+    outline: none;
 }
 
 .sticky-navigation .main-navigation li a {
-  line-height: 30px;
-  font-weight: 400;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #c8c8c8;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #c8c8c8;
 }
 
 header .only-logo .navbar {
@@ -530,7 +530,7 @@ header .intro-section .buttons {
 }
 /* 2 SLAJD */
 /*---------------------------------------
-   SECTION:  FEATURES                 
+SECTION:  FEATURES
 -----------------------------------------*/
 
 .features {
@@ -582,14 +582,14 @@ header .intro-section .buttons {
     font-size: 24px;
     text-align: center;
     -webkit-transition: all ease-in 0.25s;
-            transition: all ease-in 0.25s;
+    transition: all ease-in 0.25s;
     -webkit-background-clip: padding-box;
-           -moz-background-clip: padding;
-            background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
 }
 
 .features .graphics {
-     display: table-cell;
+    display: table-cell;
     vertical-align: middle;
     max-width: 250px;
     margin: auto;
@@ -602,7 +602,7 @@ header .intro-section .buttons {
 
 
 /*---------------------------------------
-   SECTION:  BRIEF                 
+SECTION:  BRIEF
 -----------------------------------------*/
 
 .app-brief {
@@ -656,12 +656,12 @@ header .intro-section .buttons {
 
 
 /*---------------------------------------
-   SECTION:  separation_bg
+SECTION:  separation_bg
 -----------------------------------------*/
 .separation_bg {
     background: url( /images/background.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -679,7 +679,7 @@ header .intro-section .buttons {
     font-size: 24px;
     border: 2px solid transparent;
     -webkit-box-shadow: 0px 0px 0px 2px #ffffff;
-            box-shadow: 0px 0px 0px 2px #ffffff;
+    box-shadow: 0px 0px 0px 2px #ffffff;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -719,13 +719,13 @@ header .intro-section .buttons {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-            user-select: none;
+    user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
 /*---------------------------------------
-   SECTION:  SERVICES           
+SECTION:  SERVICES
 -----------------------------------------*/
 
 .services {
@@ -749,7 +749,7 @@ header .intro-section .buttons {
 
 
 /*---------------------------------------
-   SECTION:  SCREENSHOTS 
+SECTION:  SCREENSHOTS
 -----------------------------------------*/
 
 .screenshots {
@@ -763,7 +763,7 @@ header .intro-section .buttons {
     margin: 13px;
     border-radius: 4px;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     display: block;
 }
 
@@ -774,7 +774,7 @@ header .intro-section .buttons {
 
 
 /*---------------------------------------
-   SECTION:  PACKAGES | Added on version 1.7      
+SECTION:  PACKAGES | Added on version 1.7
 -----------------------------------------*/
 
 .packages {
@@ -813,28 +813,28 @@ header .intro-section .buttons {
 }
 
 .single-package .package-feature {
-  margin-top: 25px;
-  margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .single-package .package-feature > li {
-  margin-top: 15px;
-  margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .single-package .package-feature > li > span {
-  margin-right: 7px;
+    margin-right: 7px;
 }
 
 
 /*---------------------------------------
-   SECTION:  DOWNLOAD                 
+SECTION:  DOWNLOAD
 -----------------------------------------*/
 
 .download {
     background: url('/images/bg-3.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -856,7 +856,7 @@ header .intro-section .buttons {
     padding-left: 20px;
     width: 320px;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     background: #FFF;
     border: 2px solid #FFF;
 }
@@ -878,7 +878,7 @@ header .intro-section .buttons {
 
 
 /*---------------------------------------
-   SECTION:  FOOTER                
+SECTION:  FOOTER
 -----------------------------------------*/
 
 footer .contact-box {
@@ -923,7 +923,7 @@ footer .contact-box .expanded-contact-form .input-box {
     margin-top: 10px;
     height: 50px;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     background: #222222;
     border: 1px solid #161616;
 }
@@ -932,7 +932,7 @@ footer .contact-box .expanded-contact-form .textarea-box {
     margin-top: 20px;
     margin-bottom: 20px;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     background: #222222;
     border: 1px solid #161616;
 }
@@ -978,12 +978,12 @@ footer .copyright {
 }
 
 #brief2 img {
-    
-    
+
+
 }
 
 #definition {
-        min-height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -995,11 +995,10 @@ footer .copyright {
 
 
 #equations_inequalities {
-    min-height: 200vh;
 }
 
 .math-image {
-   padding:5px;
+    padding:5px;
     padding-top: 8px;
 }
 
@@ -1008,7 +1007,6 @@ footer .copyright {
     color:#aaa;
     font-weight: bold;
     cursor:help;
-    background: #000;
 }
 .simple-tooltip:hover {
     color:#fff;
@@ -1017,12 +1015,31 @@ footer .copyright {
 /*==================
 SCHEMAT HORNERA TABELKA
 ===================*/
+
+/* Mniejsza tabelka ogólny zapis */
+.overall_record{
+    display: table;
+}
+
+.overall_record td{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+    width: 120px;
+    border: 1px solid #161616;
+    color:#161616;
+}
+.overall_record td:hover{
+    background: #E8F326;
+    cursor: default;
+}
 sub{
     font-size: 0.9em;
 }
 table {
-margin-top:50px;
- border: 1px solid #161616;
+    margin-top:40px;
+    border: 1px solid #161616;
 
 }
 .horners_method{
@@ -1043,6 +1060,7 @@ td:hover{
     cursor: pointer;
 }
 
+
 /*górny i dolny wiersz tabeli*/
 .up {
     background: #81D727;
@@ -1052,10 +1070,11 @@ td:hover{
 .down {
     background: #fff;
 }
+/* TABELKA END */
 
+/* POPOVER AND TOOLTIPS */
 .trigger {
-    color:#161616;
-
+    cursor: pointer;
 }
 
 .popover {
@@ -1065,12 +1084,13 @@ td:hover{
     font-weight: bold;
     background: #81D727;
 }
+/* END POPOVER AND TOOLTIPS */
 
 
 /*wyjaśnienie schematu, obrazek z przykładem*/
 .method_explanation {
     margin-top: 25px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     float:left;
 
 }
@@ -1080,7 +1100,7 @@ td:hover{
 }
 
 .explanation {
-font-size: 0.9em;
+    font-size: 0.9em;
 }
 .explanation span{
     color:#E8F326;

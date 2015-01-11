@@ -35,6 +35,9 @@ STYLESHEETS
     <link rel="stylesheet" href="css/back-to-top.css">
     <!-- Gem style -->
 
+    <!-- GRAPHS STYLE -->
+    <link rel="stylesheet" href="css/graphs_mathlib.css">
+
     <!-- DOT_NAVIGATION -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/dot-nav.css">
@@ -288,7 +291,11 @@ Obliczanie pierwiastkow SECTION
         Czasami może wystąpić problem z zaokrągleniem liczb, dlatego np. liczba 1.0000000000000004 może oznaczać 1.</br>
         Symbol NaN oznacza, że wprowadzone dane nie są liczbą." title="Uwagi"></span>
     <div class="padding">Rozwiązania: <span id="polynomial-solution"></br>   </span></div>
-
+            <div class="graphs">
+<input type="text" id="input" value="0,1,2,3"/>
+<input type="button" id="button" value="draw"/>
+<div id="canvas"></div>
+                </div>
 </div>
         </div>
       </section>
@@ -367,10 +374,11 @@ SCRIPTS
 ============================== -->
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery-2.1.1.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/mathlib.js"></script>
     <script src="js/dot-nav.js"></script>
     <script src="js/popover.js"></script>
     <script src="js/back-to-top.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/plugins/smoothscroll.js"></script>
     <script src="js/vendor/plugins/jquery.scrollTo.min.js"></script>
     <script src="js/vendor/plugins/jquery.localScroll.min.js"></script>
