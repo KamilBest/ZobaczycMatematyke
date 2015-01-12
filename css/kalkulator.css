@@ -1,4 +1,24 @@
 /*---------------------------------------
+SECTION:  HOME
+-----------------------------------------*/
+
+header {
+  background: url(../images/calculator.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+header .color-overlay {
+        min-height: 100vh;
+}
+
+header .full-screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/*---------------------------------------
 SECTION:  znajdz_pierwiastki
 -----------------------------------------*/
 
@@ -42,7 +62,7 @@ SECTION:  znajdz_pierwiastki
 }
 
 #polynomial-solution{
-    color:#81D727;
+    color:#76C424;
 }
 .polynomial-equation input{
     width:5em;
@@ -67,7 +87,7 @@ SECTION:  znajdz_pierwiastki
 
 
 td{
-    background: #81D727;
+    background: #76C424;
 
 }
 
@@ -87,11 +107,11 @@ input:checked{
 }
 
 .instruction {
-    color:#81D727;
+    color:#76C424;
     cursor: pointer;
 }
 .instruction:hover{
-    color:#E8F326;
+    color:#DBE524;
 
 }
 

@@ -1221,20 +1221,26 @@ h3 {
 
 #equations_normal {
     min-height: 100vh;
-    display: table;
-    width: 100%;
 }
 
 #equation_tables {
-    min-height: 200vh;
+    min-height: 100vh;
 }
 
 .container {
-    display: table-cell;
-    vertical-align: middle;
+
 }
 
 .result {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.horner-image {
+   margin-bottom:50px;
+}
+
+.horner-image-container {
+    display: table;
+
 }

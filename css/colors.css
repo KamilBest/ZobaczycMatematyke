@@ -9,11 +9,11 @@ DEEP COLOR CODE: #005885
 ----------------------------------------- */
 
 .color-overlay {
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .standard-button {
-    background: #81D727;
+    background: #76C424;
 
 }
 
@@ -35,11 +35,11 @@ DEEP COLOR CODE: #005885
 
 .colored-line,
 .colored-line-left {
-    background: #81D727;
+    background: #76C424;
 }
 
 .main-color {
-    color: #81D727;
+    color: #76C424;
 }
 
 .color-bg {
@@ -48,15 +48,15 @@ DEEP COLOR CODE: #005885
 }
 
 .features .feature:hover .icon-container .icon {
-    background: #81D727;
+    background: #76C424;
     color: #ffffff;
     border: 2px solid #ffffff;
 cursor: pointer;
 }
 
 .features .feature .icon-container .icon {
-    border: 1px solid #E8F326;
-    color: #E8F326;
+    border: 1px solid #DBE524;
+    color: #DBE524;
 }
 
 .feature-list li i {

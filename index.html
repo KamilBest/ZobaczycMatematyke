@@ -132,11 +132,10 @@ PRELOADER
 HEADER
 ============================== -->
         <!-- content here -->
-        <header class="header change-dot" data-stellar-background-ratio="0.5" id="home" style="background:url(/images/background.jpg) no-repeat center top fixed; -webkit-background-size: cover;
-                                                                                               background-size: cover;">
+        <header class="header change-dot" data-stellar-background-ratio="0.5" id="home" >
 
             <!-- COLOR OVER IMAGE -->
-            <div class="color-overlay">
+            <div class="color-overlay full-screen">
                 <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
 
                 <!-- STICKY NAVIGATION -->
@@ -524,9 +523,7 @@ TŁO ODDZIELAJĄCE
         </section>
         <!-- /END DEFINICJA SECTION-->
 
-
-
-        <!-- =========================
+     <!-- =========================
 AUTOR SECTION
 ============================== -->
         <section class="app-brief change-dot dark-bg" id="author">
@@ -545,7 +542,7 @@ AUTOR SECTION
                         <div class="colored-line-left">
                         </div>
 
-                        <p>
+                        <p class="def">
                             Brytyjski matematyk. W wieku 14 lat był asystentem nauczyciela w szkole w Bristolu, następnie w 1809 założył własną szkołę w Bath. Schemat pozwalający łatwo obliczać wartość wielomianu jest przypisywany Hornerowi, jednak był już znany Newtonowi, Ruffiniemu i matematykom chińskim w XII wieku. W 1834 opatentował zoetrop.
                         </p>
 
@@ -558,8 +555,7 @@ AUTOR SECTION
                     <!-- HORNER IMAGE -->
                     <div class=" col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
                         <div class="horner-image">
-                            <span class="simple-tooltip" title="William George Horner">
-                                <img src="images/horner.jpg" alt="William George Horner"></span>
+                                <img src="images/horner.png" title="William George Horner">
                         </div>
                     </div>
                     <!-- /END PHONES IMAGE -->
@@ -577,10 +573,10 @@ AUTOR SECTION
         <!-- equations and inequalities SECTION
 ==============================
 -->
-        <section class="app-brief change-dot deep-dark-bg" id="equations_inequalities">
+        <section id="equations_inequalities">
 
 <!-- EQUATIONS_NORMAL SECTION -->
-<section id="equations_normal" class="change-dot">
+<section id="equations_normal" class="change-dot app-brief deep-dark-bg">
             <div class="container">
                 <!-- BRIEF -->
                 <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
@@ -625,7 +621,7 @@ W(x)=((7*x+3)*x+5)*x+9)*x+1,</br> są to 4 mnożenia i 4 dodawania.</br> Postać
 </section>
 
 <!-- EQUATION_TABLES SECTION -->
-<section id="equation_tables" class="change-dot">
+<section id="equation_tables" class="change-dot app-brief dark-bg">
 <!-- TABELKI -->
     <div class="container">
         <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
@@ -700,9 +696,9 @@ W(x)=((7*x+3)*x+5)*x+9)*x+1,</br> są to 4 mnożenia i 4 dodawania.</br> Postać
                     </td>
                     <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1*7+3=10" title="b<sub>1</sub>=b<sub>0</sub>t+a<sub>1</sub>">10
                         </td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1*10+5" title=" b<sub>n-1</sub>=b<sub>n-2</sub>t+a<sub>n-1</sub>">15
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1*10+5" title=" b<sub>n-1</sub>=b<sub>n-3</sub>t+a<sub>n-2</sub>">15
                     </td>
-                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Reszta: 1*15+9=24" title="b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub>">24
+                    <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1*15+9=24" title="b<sub>n</sub>=b<sub>n-2</sub>t+a<sub>n-1</sub>">24
                     </td>
                     <td class="trigger result" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Wynik: 1*24+1=25" title="b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub>">25
                     </td>

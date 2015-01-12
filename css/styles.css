@@ -323,6 +323,8 @@ h5 {
     font-weight: 300;
 }
 
+
+
 /*---------------------------------------
 CUSTOM BUTTON
 -----------------------------------------*/
@@ -345,7 +347,7 @@ CUSTOM BUTTON
 .standard-button:hover,
 .standard-button2:hover {
     border: none;
-    background: #E8F326;
+    background: #DBE524;
 }
 
 .standard-button i,
@@ -443,13 +445,13 @@ SECTION:  HOME
 -----------------------------------------*/
 
 header {
-    background-size:  100vh 100vh;
+  background: url(../images/background.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+            background-size: cover;
 }
 
 header .color-overlay {
-    min-height: 100vh;
-    -webkit-background-size: cover;
-    background-size: cover;
+    min-height:100vh;
 }
 
 header .full-screen {
@@ -496,7 +498,7 @@ header .full-screen {
 
 header .only-logo .navbar {
     background: none;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 header .only-logo .navbar .navbar-header {
@@ -588,12 +590,8 @@ SECTION:  FEATURES
     background-clip: padding-box;
 }
 
-.features .graphics {
-    display: table-cell;
-    vertical-align: middle;
-    max-width: 250px;
-    margin: auto;
-    margin-bottom: 80px;
+.graphics {
+    max-width: 500px;
 }
 
 .features .graphics img {
@@ -606,8 +604,6 @@ SECTION:  BRIEF
 -----------------------------------------*/
 
 .app-brief {
-    min-height: 50vh;
-    background: #161616;
     padding-top: 100px;
     padding-bottom: 80px;
 }
@@ -617,10 +613,9 @@ SECTION:  BRIEF
 }
 
 .horner-image img{
-    width: 350px;
-    height: 505px;
-    max-width: 577px;
-    max-height: 905px;
+    max-width: 350px;
+    margin:auto;
+    margin: 50px;
 }
 
 .app-brief .graphics img {
@@ -1031,7 +1026,7 @@ SCHEMAT HORNERA TABELKA
     color:#161616;
 }
 .overall_record td:hover{
-    background: #E8F326;
+    background: #DBE524;
     cursor: default;
 }
 sub{
@@ -1056,14 +1051,14 @@ td{
     color:#161616;
 }
 td:hover{
-    background: #E8F326;
+    background: #DBE524;
     cursor: pointer;
 }
 
 
 /*górny i dolny wiersz tabeli*/
 .up {
-    background: #81D727;
+    background: #76C424;
     font-weight: bold;
 }
 
@@ -1082,7 +1077,7 @@ td:hover{
 }
 .popover-title{
     font-weight: bold;
-    background: #81D727;
+    background: #76C424;
 }
 /* END POPOVER AND TOOLTIPS */
 
@@ -1103,7 +1098,7 @@ td:hover{
     font-size: 0.9em;
 }
 .explanation span{
-    color:#E8F326;
+    color:#DBE524;
     cursor:pointer;
 }
 
