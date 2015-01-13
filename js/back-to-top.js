@@ -22,6 +22,6 @@ jQuery(document).ready(function($){
 		$('body,html').animate({
 			scrollTop: 0 ,
 		 	}, scroll_top_duration
-		);
+                              )
 	});
 });

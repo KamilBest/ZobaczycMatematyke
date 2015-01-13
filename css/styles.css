@@ -1,11 +1,11 @@
 /*My Icon font*/
 @font-face {
     font-family: "myfont";
-    src:url("/fonts/myfont.eot");
-    src:url("/fonts/myfont.eot?#iefix") format("embedded-opentype"),
-        url("/fonts/myfont.woff") format("woff"),
-        url("/fonts/myfont.ttf") format("truetype"),
-        url("/fonts/myfont.svg#myfont") format("svg");
+    src:url("../fonts/myfont.eot");
+    src:url("../fonts/myfont.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/myfont.woff") format("woff"),
+        url("../fonts/myfont.ttf") format("truetype"),
+        url("../fonts/myfont.svg#myfont") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -100,44 +100,44 @@
 /*OTHERfonts*/
 @font-face {
     font-family: "sketchy";
-    src:url("/fonts/sketchy.ttf");
+    src:url("../fonts/sketchy.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-bold";
-    src:url("/fonts/raleway-bold.ttf");
+    src:url("../fonts/raleway-bold.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-regular";
-    src:url("/fonts/raleway-regular.ttf");
+    src:url("../fonts/raleway-regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"raleway-thin";
-    src:url("/fonts/raleway-thin.ttf");
+    src:url("../fonts/raleway-thin.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:"open-sans-light";
-    src:url("/fonts/open-sans-light.ttf");
+    src:url("../fonts/open-sans-light.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"open-sans-regular";
-    src:url("/fonts/open-sans-regular.ttf");
+    src:url("../fonts/open-sans-regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family:"open-sans-semibold";
-    src:url("/fonts/open-sans-semibold.ttf");
+    src:url("../fonts/open-sans-semibold.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -149,7 +149,7 @@
 }
 @font-face {
     font-family:"open-sans-extrabold";
-    src:url("/fonts/open-sans-extrabold.ttf");
+    src:url("../fonts/open-sans-extrabold.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -164,7 +164,10 @@ GLOBAL STYLES
 html {
     font-size: 100%;
 }
-
+/* DELETE SCROLL BAR*/
+    body::-webkit-scrollbar {
+    display: none;
+}
 body {
     background: #232323;
     font-family: 'Roboto', sans-serif;
@@ -274,8 +277,8 @@ Typography
 /* FONT FACE LOADER */
 @font-face {
     font-family: 'Lane';
-    src: url('/fonts/lanenar_Lane.eot');
-    src: url('/fonts/lanenar_Lane.eot?#iefix') format('embedded-opentype'), url('/fonts/lanenar_Lane.woff') format('woff'), url('/fonts/lanenar_Lane.ttf') format('truetype'), url('/fonts/lanenar_Lane.svg#Lane') format('svg');
+    src: url('../fonts/lanenar_Lane.eot');
+    src: url('../fonts/lanenar_Lane.eot?#iefix') format('embedded-opentype'), url('../fonts/lanenar_Lane.woff') format('woff'), url('../fonts/lanenar_Lane.ttf') format('truetype'), url('../fonts/lanenar_Lane.svg#Lane') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -284,7 +287,7 @@ Typography
 
     @font-face {
         font-family: 'Lane';
-        src: url('/fonts/lanenar_Lane.svg#Lane') format('svg');
+        src: url('../fonts/lanenar_Lane.svg#Lane') format('svg');
     }
 }
 

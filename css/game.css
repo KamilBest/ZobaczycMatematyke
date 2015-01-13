@@ -1,0 +1,124 @@
+/*---------------------------------------
+SECTION:  HOME
+-----------------------------------------*/
+
+header {
+  background: url(../images/game.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+header .color-overlay {
+        min-height: 100vh;
+}
+
+header .full-screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/*---------------------------------------
+SECTION:  znajdz_pierwiastki
+-----------------------------------------*/
+
+#znajdz_pierwiastki {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: table;
+    width: 100%;
+}
+
+#znajdz_pierwiastki h2 {
+    margin-bottom: 20px;
+}
+
+#znajdz_pierwiastki .left-align {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#znajdz_pierwiastki .left-align p {
+    display: block;
+    float: none;
+    margin-top: 50px;
+}
+
+#znajdz_pierwiastki .left-align .feature-list {
+    margin-top: 40px;
+}
+
+#znajdz_pierwiastki .left-align .feature-list li {
+    margin-bottom: 26px;
+}
+
+#znajdz_pierwiastki .left-align .feature-list li i {
+    margin-right: 10px;
+    vertical-align: inherit;
+}
+.polynomial-equation{
+    color:#fff;
+}
+
+#polynomial-solution{
+    color:#76C424;
+}
+.polynomial-equation input{
+    width:5em;
+    color:#161616;
+}
+
+}
+
+
+
+#zmien_system{
+    min-height: 100vh;
+    display: table;
+        color:#fff;
+    width: 100%;
+    display: table;
+
+}
+#zmien_system {
+    color:#fff;
+}
+
+
+td{
+    background: #76C424;
+
+}
+
+input:checked{
+    color:#161616;
+}
+
+
+.center-block {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.padding {
+    padding-bottom: 30px;
+}
+
+.instruction {
+    color:#76C424;
+    cursor: pointer;
+}
+.instruction:hover{
+    color:#DBE524;
+
+}
+
+
+
+.graphs {
+    cursor: crosshair;
+ width: 50%;
+    margin: 0 auto;
+}

@@ -35,9 +35,6 @@ STYLESHEETS
     <link rel="stylesheet" href="css/back-to-top.css">
     <!-- Gem style -->
 
-    <!-- GRAPHS STYLE -->
-    <link rel="stylesheet" href="css/graphs_mathlib.css">
-
     <!-- DOT_NAVIGATION -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/dot-nav.css">
@@ -57,7 +54,7 @@ STYLESHEETS
 
     <!-- CUSTOM STYLESHEETS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/kalkulator.css">
+    <link rel="stylesheet" href="css/game.css">
 
     <!-- COLORS -->
     <link rel="stylesheet" href="css/colors.css">
@@ -84,19 +81,19 @@ BODY
             <li>
                 <a href="#home" data-number="1">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Początek</span>
+                    <span class="cd-label">aaa</span>
                 </a>
             </li>
             <li>
                 <a href="#znajdz_pierwiastki" data-number="2">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Obliczanie pierwiastków</span>
+                    <span class="cd-label">bbb</span>
                 </a>
             </li>
             <li>
                 <a href="#zmien_system" data-number="3">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Zamiana systemu liczby</span>
+                    <span class="cd-label">ccc</span>
                 </a>
             </li>
 
@@ -144,9 +141,9 @@ HEADER
                             <li><a href="index.html">Strona główna</a>
                             </li>
                             <li>
-                                <a href="#znajdz_pierwiastki">Obliczanie pierwiastków</a>
+                                <a href="#znajdz_pierwiastki">bbb</a>
                             </li>
-                            <li><a href="#zmien_system">zmiana systemu liczby</a>
+                            <li><a href="#zmien_system">ccc</a>
                             </li>
 
 
@@ -179,9 +176,9 @@ HEADER
 
                             <!-- WELCOM MESSAGE -->
                             <i class="icon-collapse"></i>
-                            <h1 class="intro">Kalkulator</h1>
+                            <h1 class="intro">Dzielenie wielomianów przez dwumian - gra.</h1>
                             <hr>
-                            <h5>oblicz równanie</h5>
+                            <h5>ucz się grając</h5>
 
 
                             <!-- BUTTON -->
@@ -212,161 +209,29 @@ Obliczanie pierwiastkow SECTION
 ============================== -->
     <section class="app-brief deep-dark-bg change-dot" id="znajdz_pierwiastki">
         <div class="center-block">
-        <h2 class="white-text ">Obliczanie pierwiastków wielomianu.</h2>
-        <p class="white-text padding"> podaj współczynniki wielomianu:</p>
+       <div role="tabpanel">
 
-<script>
-    function solveCubicEquation(a, b, c, d) {
-        var zero = 0.0000001,
-            //JavaScript fail to evaluate cube root from negative number - NaN
-            cbrt = function (a) {
-                return a >= 0 ? Math.pow(a, 1 / 3) : -Math.pow(-a, 1 / 3);
-            };
-        if (Math.abs(a) > zero) {
-            // normalize, convert to form: x3 + ax2 + bx + c = 0
-            b = b / a;
-            c = c / a;
-            d = d / a;
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#content1" aria-controls="content1" role="tab" data-toggle="tab">Test 1</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Test 2</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Test 3</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Test 4</a></li>
+  </ul>
 
-            var p = c - b * b / 3,
-                q = b * (2 * b * b - 9 * c) / 27 + d,
-                p3 = p * p * p;
-            D = q * q + 4 * p3 / 27,
-            subst = -b / 3;
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="content1">Lorem ipsum  1 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</div>
+    <div role="tabpanel" class="tab-pane" id="profile">Lorem ipsum 2dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</div>
+    <div role="tabpanel" class="tab-pane" id="messages">Lorem ipsum 3 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</div>
+    <div role="tabpanel" class="tab-pane" id="settings">Lorem ipsum 4 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</div>
+  </div>
 
-            if (D > zero) {
-                D = Math.sqrt(D)
-                var u = cbrt((-q + D) / 2),
-                    v = cbrt((-q - D) / 2);
-
-                return [u + v + subst];
-            } else if (D < -zero) {
-                //If (D < 0) => p < 0, change sign of p
-                var u = 2 * Math.sqrt(-p / 3),
-                v = Math.acos(-Math.sqrt(-27 / p3) * q / 2) / 3;
-                return [u * Math.cos(v) + subst,
-                    u * Math.cos(v + 2 * Math.PI / 3) + subst,
-                    u * Math.cos(v + 4 * Math.PI / 3) + subst];
-            } else {
-                // D zero
-                var u = -cbrt(q / 2);
-                return [2 * u + subst, -u + subst];
-            }
-        } else {
-            // a = 0, 2nd degree equation: ax3+bx2+cx+d => bx2+cx+d
-            if (Math.abs(b) <= zero) {
-                if (Math.abs(c) <= zero)
-                    return [];
-                else
-                    return [-d / c];
-            }
-            var D = c * c - 4 * b * d;
-            if (D > zero) {
-                D = Math.sqrt(D);
-                return [(-c - D) / (2 * b), (-c + D) / (2 * b)];
-            } else if (D < -zero) {
-                return [];
-            } else { //D = 0
-                return [-c / (2 * b)];
-            }
-        }
-    }
-
-    function solvePolynomialEquation() {
-        var inputs = document.getElementsByClassName('polynomial-equation')[0];
-        var args = [];
-        for (var i = 0; i < inputs.childNodes.length; i++)
-            if (inputs.childNodes[i].type == 'number')
-                args.push(parseFloat(inputs.childNodes[i].value));
-        var result = solveCubicEquation.apply(this, args);
-        document.getElementById('polynomial-solution').innerText = result;
-    }
-</script>
-
-<div class="polynomial-equation">
-    <input type="number" value="1" /> x<sup>3</sup> + <input type="number" value="3" /> x<sup>2</sup> + <input type="number" value="0" /> x + <input type="number" value="-4" /> = 0
-    <input type="button" value="Oblicz" onclick="solvePolynomialEquation();" /> <span class="icon-what instruction trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Obliczanie prostych wielomianów 3 stopnia. </br>
-        Rozwiązania są oddzielone przecinkami.</br>
-        Czasami może wystąpić problem z zaokrągleniem liczb, dlatego np. liczba 1.0000000000000004 może oznaczać 1.</br>
-        Symbol NaN oznacza, że wprowadzone dane nie są liczbą." title="Uwagi"></span>
-    <div class="padding">Rozwiązania: <span id="polynomial-solution"></br>   </span></div>
-            <div class="graphs">
-<input type="text" id="input" value="0,1,2,3"/>
-<input type="button" id="button" value="draw"/>
-<div id="canvas"></div>
-                </div>
 </div>
+
         </div>
       </section>
 
-<!-- ZMIEN SYSTEM LICZBOWY SECTION -->
-        <section class="app-brief dark-bg change-dot" id="zmien_system">
-<div align="center">
-      <form name="frmhorner" class="center-block">
-        <h2 id="data_out" class="white-text">
-          Zamiana systemu pozycyjnego liczb
-        </h2>
-
-        <div align="center">
-          <table border="0" cellpadding="4"
-                 style="border-collapse: collapse">
-            <tr>
-              <td align="right">podstawa (2...10) =</td>
-              <td>
-<input value="5" name="inp_p" size="20" style="text-align: center;color:#161616" type="number">
-              </td>
-            </tr>
-            <tr>
-              <td align="right">liczba w systemie dziesiętnym</td>
-              <td>
-<input value="23314" name="inp_s" size="20" style="text-align: center; color:#161616;" type="number">
-              </td>
-            </tr>
-          </table>
-        </div>
-        <p style="TEXT-ALIGN: center">
-          <input onclick="main();"
-                 type="button"
-                 value="Oblicz wartość liczby"
-                 name="B1"
-                 style="color:#161616"
-                 >
-
-        </p>
-        <p id="out_t" style="TEXT-ALIGN: center">...</p>
-      </form>
-
-<script language=javascript>
-
-// Wyznaczanie wartości liczby zapisanej
-// w systemie pozycyjnym o podstawie
-// p równej od 2 do 10
-
-
-function main()
-{
-  var s,p,L,c,i,t;
-
-  p = parseInt(document.frmhorner.inp_p.value);
-  s = document.frmhorner.inp_s.value;
-  t = "<font color=Red><b>Złe dane</b></font>";
-  if(!isNaN(p) && !(s=="") || !(p>10))
-  {
-    L = s.charCodeAt(0) - 48;
-    for(i = 1; i < s.length; i++)
-    {
-      c = s.charCodeAt(i) - 48;
-      L = L * p + c;
-    };
-    t = s + "<sub>(" + p + ")</sub> = " + L + "<sub>(10)</sub>";
-  };
-  document.getElementById("out_t").innerHTML = t;
-}
-</script>
-    </div>
-
-    </section>
-    <!-- /END SECTION -->
         <a href="#home" class="cd-top">Top</a>
 
     <!-- =========================
