@@ -10,6 +10,7 @@
     font-style: normal;
 }
 
+
 [data-icon]:before {
     font-family: "myfont" !important;
     content: attr(data-icon);
@@ -98,12 +99,6 @@
 }
 
 /*OTHERfonts*/
-@font-face {
-    font-family: "sketchy";
-    src:url("../fonts/sketchy.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family:"raleway-bold";
     src:url("../fonts/raleway-bold.ttf");

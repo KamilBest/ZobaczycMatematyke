@@ -140,7 +140,7 @@ Main components
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
-    background: #161616;
+    background: rgba(0, 0, 0, 0.5)
 }
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
@@ -173,7 +173,7 @@ Main components
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
-  padding: .0em .1em;
+  padding: 0.0em 1em;
   color: white;
   font-size: 14px;
   font-size: 0.875rem;
