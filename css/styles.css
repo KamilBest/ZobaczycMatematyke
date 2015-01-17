@@ -99,6 +99,13 @@
 }
 
 /*OTHERfonts*/
+
+@font-face {
+    font-family:"dual_300";
+    src:url("../fonts/dual_300.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family:"raleway-bold";
     src:url("../fonts/raleway-bold.ttf");
@@ -165,7 +172,7 @@ html {
 }
 body {
     background: #232323;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', 'raleway-regular';
     font-size: 16px;
     font-weight: 300;
     color: #c8c8c8;
@@ -305,7 +312,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 2rem;
     line-height: 38px;
     font-weight: 300;
 }
@@ -1028,7 +1035,7 @@ SCHEMAT HORNERA TABELKA
     cursor: default;
 }
 sub{
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 table {
     margin-top:40px;
@@ -1093,7 +1100,9 @@ td:hover{
 }
 
 .explanation {
+    margin-left: 50%;
     font-size: 0.9em;
+    line-height: 3em;
 }
 .explanation span{
     color:#DBE524;
@@ -1101,3 +1110,41 @@ td:hover{
 }
 
 
+
+.pl_znaki {
+    font-family: "dual_300" ;
+}
+
+
+.mark {
+    color:#DBE524;
+}
+.mark:hover{
+        font-weight: bold;
+
+}
+
+.yellow {
+    border:1px solid #DBE524;
+}
+
+
+.definition_bg {
+      background: #161616;
+
+    font-size: 1.2rem;
+    color:#fff;
+}
+
+.definition_text {
+    padding: 15px;
+}
+
+.green-text {
+    color:#76C424;
+}
+
+.math_marks {
+    font-weight: 500;
+    font-size: 1.2rem;
+}

@@ -263,7 +263,7 @@ Main components
 }
 .touch #cd-vertical-nav a {
   display: block;
-  padding: 1em;
+  padding: 2em;
   border-bottom: 1px solid rgba(62, 57, 71, 0.1);
 }
 .touch #cd-vertical-nav a span:first-child {

@@ -64,7 +64,8 @@ STYLESHEETS
 <!-- RESPONSIVE FIXES -->
         <link rel="stylesheet" href="css/responsive.css">
 
-        <!-- JQUERY -->
+        <!-- JS -->
+
 
     </head>
     <!-- END HEAD -->
@@ -107,25 +108,26 @@ STYLESHEETS
                         <span class="cd-label">Autor</span>
                     </a>
                 </li>
+                 <li>
+                    <a href="#horner_theory" data-number="6">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Teoria</span>
+                    </a>
+                </li>
                 <li>
-                    <a href="#equations_normal" data-number="6">
+                    <a href="#equations_normal" data-number="7">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Równania i nierówności - teoria</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#equation_tables" data-number="7">
+                    <a href="#equation_tables" data-number="8">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Równania i nierówności - tabelka</span>
                     </a>
                 </li>
-                  <li>
-                    <a href="#bezout_theory" data-number="8">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">Twierdzenie Bézouta </span>
-                    </a>
-                </li>
-                  <li>
+
+                <li>
                     <a href="#division_theory" data-number="9">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Dzielenie wielomianu przez dwumian</span>
@@ -178,6 +180,9 @@ HEADER
                                 </li>
                                 <li><a href="#author" title="Autor">Autor</a>
                                 </li>
+                                <li><a href="#horner_theory">Teoria</a>
+                                </li>
+
                                 <li><a href="#equations_inequalities">Równania i nierowności</a>
                                 </li>
                                 <li><a href="#division_polynomial_by_binomial">Dzielenie</a>
@@ -273,21 +278,21 @@ WPROWADZENIE
                         </div>
                         <p>Algorytm nazywany dziś schematem Hornera, znany był Chińczykom pięćset lat wcześniej.
                         </br>
-                            Wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz z zastosowaniem go w zadaniach, stąd pomysł na jego przybliżenie.
-                        </br>
+                    Wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz z zastosowaniem go w zadaniach, stąd pomysł na jego przybliżenie.
                     </br>
-                W zadaniach maturalnych często występują zadania, w których należy zastosować ten schemat. Dzięki tej stronie nie będziesz miał problemu z ich rozwiązywaniem.
+                </br>
+            W zadaniach maturalnych często występują zadania, w których należy zastosować ten schemat. Dzięki tej stronie nie będziesz miał problemu z ich rozwiązywaniem.
 
-                </p>
+            </p>
 
-
-            </div>
-        <!-- /END RIGHT BRIEF -->
 
         </div>
-    <!-- /END ROW -->
+    <!-- /END RIGHT BRIEF -->
 
     </div>
+<!-- /END ROW -->
+
+</div>
 <!-- /END CONTAINER -->
 </section>
 <!-- /END SECTION -->
@@ -309,6 +314,7 @@ FEATURES
             <h2 class="white-text">Co tu znajdziesz?</h2>
             <div class="colored-line">
             </div>
+
         </div>
         <!-- /END SECTION HEADER -->
         <div class="row">
@@ -579,6 +585,67 @@ AUTOR SECTION
 
 </section>
 
+<!-- =========================
+DIVISION THEOREM
+===========================-->
+<section id="horner_theory" class="change-dot app-brief deep-dee-dark-bg">
+    <div class="container">
+        <!-- BRIEF -->
+        <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+            <!-- SECTION TITLE -->
+            <h2 class="white-text">Niezb<span class="pl_znaki">ę</span>dna teoria.</h2>
+            <p>Aby móc nauczyć się rozwiązywać równania i nierówności oraz dzielić wielomian przez dwumian metodą schematu Hornera musisz najpierw poznać trochę teorii.
+            </p>
+            <hr class="yellow margin-top">
+            <div class="definition_bg">
+                <div class="definition_text">
+                    <h3 class="green-text"></br>Podzieloność wielomianów</h3>
+
+                <p>
+                    Wielomian <img src="images/division_images/divisibility/p(x).svg"> jest podzielny przez wielomian <img src="images/division_images/divisibility/q(x).svg"> (który jest różny od <span class="trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Wielomian zerowy - wielomian, który dla danego argumentu x przyjmuje wartość 0.</br>
+                        W(x)=0" title="Wielomian zerowy">wielomianu zerowego</span>), gdy istnieje taki wielomian <img src="images/division_images/divisibility/s(x).svg">, że:</br> <img src="images/division_images/divisibility/p(x)=q(x)*s(x).svg">
+            . </p>
+    </div>
+
+    <div class="colored-line-left margin-top yellow">
+    </div>
+    </div>
+<h4 class="white-text">
+    </br></br>Przykładowe zadanie</h4>
+<p>ZADANIE</br>Udowodnij, że jeśli <img src="images/division_images/divisibility/pw_s(x).svg">, to wielomian <img src="images/division_images/divisibility/pw_rownanie.svg"> jest podzielny przez wielomian <img src="images/division_images/divisibility/pw_q(x).svg">
+</br></br>Rozwiązanie:</br>
+Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był podzielny przez Q(x) musi być spełniony warunek:</br><img src="images/division_images/divisibility/p(x)=q(x)*s(x).svg">
+</br>Zatem:</br>
+<img src="images/division_images/divisibility/wynik.svg">
+</br>cnd.
+</p>
+<hr class="yellow margin-top">
+<div class="definition_bg">
+    <div class="definition_text">
+        <h3 class="green-text"></br>Twierdzenie Bézouta</h3>
+    <p>Liczba <span class="math_marks">a</span> jest <span class="trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Pierwiastek wielomianu - miejsce zerowe wielomianu, czyli liczba, dla której wartość wielomianu wynosi 0." title="Pierwiastek wielomianu">pierwiastkiem wielomianu</span> <span class="math_marks">W(x)</span> wtedy i tylko wtedy, gdy wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x - a.</span></br>Z twierdzenia wynika również, że reszta z dzielenia wielomianu <span class="math_marks">W(x)</span> przez dwumian <span class="math_marks">(x-a)</span> jest równa <span class="math_marks">W(a)</span> czyli wartości wielomianu dla <span class="math_marks">x=a.</span>
+</p>
+</div>
+</div>
+<div class="colored-line-left margin-top yellow">
+</div>
+<h4 class="white-text"> </br></br>Przykładowe zadanie</h4>
+<p>ZADANIE</br>Sprawdź czy wielomian <img src="images/division_images/tw_bezoutea/bezout_rown.svg"> jest podzielny przez dwumian <img src="images/division_images/tw_bezoutea/x-1.svg">.
+</br></br>Rozwiązanie:</br>
+Zgodnie z twierdzeniem Bézouta jeśli wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span> to liczba <span class="math_marks">1</span> jest pierwiastkiem wielomianu (wielomian przyjmuje dla argumentu x=1 wartość 0). </br>Sprawdźmy to:
+</br>
+<img src="images/division_images/tw_bezoutea/sprawdzenie.svg"></br>
+Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span>.
+</p>
+
+</div>
+</div>
+<!-- /END CONTAINER -->
+</section>
+<!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
+
+
 <!-- equations and inequalities SECTION
 ==============================
 -->
@@ -588,12 +655,12 @@ AUTOR SECTION
     <section id="equations_normal" class="change-dot app-brief deep-dark-bg">
         <div class="container">
             <!-- BRIEF -->
-            <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
                 <!-- SECTION TITLE -->
-                <h2 class="white-text">Równania i nierówności</h2>
+                <h2 class="white-text">Obliczanie warto<span class="pl_znaki">ś</span>ci wielomianu.</h2>
                 <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego
-                    <span class="simple-tooltip" title="t - argument, dla której podany wielomian osiąga jakąś wartość">x=t.</span>
+                    <span class="math_marks trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="t-dowolny argument, dla którego chcemy obliczyć wartość wielomianu => W(t). " title="Argument t">x=t.</span>
 
                 <div class="math-image">
                     <img src="images/equation1.svg"/>
@@ -602,27 +669,26 @@ AUTOR SECTION
                 <div class="math-image">
                     <img src="images/equation2.svg"/>
                 </div>
-                zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu (w punkcie) dla danego argumentu x=t  oraz redukuje ilość potrzebnych mnożeń.
+                zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu (w punkcie) dla danego argumentu <span class="math_marks">x=t</span>  oraz redukuje ilość potrzebnych mnożeń.
                 </p>
-
-            </br>
-
         </div>
-    <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+    <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
         <h3 class="white-text">Przykład i wyjaśnienie</h3>
         <img class="method_explanation" src="images/method_explanation.svg"/>
         <p class="explanation">
-            Obliczanie wartości wielomianu w punkcie x = t = 1.
+            Obliczanie wartości wielomianu dla argumentu t=1.
         </br>
     1) Wyłączamy wspólny czynnik przed nawias, w tym przypadku jest to x.
     </br>
 2) Wyłączamy wspólny czynnik z trzech pierwszych elementów w nawiasie.
 </br>
-3) Podstawiamy za x podaną wartość t, czyli 1.Otrzymujemy wynik.<span class="icon-what trigger question_mark" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Dzięki zastosowaniu schematu Hornera uzyskujemy znaczną redukcję mnożeń. </br> W zwykłej postaci: </br>W(x)=7&bull;x&bull;x&bull;x&bull;x+3&bull;x&bull;x&bull;x+5&bull;x&bull;x+9&bull;x+1,</br> jest to 10 mnożeń i 4 dodawania.
+3) Podstawiamy za x podaną wartość t, czyli 1.</br>Otrzymujemy wynik.<span class="icon-what trigger question_mark" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Dzięki zastosowaniu schematu Hornera uzyskujemy znaczną redukcję mnożeń. </br> W zwykłej postaci: </br>W(x)=7&bull;x&bull;x&bull;x&bull;x+3&bull;x&bull;x&bull;x+5&bull;x&bull;x+9&bull;x+1,</br> jest to 10 mnożeń i 4 dodawania.
     </br></br>W postaci schematu Hornera:</br>
-    W(x)=((7&bull;x+3)&bull;x+5)&bull;x+9)&bull;x+1,</br> są to 4 mnożenia i 4 dodawania.</br> To samo dzięki regule przemienności mnożenia możemy zapisać również w ten sposób: </br>W(x)=x&bull;(x&bull;(x&bull;(7&bull;x+3)+5)+9)+1. " title="Korzyści"></span>
+    W(x)=((7&bull;x+3)&bull;x+5)&bull;x+9)&bull;x+1,</br> są to 4 mnożenia i 4 dodawania.</br> To samo dzięki regule przemienności mnożenia możemy zapisać również w ten sposób: </br>W(x)=x&bull;(x&bull;(x&bull;(7x+3)+5)+9)+1. " title="Korzyści"></span>
 </p>
 </div>
+ <p>Częściej spotykany jest jednak zapis w tabelce, który znajdziesz niżej.</h3>
+
 <!-- /ENDBRIEF -->
 </div>
 <!-- /END CONTAINER -->
@@ -634,8 +700,7 @@ AUTOR SECTION
     <!-- TABELKI -->
     <div class="container">
         <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-            <hr>
-            <h3 class="white-text">Tabelka</h3>
+            <h3 class="white-text">Tabelka do obliczania wartości wielomianu</h3>
             <p class="def">Najczęściej jednak do obliczania wartości wielomianu o argumencie x=t używa się zapisu w tabelce, dzięki której możemy obliczyć wartość wielomianu. Podobną tabelkę stosuje się przy dzieleniu wielomianu przez dwumian. </br></br>
 
     Poniższa tabelka przedstawia jak uzupełnia się pola dla wielomianu W<sub>n</sub>(x) i argumencie x=t (zapis ogólny).</p>
@@ -643,36 +708,36 @@ AUTOR SECTION
 <table class="overall_record">
     <tr class="up">
         <td class="empty-cell">Schemat Hornera</td>
-        <td>a<sub>0</sub>
+        <td>a<sub>n</sub>
         </td>
-        <td>a<sub>1</sub>
+        <td>a<sub>n-1</sub>
         </td>
         <td>...</td>
-        <td>a<sub>n-1</sub></td>
-        <td>a<sub>n</sub></td>
+        <td>a<sub>1</sub></td>
+        <td>a<sub>0</sub></td>
     </tr>
     <tr class="down">
         <td class="up">x=t</td>
         <td>
-            b<sub>0</sub>=a<sub>0</sub>
+            b<sub>n</sub>=a<sub>n</sub>
         </td>
-        <td>                        b<sub>1</sub>=b<sub>0</sub>&bull;t+a<sub>1</sub></td>
+        <td>                        b<sub>n-1</sub>=b<sub>n</sub>&bull;t+a<sub>n-1</sub></td>
         <td>
             ...
         </td>
         <td>
-            b<sub>n-1</sub>=b<sub>n-2</sub>&bull;t+a<sub>n-1</sub>
+            b<sub>1</sub>=b<sub>n-2</sub>&bull;t+a<sub>1</sub>
         </td>
         <td>
-            b<sub>n</sub>=b<sub>n-1</sub>&bull;t+a<sub>n</sub>
+            b<sub>0</sub>=b<sub>1</sub>&bull;t+a<sub>0</sub>
 
         </td>
     </tr>
 </table>
 <!-- /END TABLE -->
-<p>liczby a<sub>0</sub>,a<sub>1</sub>,........,a<sub>n</sub> - współczynniki wielomianu</br>
-współczynnikiem a<sub>0</sub>  nazywamy wyraz przy najwyższej potędze wielomianu</br>
-n- stopień wielomianu.</br>b<sub>n</sub> jest wartością wielomianu dla argumentu t (wynik) </p>
+<p>liczby a<sub>n</sub>,a<sub>n-1</sub>,........,a<sub>0</sub> - współczynniki wielomianu</br>
+współczynnikiem a<sub>n</sub>  nazywamy wyraz przy najwyższej potędze wielomianu</br>
+n - stopień wielomianu.</br>b<sub>0</sub> jest wartością wielomianu dla argumentu t (wynik) </p>
 <div class="colored-line-left margin-top">
 </div>
 
@@ -730,57 +795,31 @@ Jak widać wynik wyszedł taki sam jak poprzednio.
 <!-- DZIELENIE -->
 <section id="division_polynomial_by_binomial">
 
-<!-- BEZOUT THEOREM -->
-<section id="bezout_theory" class="change-dot app-brief deep-dee-dark-bg">
-    <div class="container">
-        <!-- BRIEF -->
-        <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+    <!-- DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
+    <section id="division_theory" class="change-dot app-brief deep-dark-bg">
+        <div class="container">
+            <!-- BRIEF -->
+            <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
-            <!-- SECTION TITLE -->
-            <h2 class="white-text">Dzielenie wielomianu przez dwumian.</h2>
-            <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego   </p>
-            <iframe width="560" height="315" src="//www.youtube.com/embed/llHOtLxsTzI" frameborder="0" allowfullscreen></iframe>
-            <p>(Film stworzony przez InfoPlus. Umieszczony na podstawie standardowej licencji YouTube).</p>
+                <!-- SECTION TITLE -->
+                <h2 class="white-text">Dzielenie wielomianu przez dwumian.</h2>
+                <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego   </p>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/llHOtLxsTzI" frameborder="0" allowfullscreen></iframe>
+                <p>(Film stworzony przez InfoPlus. Umieszczony na podstawie standardowej licencji YouTube).</p>
 
+            </div>
+            <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <h3 class="white-text">Przykład i wyjaśnienie</h3>
+
+                <p>
+                    TEKST W 2 KOLUMNIE
+                </p>
+            </div>
+            <!-- /ENDBRIEF -->
         </div>
-        <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-            <h3 class="white-text">Przykład i wyjaśnienie</h3>
-
-            <p>
-                TEKST W 2 KOLUMNIE
-            </p>
-        </div>
-        <!-- /ENDBRIEF -->
-    </div>
-    <!-- /END CONTAINER -->
-</section>
-<!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
-
-<!-- DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
-<section id="division_theory" class="change-dot app-brief deep-dark-bg">
-    <div class="container">
-        <!-- BRIEF -->
-        <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-            <!-- SECTION TITLE -->
-            <h2 class="white-text">Dzielenie wielomianu przez dwumian.</h2>
-            <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego   </p>
-            <iframe width="560" height="315" src="//www.youtube.com/embed/llHOtLxsTzI" frameborder="0" allowfullscreen></iframe>
-            <p>(Film stworzony przez InfoPlus. Umieszczony na podstawie standardowej licencji YouTube).</p>
-
-        </div>
-        <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-            <h3 class="white-text">Przykład i wyjaśnienie</h3>
-
-            <p>
-                TEKST W 2 KOLUMNIE
-            </p>
-        </div>
-        <!-- /ENDBRIEF -->
-    </div>
-    <!-- /END CONTAINER -->
-</section>
-<!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
+        <!-- /END CONTAINER -->
+    </section>
+    <!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
 
 
 
@@ -792,32 +831,32 @@ Jak widać wynik wyszedł taki sam jak poprzednio.
 
 
 
-<!-- /END equations and inequalities SECTION-->
-<a href="#home" class="cd-top">Top</a>
+    <!-- /END equations and inequalities SECTION-->
+    <a href="#home" class="cd-top">Top</a>
 
-<!-- =========================
+    <!-- =========================
 SCRIPTS
 ============================== -->
-<script src="js/vendor/modernizr.js"></script>
-<script src="js/vendor/jquery-2.1.1.js"></script>
-<script src="js/dot-nav.js"></script>
-<script src="js/popover.js"></script>
-<script src="js/back-to-top.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/vendor/plugins/smoothscroll.js"></script>
-<script src="js/vendor/plugins/jquery.scrollTo.min.js"></script>
-<script src="js/vendor/plugins/jquery.localScroll.min.js"></script>
-<script src="js/vendor/plugins/owl.carousel.min.js"></script>
-<script src="js/vendor/plugins/nivo-lightbox.min.js"></script>
-<script src="js/vendor/plugins/simple-expand.min.js"></script>
-<script src="js/vendor/plugins/wow.min.js"></script>
-<script src="js/vendor/plugins/jquery.stellar.min.js"></script>
-<script src="js/vendor/plugins/retina.min.js"></script>
-<script src="js/vendor/plugins/jquery.nav.js"></script>
-<script src="js/vendor/plugins/matchMedia.js"></script>
-<script src="js/vendor/plugins/jquery.ajaxchimp.min.js"></script>
-<script src="js/vendor/plugins/jquery.fitvids.js"></script>
-<script src="js/vendor/plugins/custom.js"></script>
-</body>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery-2.1.1.js"></script>
+    <script src="js/dot-nav.js"></script>
+    <script src="js/popover.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/plugins/smoothscroll.js"></script>
+    <script src="js/vendor/plugins/jquery.scrollTo.min.js"></script>
+    <script src="js/vendor/plugins/jquery.localScroll.min.js"></script>
+    <script src="js/vendor/plugins/owl.carousel.min.js"></script>
+    <script src="js/vendor/plugins/nivo-lightbox.min.js"></script>
+    <script src="js/vendor/plugins/simple-expand.min.js"></script>
+    <script src="js/vendor/plugins/wow.min.js"></script>
+    <script src="js/vendor/plugins/jquery.stellar.min.js"></script>
+    <script src="js/vendor/plugins/retina.min.js"></script>
+    <script src="js/vendor/plugins/jquery.nav.js"></script>
+    <script src="js/vendor/plugins/matchMedia.js"></script>
+    <script src="js/vendor/plugins/jquery.ajaxchimp.min.js"></script>
+    <script src="js/vendor/plugins/jquery.fitvids.js"></script>
+    <script src="js/vendor/plugins/custom.js"></script>
+    </body>
 
 </html>
