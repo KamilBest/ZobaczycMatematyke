@@ -132,7 +132,7 @@ STYLESHEETS
                         <span class="cd-label">Równania</span>
                     </a>
                 </li>
-                   <li>
+                <li>
                     <a href="#inequalities" data-number="10">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Nierówności</span>
@@ -289,8 +289,7 @@ WPROWADZENIE
 
                         <div class="colored-line-left">
                         </div>
-                        <p>Algorytm nazywany dziś schematem Hornera, znany był Chińczykom pięćset lat wcześniej.
-                        </br>
+                        <p>
                     Wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz z zastosowaniem go w zadaniach, stąd pomysł na jego przybliżenie.
                     </br>
                 </br>
@@ -815,40 +814,40 @@ Jak widać wynik wyszedł taki sam jak poprzednio.
 <section id="equations_inequalities">
 
 
- <section id="equations" class="change-dot app-brief deep-dark-bg">
-     <div class="container">
+    <section id="equations" class="change-dot app-brief deep-dark-bg">
+        <div class="container">
             <!-- BRIEF -->
             <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
                 <h2 class="white-text">Rozwi<span class="pl_znaki">ą</span>zywanie równa<span class="pl_znaki">ń</span> schematem Hornera</h2>
                 <p>Lista kroków:</p>
                 <ul style="list-style-type:disc">
                     <li>
-                    1. Korzystając z twierdzenia Bézouta znaleźć pierwiastek wielomianu (argument, dla którego wartość wynosi 0). Należy sprawdzić podzielniki wyrazu wolnego obliczając dla nich wartość np. W(1),W(2) itd. dopóki nie znajdziemy pierwiastka wielomianu.
+                        1. Korzystając z twierdzenia Bézouta znaleźć pierwiastek wielomianu (argument, dla którego wartość wynosi 0). Należy sprawdzić podzielniki wyrazu wolnego obliczając dla nich wartość np. W(1),W(2) itd. dopóki nie znajdziemy pierwiastka wielomianu.
                     </li>
                     <li>
-                    2. Z otrzymanego pierwiastka tworzymy dwumian i wykonujemy dzielenie w tabelce.
+                        2. Z otrzymanego pierwiastka tworzymy dwumian i wykonujemy dzielenie w tabelce.
                         np. Jeżeli pierwiastkiem wielomianu jest x=1 (W(1)=0), to dzielimy przez dwumian (x-1).
 
                     </li>
-                    <li>3. Tworzymy równanie: (wynik z dzielenia) &bull; (dwumian)=0 </li>
+                    <li>3. Tworzymy równanie - postać iloczynowa: <span class="math_marks">(wynik z dzielenia) &bull; (dwumian)=0</span> </li>
                     <li>4. Rozwiązujemy równanie.</li>
                 </ul>
                 <div class="colored-line-left margin-top">
-</div>
+                </div>
                 <h3 class="white-text"></br>Przykładowe zadanie</h3>
-         <p>ZADANIE</br>
-     Rozwiąż równanie:</br>
+            <p>ZADANIE</br>
+        Rozwiąż równanie:</br>
     <span class="math_marks">x<sup>3</sup>−3x+2=0</span>
-</br></br>
+    </br></br>
 wyraz wolny: 2, podzielniki wyrazu wolnego {1, −1, 2, −2}
 </br>
-<span class="math_marks yellow">W(1)=1<sup>3</sup>-3&bull;1+2=1-3+2=0</span> (Nie muszę dalej sprawdzać, ponieważ W(1)=0, czyli x=1 jest pierwiastkiem.)
+<span class="math_marks yellow">W(1)=1<sup>3</sup>-3&bull;1+2=1-3+2=0</span> (Nie musimy dalej sprawdzać, ponieważ W(1)=0, czyli x=1 jest pierwiastkiem.)
 <span class="math_marks">
     </br>
 W(-1)=-1<sup>3</sup>-3&bull;(-1)+2=-1+3+2=4
-    </br>
+</br>
 W(2)=2<sup>3</sup>-3&bull;2+2=8-6+2=4
-    </br>
+</br>
 W(-2)=-2<sup>3</sup>-3&bull;(-2)+2=-8+6+2=0
 </span> (-2 też jest pierwiastkiem, więc od nas zależy, który wybierzemy.)
 </br></br>
@@ -869,15 +868,15 @@ Zatem aby rozwiązać równanie musimy podzielić <span class="math_marks">x<sup
     <tr class="down">
         <td class="up">1</td>
         <td>
-           1
+            1
         </td>
         <td>1</td>
 
         <td>
-           -2
+            -2
         </td>
         <td>
-           0
+            0
         </td>
     </tr>
 </table>
@@ -886,39 +885,122 @@ Wynik z dzielenia:</br>
 <span class="math_marks">x<sup>2</sup>+x−2</span></br> (schemat Hornera obniża stopień o 1, dla większych wielomianów musielibyśmy zastosować tabelkę kilkukrotnie)
 </br>
 Zatem otrzymujemy równanie: </br>
-<span class="math_marks">(x−1)(x2+x−2)=0</span>
-</br>Jak już wcześniej obliczyliśmy x<sub>1</sub>=1, teraz pozostaje nam policzyć deltę.
+<span class="math_marks">(x−1)(x<sup>2</sup>+x−2)=0</span>
+</br>Jak już wcześniej obliczyliśmy, x<sub>1</sub>=-1, teraz pozostaje nam obliczyć drugą część iloczynu (równanie kwadratowe).Liczymy za pomocą delty pozostałe rozwiązania.
 </br>
 Δ=9, √Δ=3 </br>
-x<sub>1</sub>=1 x<sub>2</sub>=-2</br>
-I mamy wynik! Pierwiastkami równania  <span class="math_marks">x<sup>3</sup>−3x+2=0</span> są:
+x<sub>2</sub>=-2 x<sub>3</sub>=-2</br>
+I mamy wynik! Pierwiastkami wielomianu <span class="math_marks">x<sup>3</sup>−3x+2=0</span> są:
 </br><span class="math_marks yellow">x<sub>1</sub>=1(dwukrotny),  x<sub>2</sub>=-2.</span>
 </br>
+</p>
+</div>
+</div>
 
+</section>
+<!-- /END EQUATIONS SECTION -->
+
+<!-- ========================
+INEQUATIONS SECTION
+========================= -->
+<section id="inequalities" class="change-dot app-brief dark-bg">
+<div class="container">
+    <!-- BRIEF -->
+    <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+        <h2 class="white-text">Rozwi<span class="pl_znaki">ą</span>zywanie nierówno<span class="pl_znaki">ś</span>ci schematem Hornera</h2>
+        <p>Lista kroków:</p>
+        <ul style="list-style-type:disc">
+            <li>
+                1. Korzystając z twierdzenia Bézouta znaleźć pierwiastek wielomianu (argument, dla którego wartość wynosi 0). Należy sprawdzić podzielniki wyrazu wolnego obliczając dla nich wartość np. W(1),W(2) itd. dopóki nie znajdziemy pierwiastka wielomianu.
+            </li>
+            <li>
+                2. Z otrzymanego pierwiastka tworzymy dwumian i wykonujemy dzielenie w tabelce.
+                np. Jeżeli pierwiastkiem wielomianu jest x=1 (W(1)=0), to dzielimy przez dwumian (x-1).
+
+            </li>
+            <li>3. Tworzymy równanie - postać iloczynowa: <span class="math_marks">(wynik z dzielenia) &bull; (dwumian)>0</span> (znak nierówności w zależności od polecenia   <, <=, >, >= ) </li>
+            <li>4. Rozwiązujemy nierówność.</li>
+            <li>5. Rysujemy przybliżony wykres tego wielomianu:
+            </br>   - zaznaczamy kropkami pierwiastki na osi (przy znakach >= i <= zamalowujemy kropkę),
+    </br>   - określamy znak współczynnika kierunkowego, jeżeli jest dodatni, to zaczynamy rysować od góry, z prawej strony, jeżeli ujemny, to z prawej strony od dołu,
+    </br>   - przy pierwiastkach parzystokrotnych (np. dwukrotnym, odbijamy wykres).
+        </li>
+    <li>6. Wypisać z wykresu przedział/-y spełniający warunek.
+    </li>
+        </ul>
+        <div class="colored-line-left margin-top">
+        </div>
+        <h3 class="white-text"></br>Przykładowe zadanie</h3>
+    <p>ZADANIE</br>
+Rozwiąż nierówność:</br>
+<span class="math_marks">x<sup>3</sup>+5x<sup>2</sup>+8x+4>0</span>
+</br></br>
+</br>Oznaczmy wielomian jako: <span class="math_marks">W(x)=x<sup>3</sup>+5x<sup>2</sup>+8x+4</span></br>
+wyraz wolny: 4, podzielniki wyrazu wolnego {1, -1, 2, −2, 4, -4}
+</br>
+<span class="math_marks">W(1)=1<sup>3</sup>+5&bull;1<sup>2</sup>+8&bull;1+4=18</span>
+</br>
+<span class="math_marks yellow">W(-1)=(-1)<sup>3</sup>+5&bull;(-1)<sup>2</sup>+8&bull;(-1)+4=-1+5-8+4=-9+9=0</span> (Nie musimy dalej sprawdzać, ponieważ W(-1)=0, czyli x=-1 jest pierwiastkiem.)
+
+</br></br>
+Zatem aby rozwiązać nierówność musimy podzielić <span class="math_marks">x<sup>3</sup>+5x<sup>2</sup>+8x+4</span> przez dwumian <span class="math_marks">(x+1)</span>
+</br>Aby to zrobić ponownie tworzymy tabelkę. Tym razem jako argument bierzemy <span class="math_marks">-1.</span>
+</br>
+<table class="overall_record">
+    <tr class="up">
+        <td class="empty-cell">W(x)</td>
+        <td>1</td>
+        <td>5</td>
+        <td>8</td>
+        <td>4</td>
+
+    </tr>
+    <tr class="down">
+        <td class="up">-1</td>
+        <td> 1</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+    </tr>
+</table>
+</br>
+Wynik z dzielenia:</br>
+<span class="math_marks">x<sup>2</sup>+4x+4</span></br> (schemat Hornera obniża stopień o 1)
+</br>
+Zatem otrzymujemy nierówność: </br>
+<span class="math_marks">(x+1)(x<sup>2</sup>+4x+4)>0</span>
+</br>Jak już wcześniej obliczyliśmy, x<sub>1</sub>=1, teraz pozostaje nam obliczyć drugą część iloczyny (równanie kwadratowe).Liczymy za pomocą delty pozostałe rozwiązania.
+</br>
+Δ=0, 1 rozwiązanie z delty </br>
+x<sub>2</sub>=-2 (dwukrotny)</br>
+Pierwiastkami wielomianu  <span class="math_marks">W(x)=x<sup>3</sup>+5x<sup>2</sup>+8x+4</span> są:
+</br><span class="math_marks yellow">x<sub>1</sub>=-1,  x<sub>2</sub>=-2(dwukrotny).</span></br></br>
+Zaznaczamy pierwiastki na osi.</br>
+<img src="images/division_images/inequations/axis.svg"></br>
+Określamy znak współczynnika kierunkowego:</br>
+a=1 => a>0
+</br>
+Rysujemy wykres.</br>
+<img src="images/division_images/inequations/axis_graph.svg">
+</br>
+Zaznaczamy przedziały spełniające nierówność: </br>
+<span class="math_marks">x<sup>3</sup>+5x<sup>2</sup>+8x+4>0</span></br>
+<img src="images/division_images/inequations/axis_graph_result.svg">
+</br>
+Pozostaje nam odczytać zaznaczony przedział i mamy wynik.</br>
+<span class="math_marks yellow">x<span class="belong">&isin;</span>(-1, +&infin;)</span>
 
 
 </p>
-
-
-         </div>
-     </div>
-
-
-    </section>
-
-
-
-
-     <section id="inequalities" class="change-dot app-brief dark-bg">
-
-    </section>
+</div>
+</div>
 
 
 
 </section>
 
 
-    <!-- /END equations and inequalities SECTION-->
+<!-- /END equations and inequalities SECTION-->
 
 
 
@@ -936,7 +1018,7 @@ I mamy wynik! Pierwiastkami równania  <span class="math_marks">x<sup>3</sup>−
     <section id="division_theory" class="change-dot app-brief deep-dark-bg">
         <div class="container">
             <!-- BRIEF -->
-            <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
                 <!-- SECTION TITLE -->
                 <h2 class="white-text">Dzielenie wielomianu przez dwumian.</h2>
@@ -945,13 +1027,7 @@ I mamy wynik! Pierwiastkami równania  <span class="math_marks">x<sup>3</sup>−
                 <p>(Film stworzony przez InfoPlus. Umieszczony na podstawie standardowej licencji YouTube).</p>
 
             </div>
-            <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-                <h3 class="white-text">Przykład i wyjaśnienie</h3>
 
-                <p>
-                    TEKST W 2 KOLUMNIE
-                </p>
-            </div>
             <!-- /ENDBRIEF -->
         </div>
         <!-- /END CONTAINER -->

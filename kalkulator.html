@@ -148,6 +148,8 @@ HEADER
                             </li>
                             <li><a href="#zmien_system">zmiana systemu liczby</a>
                             </li>
+                            <li><a href="game.html">zagraj</a>
+                            </li>
 
 
                             </ul>
@@ -211,9 +213,10 @@ WSTĘP
 Obliczanie pierwiastkow SECTION
 ============================== -->
     <section class="app-brief deep-dark-bg change-dot" id="znajdz_pierwiastki">
+        <div class="container">
          <div class="col-md-12">
         <h2 class="white-text ">Obliczanie pierwiastków wielomianu.</h2>
-        <p class="white-text padding"> Podaj współczynniki wielomianu, wciśnij "Oblicz" po wpisaniu.</p>
+        <p class="white-text padding"> Podaj współczynniki wielomianu (maksymalnie 3-stopnia), wciśnij "Oblicz" po wpisaniu.</p>
 
         <script>
             function solveCubicEquation(a, b, c, d) {
@@ -290,19 +293,27 @@ Obliczanie pierwiastkow SECTION
                 Czasami może wystąpić problem z zaokrągleniem liczb, dlatego np. liczba 1.0000000000000004 może oznaczać 1.</br>
                 Symbol NaN oznacza, że wprowadzone dane nie są liczbą." title="Uwagi"></span>
             <div class="padding">Rozwiązania: <span id="polynomial-solution"></br>   </span></div>
+                         <hr class="yellow margin-top">
+
+             <h2 class="white-text ">Sprawd<span class="pl_znaki">ź</span> jak wygl<span class="pl_znaki">ą</span>da wykres wielomianu.</h2>
+             <p>UWAGA!</br>
+        Współczynniki należy wpisywać od końca, jeżeli nie ma współczynnika, wpisz 0.</br>
+    Przykład:</br>
+Dla wielomianu <span class="math_marks">x<sup>3</sup>-8</span> powinieneś wpisać: </br>-8,0,0,3</br>Wpisz współczynniki:
+
+
+        </p>
                  <input type="text" id="input" value="-4,0,3,1"/>
             <input type="button" id="button" value="rysuj"/>
-             <p>Wpisz współczynniki:</br></p>
              </div>
 
-                      <div class="col-md-6">
 
         <div class="graphs">
 
             <div id="canvas"></div>
         </div>
         </div>
-        </div>
+</div>
     </section>
 
 <!-- ZMIEN SYSTEM LICZBOWY SECTION -->

@@ -118,7 +118,9 @@ input:checked{
 
 
 .graphs {
+    display: table;
     cursor: crosshair;
- width: 50%;
-    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    right: 23%;
 }
