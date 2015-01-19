@@ -72,7 +72,7 @@ BODY
 
 ############################
 -->
-    <body style="overflow-y:hidden;">
+    <body  cz-shortcut-listen="true">
         <nav id="cd-vertical-nav">
             <ul>
                 <li>
@@ -120,12 +120,13 @@ HEADER
                         <div class="navbar-header">
 
                             <!-- LOGO ON STICKY NAV BAR -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navigation">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+
                             <a class="navbar-brand" href="index.html">
                                 <img src="images/logo2.svg" alt="Strona główna">
                             </a>
@@ -204,46 +205,55 @@ HEADER
 WSTĘP
 Obliczanie pierwiastkow SECTION
 ============================== -->
-    <section class="app-brief deep-dark-bg change-dot" id="znajdz_pierwiastki">
-        <div class="row">
-        <div class="col-md-6 col-md-offset-2">
-
-            <table id="horners_method">
-                <tr class="up">
-                    <td class="tytul">SCHEMAT HORNERA</td>
-                    <td>(Upuść tutaj)</td>
-                    <td>(Upuść tutaj)</td>
-                    <td>(Upuść tutaj)</td>
-                    <td>(Upuść tutaj)</td>
-                </tr>
-                <tr class="down">
-                    <td class="up">(Upuść tutaj)</td>
-                    <td>(Upuść tutaj)</td>
-                    <td>(Upuść tutaj)</td>
-                    <td>(Upuść tutaj)</td>
-                    <td>(Upuść tutaj)</td>
-                </tr>
-            </table>        </div>
-        <div class="col-md-3 col-md-offset-2">
-            <table class="down">
-                <tr >
-                    <td class="makeMeDraggable">1</td>
-                    <td class="makeMeDraggable">2</td>
-                    <td class="makeMeDraggable">3</td>
-                </tr>
-                <tr >
-                    <td class="makeMeDraggable">4</td>
-                    <td class="makeMeDraggable">5</td>
-                    <td class="makeMeDraggable">6</td>
-                </tr>
-                <tr >
-                    <td class="makeMeDraggable">7</td>
-                    <td class="makeMeDraggable">8</td>
-                    <td class="makeMeDraggable">9</td>
-                </tr>
-            </table>
-        </div>
+    <section class="app-brief deep-dark-bg change-dot" id="game">
+        <div class="container">
+            <h2 class="white-text">GRA</h2>
+            <p>Uzupełnij tabelkę dzielenia wielomianu przez dwumian, dla wielomianu </br>przenosząc pola z cyframi w odpowiednie pola.</p>
+              <div class="col-sm-8">
+      <table class="game-table">
+    <tr>
+        <td class="up">SCHEMAT HORNERA</td>
+        <td class="up makeMeDroppable">(Upuść tutaj)</td>
+        <td class="up">(Upuść tutaj)</td>
+        <td class="up">(Upuść tutaj)</td>
+        <td class="up">(Upuść tutaj)</td>
+    </tr>
+    <tr>
+        <td class="up">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+    </tr>
+</table>
             </div>
+        <div class="col-sm-4">
+<table id="Cyfry">
+    <tr>
+        <td class="makeMeDraggable">-1</td>
+        <td class="makeMeDraggable">-2</td>
+        <td class="makeMeDraggable">0</td>
+        <td class="makeMeDraggable">1</td>
+    </tr>
+    <tr>
+        <td class="makeMeDraggable">2</td>
+        <td class="makeMeDraggable">3</td>
+        <td class="makeMeDraggable">4</td>
+        <td class="makeMeDraggable">5</td>
+    </tr>
+    <tr>
+        <td class="makeMeDraggable">6</td>
+        <td class="makeMeDraggable">7</td>
+        <td class="makeMeDraggable">8</td>
+        <td class="makeMeDraggable">9</td>
+    </tr>
+
+</table>
+                    </div>
+        </div>
+           </div>
+
+
     </section>
 
     <a href="#home" class="cd-top">Top</a>
@@ -251,10 +261,12 @@ Obliczanie pierwiastkow SECTION
     <!-- =========================
 SCRIPTS
 ============================== -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery-2.1.1.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/mathlib.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
     <script src="js/game.js"></script>
     <script src="js/dot-nav.js"></script>
     <script src="js/popover.js"></script>

@@ -352,7 +352,7 @@ CUSTOM BUTTON
 .standard-button:hover,
 .standard-button2:hover {
     border: none;
-    background: #DBE524;
+    background: #E0EB25;
 }
 
 .standard-button i,
@@ -1031,7 +1031,7 @@ SCHEMAT HORNERA TABELKA
     color:#161616;
 }
 .overall_record td:hover{
-    background: #DBE524;
+    background: #E0EB25;
     cursor: default;
 }
 sub{
@@ -1056,7 +1056,7 @@ td{
     color:#161616;
 }
 td:hover{
-    background: #DBE524;
+    background: #E0EB25;
     cursor: pointer;
 }
 
@@ -1105,7 +1105,7 @@ td:hover{
     line-height: 3em;
 }
 .explanation span{
-    color:#DBE524;
+    color:#E0EB25;
     cursor:pointer;
 }
 
@@ -1117,7 +1117,7 @@ td:hover{
 
 
 .mark {
-    color:#DBE524;
+    color:#E0EB25;
 }
 .mark:hover{
         font-weight: bold;
@@ -1125,7 +1125,8 @@ td:hover{
 }
 
 .yellow {
-    border:1px solid #DBE524;
+    border:1px solid #E0EB25;
+    color:#E0EB25;
 }
 
 
@@ -1145,6 +1146,11 @@ td:hover{
 }
 
 .math_marks {
+    padding: 1px;
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+sup {
+    font-size: 0.8em;
 }

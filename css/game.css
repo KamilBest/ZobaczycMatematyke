@@ -17,140 +17,12 @@ header .full-screen {
     min-height: 100vh;
 }
 
-/* Main content area */
 
-#content {
-  margin: 80px 70px;
-  text-align: center;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-/* Header/footer boxes */
-
-.wideBox {
-  clear: both;
-  text-align: center;
-  margin: 70px;
-  padding: 10px;
-  background: #ebedf2;
-  border: 1px solid #333;
-}
-
-.wideBox h1 {
-  font-weight: bold;
-  margin: 20px;
-  color: #666;
-  font-size: 1.5em;
-}
-
-/* Slots for final card positions */
-
-#cardSlots {
-  margin: 50px auto 0 auto;
-  background: #ddf;
-}
-
-/* The initial pile of unsorted cards */
-
-#cardPile {
-  margin: 0 auto;
-  background: #ffd;
-}
-
-#cardSlots, #cardPile {
-  width: 910px;
-  height: 120px;
-  padding: 20px;
-  border: 2px solid #333;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-}
-
-/* Individual cards and slots */
-
-#cardSlots div, #cardPile div {
-  float: left;
-  width: 58px;
-  height: 78px;
-  padding: 10px;
-  padding-top: 40px;
-  padding-bottom: 0;
-  border: 2px solid #333;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  margin: 0 0 0 10px;
-  background: #fff;
-}
-
-#cardSlots div:first-child, #cardPile div:first-child {
-  margin-left: 0;
-}
-
-#cardSlots div.hovered {
-  background: #aaa;
-}
-
-#cardSlots div {
-  border-style: dashed;
-}
-
-#cardPile div {
-  background: #666;
-  color: #fff;
-  font-size: 50px;
-  text-shadow: 0 0 3px #000;
-}
-
-#cardPile div.ui-draggable-dragging {
-  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-}
-
-/* Individually coloured cards */
-
-#card1.correct { background: red; }
-#card2.correct { background: brown; }
-#card3.correct { background: orange; }
-#card4.correct { background: yellow; }
-#card5.correct { background: green; }
-#card6.correct { background: cyan; }
-#card7.correct { background: blue; }
-#card8.correct { background: indigo; }
-#card9.correct { background: purple; }
-#card10.correct { background: violet; }
-
-
-/* "You did it!" message */
-#successMessage {
-  position: absolute;
-  left: 580px;
-  top: 250px;
-  width: 0;
-  height: 0;
-  z-index: 100;
-  background: #dfd;
-  border: 2px solid #333;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-  padding: 20px;
-}
 /*---------------------------------------
-SECTION:  znajdz_pierwiastki
+SECTION:  game
 -----------------------------------------*/
 
-#znajdz_pierwiastki {
+#game {
     min-height: 100vh;
     padding-top: 100px;
     padding-bottom: 80px;
@@ -158,30 +30,30 @@ SECTION:  znajdz_pierwiastki
     width: 100%;
 }
 
-#znajdz_pierwiastki h2 {
+#game h2 {
     margin-bottom: 20px;
 }
 
-#znajdz_pierwiastki .left-align {
+#game .left-align {
     text-align: left;
     margin-bottom: 50px;
 }
 
-#znajdz_pierwiastki .left-align p {
+#game .left-align p {
     display: block;
     float: none;
     margin-top: 50px;
 }
 
-#znajdz_pierwiastki .left-align .feature-list {
+#game .left-align .feature-list {
     margin-top: 40px;
 }
 
-#znajdz_pierwiastki .left-align .feature-list li {
+#game .left-align .feature-list li {
     margin-bottom: 26px;
 }
 
-#znajdz_pierwiastki .left-align .feature-list li i {
+#game .left-align .feature-list li i {
     margin-right: 10px;
     vertical-align: inherit;
 }
@@ -224,7 +96,6 @@ input:checked{
 .center-block {
     display: table-cell;
     vertical-align: middle;
-
 }
 
 .padding {
@@ -236,14 +107,47 @@ input:checked{
     cursor: pointer;
 }
 .instruction:hover{
-    color:#DBE524;
+    color:#E0EB25;
 
 }
 
-.cyfry td{
-    background:#76C424;
+span{
+    font-weight: bold;
+    color: #F0F2F2;
 }
 
-.cyfry {
-    background: #76C424;
+/*  TABELA DO SCHEMATU HORNERA*/
+
+
+.tytul{
+
+    font-weight: bold;
 }
+
+/*TABELA Z CYFRAMI (DRAGGABLE ITEMS) */
+
+td:hover{
+    cursor: default;
+}
+#Cyfry td {
+
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #E0EB25;
+    font-size:35px;
+    font-weight: bold;
+    color:#fff;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    text-align: center;
+}
+#Cyfry td:hover{
+    cursor: move;
+}
+
+.table-view {
+    display: table;
+}
+
+

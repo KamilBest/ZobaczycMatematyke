@@ -108,27 +108,38 @@ STYLESHEETS
                         <span class="cd-label">Autor</span>
                     </a>
                 </li>
-                 <li>
+                <li>
                     <a href="#horner_theory" data-number="6">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Teoria</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#equations_normal" data-number="7">
+                    <a href="#value_calculation_normal" data-number="7">
                         <span class="cd-dot"></span>
-                        <span class="cd-label">Równania i nierówności - teoria</span>
+                        <span class="cd-label">Wartość wielomianu</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#equation_tables" data-number="8">
+                    <a href="#value_calculation_tables" data-number="8">
                         <span class="cd-dot"></span>
-                        <span class="cd-label">Równania i nierówności - tabelka</span>
+                        <span class="cd-label">Wartość wielomianu - tabelka</span>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#division_theory" data-number="9">
+                    <a href="#equations" data-number="9">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Równania</span>
+                    </a>
+                </li>
+                   <li>
+                    <a href="#inequalities" data-number="10">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Nierówności</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#division_theory" data-number="11">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Dzielenie wielomianu przez dwumian</span>
                     </a>
@@ -159,7 +170,7 @@ HEADER
                         <div class="navbar-header">
 
                             <!-- LOGO ON STICKY NAV BAR -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navigation">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -168,13 +179,13 @@ HEADER
                             <a class="navbar-brand" href="#home">
                                 <img src="images/logo2.svg" alt="Powrót na stronę główną.">
                             </a>
+
                         </div>
 
                         <!-- NAVIGATION LINKS -->
                         <div class="navbar-collapse collapse" id="top-navigation">
                             <ul class="nav navbar-nav navbar-right main-navigation">
-                                <li><a href="#home">Strona główna</a>
-                                </li>
+
                                 <li>
                                     <a href="#definition">Definicja</a>
                                 </li>
@@ -183,7 +194,9 @@ HEADER
                                 <li><a href="#horner_theory">Teoria</a>
                                 </li>
 
-                                <li><a href="#equations_inequalities">Równania i nierowności</a>
+                                <li><a href="#value_calculation">Obliczanie wartości</a>
+                                </li>
+                                <li><a href="#equations_inequalities">Równania i Nierówności</a>
                                 </li>
                                 <li><a href="#division_polynomial_by_binomial">Dzielenie</a>
                                 </li>
@@ -431,12 +444,13 @@ FEATURES
                 <div class="feature">
 
                     <!-- ICON -->
-                    <div class="icon-container">
-                        <div class="icon">
-                            <span class="icon-divide"></span>
+                    <a href="#division_polynomial_by_binomial">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-divide"></span>
+                            </div>
                         </div>
-                    </div>
-
+                    </a>
                     <!-- FEATURE HEADING AND DESCRIPTION -->
                     <div class="fetaure-details">
                         <h4 class="main-color">Dzielenie</h4>
@@ -453,12 +467,13 @@ FEATURES
                 <div class="feature">
 
                     <!-- ICON -->
-                    <div class="icon-container">
-                        <div class="icon">
-                            <span class="icon-checkbox"></span>
+                    <a href="game.html">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <span class="icon-checkbox"></span>
+                            </div>
                         </div>
-                    </div>
-
+                    </a>
                     <!-- FEATURE HEADING AND DESCRIPTION -->
                     <div class="fetaure-details">
                         <h4 class="main-color">Zagraj</h4>
@@ -611,8 +626,8 @@ DIVISION THEOREM
     <div class="colored-line-left margin-top yellow">
     </div>
     </div>
-<h4 class="white-text">
-    </br></br>Przykładowe zadanie</h4>
+<h3 class="white-text">
+    </br></br>Przykładowe zadanie</h3>
 <p>ZADANIE</br>Udowodnij, że jeśli <img src="images/division_images/divisibility/pw_s(x).svg">, to wielomian <img src="images/division_images/divisibility/pw_rownanie.svg"> jest podzielny przez wielomian <img src="images/division_images/divisibility/pw_q(x).svg">
 </br></br>Rozwiązanie:</br>
 Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był podzielny przez Q(x) musi być spełniony warunek:</br><img src="images/division_images/divisibility/p(x)=q(x)*s(x).svg">
@@ -630,7 +645,7 @@ Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był po
 </div>
 <div class="colored-line-left margin-top yellow">
 </div>
-<h4 class="white-text"> </br></br>Przykładowe zadanie</h4>
+<h3 class="white-text"> </br></br>Przykładowe zadanie</h3>
 <p>ZADANIE</br>Sprawdź czy wielomian <img src="images/division_images/tw_bezoutea/bezout_rown.svg"> jest podzielny przez dwumian <img src="images/division_images/tw_bezoutea/x-1.svg">.
 </br></br>Rozwiązanie:</br>
 Zgodnie z twierdzeniem Bézouta jeśli wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span> to liczba <span class="math_marks">1</span> jest pierwiastkiem wielomianu (wielomian przyjmuje dla argumentu x=1 wartość 0). </br>Sprawdźmy to:
@@ -646,13 +661,13 @@ Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny
 <!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
 
 
-<!-- equations and inequalities SECTION
+<!-- VALUE CALCULATION SECTION
 ==============================
 -->
-<section id="equations_inequalities">
+<section id="value_calculation">
 
-    <!-- EQUATIONS_NORMAL SECTION -->
-    <section id="equations_normal" class="change-dot app-brief deep-dark-bg">
+    <!-- VALUE CALCULATION NORMAL SECTION -->
+    <section id="value_calculation_normal" class="change-dot app-brief deep-dark-bg">
         <div class="container">
             <!-- BRIEF -->
             <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
@@ -672,22 +687,22 @@ Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny
                 zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu (w punkcie) dla danego argumentu <span class="math_marks">x=t</span>  oraz redukuje ilość potrzebnych mnożeń.
                 </p>
         </div>
-    <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-        <h3 class="white-text">Przykład i wyjaśnienie</h3>
-        <img class="method_explanation" src="images/method_explanation.svg"/>
-        <p class="explanation">
-            Obliczanie wartości wielomianu dla argumentu t=1.
+        <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <h3 class="white-text">Przykład i wyjaśnienie</h3>
+            <img class="method_explanation" src="images/method_explanation.svg"/>
+            <p class="explanation">
+                Obliczanie wartości wielomianu dla argumentu t=1.
+            </br>
+        1) Wyłączamy wspólny czynnik przed nawias, w tym przypadku jest to x.
         </br>
-    1) Wyłączamy wspólny czynnik przed nawias, w tym przypadku jest to x.
+    2) Wyłączamy wspólny czynnik z trzech pierwszych elementów w nawiasie.
     </br>
-2) Wyłączamy wspólny czynnik z trzech pierwszych elementów w nawiasie.
-</br>
 3) Podstawiamy za x podaną wartość t, czyli 1.</br>Otrzymujemy wynik.<span class="icon-what trigger question_mark" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Dzięki zastosowaniu schematu Hornera uzyskujemy znaczną redukcję mnożeń. </br> W zwykłej postaci: </br>W(x)=7&bull;x&bull;x&bull;x&bull;x+3&bull;x&bull;x&bull;x+5&bull;x&bull;x+9&bull;x+1,</br> jest to 10 mnożeń i 4 dodawania.
     </br></br>W postaci schematu Hornera:</br>
     W(x)=((7&bull;x+3)&bull;x+5)&bull;x+9)&bull;x+1,</br> są to 4 mnożenia i 4 dodawania.</br> To samo dzięki regule przemienności mnożenia możemy zapisać również w ten sposób: </br>W(x)=x&bull;(x&bull;(x&bull;(7x+3)+5)+9)+1. " title="Korzyści"></span>
 </p>
 </div>
- <p>Częściej spotykany jest jednak zapis w tabelce, który znajdziesz niżej.</h3>
+<p>Częściej spotykany jest jednak zapis w tabelce, który znajdziesz niżej.</h3>
 
 <!-- /ENDBRIEF -->
 </div>
@@ -695,13 +710,13 @@ Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny
 <!-- /END EQUATIONS NORMAL -->
 </section>
 
-<!-- EQUATION_TABLES SECTION -->
-<section id="equation_tables" class="change-dot app-brief dark-bg">
+<!--VALUE CALCULATION ABLES SECTION -->
+<section id="value_calculation_tables" class="change-dot app-brief dark-bg">
     <!-- TABELKI -->
     <div class="container">
         <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
             <h3 class="white-text">Tabelka do obliczania wartości wielomianu</h3>
-            <p class="def">Najczęściej jednak do obliczania wartości wielomianu o argumencie x=t używa się zapisu w tabelce, dzięki której możemy obliczyć wartość wielomianu. Podobną tabelkę stosuje się przy dzieleniu wielomianu przez dwumian. </br></br>
+            <p class="def">Najczęściej jednak do obliczania wartości wielomianu o argumencie x=t używa się zapisu w tabelce, dzięki której obliczymy wartość wielomianu o wiele szybciej. Podobną tabelkę stosuje się przy dzieleniu wielomianu przez dwumian. </br></br>
 
     Poniższa tabelka przedstawia jak uzupełnia się pola dla wielomianu W<sub>n</sub>(x) i argumencie x=t (zapis ogólny).</p>
 
@@ -726,7 +741,7 @@ Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny
             ...
         </td>
         <td>
-            b<sub>1</sub>=b<sub>n-2</sub>&bull;t+a<sub>1</sub>
+            b<sub>1</sub>=b<sub>n-2,3...</sub>&bull;t+a<sub>1</sub>
         </td>
         <td>
             b<sub>0</sub>=b<sub>1</sub>&bull;t+a<sub>0</sub>
@@ -756,27 +771,27 @@ n - stopień wielomianu.</br>b<sub>0</sub> jest wartością wielomianu dla argum
 <table class="horners_method">
     <tr class="up">
         <td class="empty-cell">Schemat Hornera</td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>0</sub>=7, ponieważ współczynnik przy najwyższej potędze, czyli w tym przypadku x<sup>4</sup> wynosi 7." title="a<sub>0</sub> - współczynnik przy najwyższej potędze">7
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>n</sub>=7, ponieważ współczynnik przy najwyższej potędze, czyli w tym przypadku x<sup>4</sup> wynosi 7." title="a<sub>n</sub> - współczynnik przy najwyższej potędze">7
         </td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>1</sub>=3, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>4</sup>, to x<sup>3</sup>, czyli w tym przypadku 3x<sup>3</sup> wynosi 3." title="a<sub>1</sub>">3
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>n-1</sub>=3, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>4</sup>, to x<sup>3</sup>, czyli w tym przypadku 3x<sup>3</sup> wynosi 3." title="a<sub>n-1</sub>">3
         </td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>2</sub>=5, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>3</sup>, to x<sup>2</sup>, czyli w tym przypadku 5x<sup>2</sup> wynosi 5." title="a<sub>2</sub>">5
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br> Przykład: </br><img src='images/example_equation_bw.svg'></br> a<sub>n-2</sub>=5, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>3</sup>, to x<sup>2</sup>, czyli w tym przypadku 5x<sup>2</sup> wynosi 5." title="a<sub>n-2</sub>">5
         </td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Przedostatni element ciągu jest nim, (o ile istnieje) współczynnik stojący przy x. </br><img src='images/example_equation_bw.svg'></br> a<sub>n-1</sub>=9, ponieważ współczynnik przy x wynosi 9." title="a<sub>n-1</sub>">9</td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Element nie stojący przy x. </br> Przykład: </br><img src='images/example_equation_bw.svg'> </br> wyraz wolny = 1." title="a<sub>n</sub> - wyraz wolny wielomianu">1</td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Przedostatni element ciągu jest nim, (o ile istnieje) współczynnik stojący przy x. </br><img src='images/example_equation_bw.svg'></br> a<sub>1</sub>=9, ponieważ współczynnik przy x wynosi 9." title="a<sub>1</sub>">9</td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Element nie stojący przy x. </br> Przykład: </br><img src='images/example_equation_bw.svg'> </br> wyraz wolny = 1." title="a<sub>0</sub> - wyraz wolny wielomianu">1</td>
     </tr>
     <!-- DOLNY WIERSZ -->
     <tr class="down">
         <td class="up trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="t - argument, dla którego obliczamy wartość wielomianu." title="x=t">x=1</td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Przepisujemy wartość z górnej komórki tabeli." title="b<sub>0</sub>=a<sub>0</sub>">7
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Przepisujemy wartość z górnej komórki tabeli." title="b<sub>n</sub>=a<sub>n</sub>">7
         </td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1&bull;7+3=10" title="b<sub>1</sub>=b<sub>0</sub>t+a<sub>1</sub>">10
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1&bull;7+3=10" title="b<sub>n-1</sub>=b<sub>n</sub>t+a<sub>n-1</sub>">10
         </td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1&bull;10+5" title=" b<sub>n-1</sub>=b<sub>n-3</sub>t+a<sub>n-2</sub>">15
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1&bull;10+5" title=" b<sub>n-2</sub>=b<sub>n-1</sub>t+a<sub>n-2</sub>">15
         </td>
-        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1&bull;15+9=24" title="b<sub>n</sub>=b<sub>n-2</sub>t+a<sub>n-1</sub>">24
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="1&bull;15+9=24" title="b<sub>1</sub>=b<sub>n-2</sub>t+a<sub>1</sub>">24
         </td>
-        <td class="trigger result" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Wynik: 1&bull;24+1=25" title="b<sub>n</sub>=b<sub>n-1</sub>t+a<sub>n</sub>">25
+        <td class="trigger result" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Wynik: 1&bull;24+1=25" title="b<sub>0</sub>=b<sub>1</sub>t+a<sub>0</sub>">25
         </td>
     </tr>
 </table>
@@ -788,9 +803,131 @@ Jak widać wynik wyszedł taki sam jak poprzednio.
 </div>
 <!-- /END CONTAINER -->
 </section>
-<!-- /END EQUATION_TABLES-->
+<!-- /END VALUE CALCULATION _TABLES-->
 </section>
-<!-- /END EQUATION SECTION-->
+<!-- /END VALUE CALCULATION SECTION-->
+
+
+
+
+
+
+<section id="equations_inequalities">
+
+
+ <section id="equations" class="change-dot app-brief deep-dark-bg">
+     <div class="container">
+            <!-- BRIEF -->
+            <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <h2 class="white-text">Rozwi<span class="pl_znaki">ą</span>zywanie równa<span class="pl_znaki">ń</span> schematem Hornera</h2>
+                <p>Lista kroków:</p>
+                <ul style="list-style-type:disc">
+                    <li>
+                    1. Korzystając z twierdzenia Bézouta znaleźć pierwiastek wielomianu (argument, dla którego wartość wynosi 0). Należy sprawdzić podzielniki wyrazu wolnego obliczając dla nich wartość np. W(1),W(2) itd. dopóki nie znajdziemy pierwiastka wielomianu.
+                    </li>
+                    <li>
+                    2. Z otrzymanego pierwiastka tworzymy dwumian i wykonujemy dzielenie w tabelce.
+                        np. Jeżeli pierwiastkiem wielomianu jest x=1 (W(1)=0), to dzielimy przez dwumian (x-1).
+
+                    </li>
+                    <li>3. Tworzymy równanie: (wynik z dzielenia) &bull; (dwumian)=0 </li>
+                    <li>4. Rozwiązujemy równanie.</li>
+                </ul>
+                <div class="colored-line-left margin-top">
+</div>
+                <h3 class="white-text"></br>Przykładowe zadanie</h3>
+         <p>ZADANIE</br>
+     Rozwiąż równanie:</br>
+    <span class="math_marks">x<sup>3</sup>−3x+2=0</span>
+</br></br>
+wyraz wolny: 2, podzielniki wyrazu wolnego {1, −1, 2, −2}
+</br>
+<span class="math_marks yellow">W(1)=1<sup>3</sup>-3&bull;1+2=1-3+2=0</span> (Nie muszę dalej sprawdzać, ponieważ W(1)=0, czyli x=1 jest pierwiastkiem.)
+<span class="math_marks">
+    </br>
+W(-1)=-1<sup>3</sup>-3&bull;(-1)+2=-1+3+2=4
+    </br>
+W(2)=2<sup>3</sup>-3&bull;2+2=8-6+2=4
+    </br>
+W(-2)=-2<sup>3</sup>-3&bull;(-2)+2=-8+6+2=0
+</span> (-2 też jest pierwiastkiem, więc od nas zależy, który wybierzemy.)
+</br></br>
+Zatem aby rozwiązać równanie musimy podzielić <span class="math_marks">x<sup>3</sup>−3x+2=0</span> przez dwumian <span class="math_marks">(x-1)</span>
+</br>Aby to zrobić tworzymy taką samą tabelkę, którą stosowaliśmy do obliczania wartości wielomianu dla podanego argumentu.
+</br>
+<table class="overall_record">
+    <tr class="up">
+        <td class="empty-cell">W(x)</td>
+        <td>1
+        </td>
+        <td>0
+        </td>
+        <td>-3</td>
+        <td>2</td>
+
+    </tr>
+    <tr class="down">
+        <td class="up">1</td>
+        <td>
+           1
+        </td>
+        <td>1</td>
+
+        <td>
+           -2
+        </td>
+        <td>
+           0
+        </td>
+    </tr>
+</table>
+</br>
+Wynik z dzielenia:</br>
+<span class="math_marks">x<sup>2</sup>+x−2</span></br> (schemat Hornera obniża stopień o 1, dla większych wielomianów musielibyśmy zastosować tabelkę kilkukrotnie)
+</br>
+Zatem otrzymujemy równanie: </br>
+<span class="math_marks">(x−1)(x2+x−2)=0</span>
+</br>Jak już wcześniej obliczyliśmy x<sub>1</sub>=1, teraz pozostaje nam policzyć deltę.
+</br>
+Δ=9, √Δ=3 </br>
+x<sub>1</sub>=1 x<sub>2</sub>=-2</br>
+I mamy wynik! Pierwiastkami równania  <span class="math_marks">x<sup>3</sup>−3x+2=0</span> są:
+</br><span class="math_marks yellow">x<sub>1</sub>=1(dwukrotny),  x<sub>2</sub>=-2.</span>
+</br>
+
+
+
+</p>
+
+
+         </div>
+     </div>
+
+
+    </section>
+
+
+
+
+     <section id="inequalities" class="change-dot app-brief dark-bg">
+
+    </section>
+
+
+
+</section>
+
+
+    <!-- /END equations and inequalities SECTION-->
+
+
+
+
+
+
+
+
+
 
 <!-- DZIELENIE -->
 <section id="division_polynomial_by_binomial">
@@ -831,7 +968,6 @@ Jak widać wynik wyszedł taki sam jak poprzednio.
 
 
 
-    <!-- /END equations and inequalities SECTION-->
     <a href="#home" class="cd-top">Top</a>
 
     <!-- =========================
