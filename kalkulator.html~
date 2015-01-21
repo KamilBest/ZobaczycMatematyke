@@ -39,10 +39,11 @@ STYLESHEETS
         <link rel="stylesheet" href="css/graphs_mathlib.css">
 
         <!-- DOT_NAVIGATION -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/dot-nav.css">
         <!-- Resource style -->
 
-         <!-- WEB FONTS -->
+        <!-- WEB FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
 
         <!-- CAROUSEL AND LIGHTBOX -->
@@ -65,6 +66,7 @@ STYLESHEETS
 <!-- RESPONSIVE FIXES -->
         <link rel="stylesheet" href="css/responsive.css">
 
+        <!-- JQUERY -->
 
 
 
@@ -76,7 +78,7 @@ BODY
 
 ############################
 -->
-    <body>
+    <body style="overflow-y:hidden;">
         <nav id="cd-vertical-nav">
             <ul>
                 <li>
@@ -179,21 +181,16 @@ HEADER
 
                             <!-- WELCOM MESSAGE -->
                             <i class="icon-collapse"></i>
-                            <h1 class="intro">Kalkulator równań wielomianowych</h1>
+                            <h1 class="intro">Kalkulator</h1>
                             <hr>
                             <h5>rozwiązywanie równań</h5>
 
 
-                            <!-- BUTTON --><a href="#znajdz_pierwiastki">
-                            <div class="scroll_icon">
-        <p class="text">SCROLL</p>
+                            <!-- BUTTON -->
+                            <div class="buttons" id="download-button">
+                                <a href="#znajdz_pierwiastki" class="btn btn-default btn-lg standard-button"><i class="icon-scroll"></i>Przejdź dalej</a>
 
-                                    <div class="mouse"><div class="wheel"></div></div>
-                                    <div><span class=" span_class unu"></span> <span class=" span_class doi"></span>
-    <span class=" span_class trei"></span></div>
-    </div>
-                                     </a>
-
+                            </div>
 
                             <!-- /END BUTTONS -->
 
@@ -216,12 +213,12 @@ WSTĘP
 Obliczanie pierwiastkow SECTION
 ============================== -->
     <section class="app-brief deep-dark-bg change-dot" id="znajdz_pierwiastki">
-
+        <div class="container">
+         <div class="col-md-12">
         <h2 class="white-text ">Obliczanie pierwiastków wielomianu.</h2>
-        <p class="white-text padding"> Podaj współczynniki wielomianu (maksymalnie 3-stopnia), wciśnij "rozwiąż" po wpisaniu.</p>
+        <p class="white-text padding"> Podaj współczynniki wielomianu (maksymalnie 3-stopnia), wciśnij "Oblicz" po wpisaniu.</p>
 
-
-         <script>
+        <script>
             function solveCubicEquation(a, b, c, d) {
                 var zero = 0.0000001,
                     //JavaScript fail to evaluate cube root from negative number - NaN
@@ -290,22 +287,32 @@ Obliczanie pierwiastkow SECTION
         </script>
 
         <div class="polynomial-equation">
-<input type="number" id="input3" value="1"/>
-x<sup>3</sup>+
-<input type="number" id="input2" value="5"/>
-x<sup>2</sup>+
-<input type="number" id="input1" value="8"/>
-x+
-<input type="number" id="input0" value="4"/>
-
-<input type="button" id="button" value="rozwiąż" onclick="solvePolynomialEquation();"/><span class="icon-what instruction trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Obliczanie prostych wielomianów 3 stopnia. </br>
+            <input type="number" value="1" /> x<sup>3</sup> + <input type="number" value="3" /> x<sup>2</sup> + <input type="number" value="0" /> x + <input type="number" value="-4" /> = 0
+            <input type="button" value="Oblicz" onclick="solvePolynomialEquation();" /> <span class="icon-what instruction trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Obliczanie prostych wielomianów 3 stopnia. </br>
                 Rozwiązania są oddzielone przecinkami.</br>
                 Czasami może wystąpić problem z zaokrągleniem liczb, dlatego np. liczba 1.0000000000000004 może oznaczać 1.</br>
-                Symbol NaN oznacza, że wprowadzone dane nie są liczbą." title="Uwagi">ważne</span></div>
-        <div class="padding">Rozwiązania: <span id="polynomial-solution"></br>   </span></div>
-    <h3 class="white-text"></br>Wykres rozwiązania: <br></h3>
-<div id="canvas"></div>
+                Symbol NaN oznacza, że wprowadzone dane nie są liczbą." title="Uwagi"></span>
+            <div class="padding">Rozwiązania: <span id="polynomial-solution"></br>   </span></div>
+                         <hr class="yellow margin-top">
 
+             <h2 class="white-text ">Sprawd<span class="pl_znaki">ź</span> jak wygl<span class="pl_znaki">ą</span>da wykres wielomianu.</h2>
+             <p>UWAGA!</br>
+        Współczynniki należy wpisywać od końca, jeżeli nie ma współczynnika, wpisz 0.</br>
+    Przykład:</br>
+Dla wielomianu <span class="math_marks">x<sup>3</sup>-8</span> powinieneś wpisać: </br>-8,0,0,3</br>Wpisz współczynniki:
+
+
+        </p>
+                 <input type="text" id="input" value="-4,0,3,1"/>
+            <input type="button" id="button" value="rysuj"/>
+             </div>
+
+
+        <div class="graphs">
+
+            <div id="canvas"></div>
+        </div>
+        </div>
 </div>
     </section>
 

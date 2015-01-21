@@ -42,8 +42,7 @@ STYLESHEETS
         <link rel="stylesheet" href="css/dot-nav.css">
         <!-- Resource style -->
 
-        <!-- WEB FONTS -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
 
         <!-- CAROUSEL AND LIGHTBOX -->
         <link rel="stylesheet" href="css/owl.theme.css">
@@ -64,8 +63,8 @@ STYLESHEETS
 <!-- RESPONSIVE FIXES -->
         <link rel="stylesheet" href="css/responsive.css">
 
-        <!-- JS -->
-
+        <!-- WEB FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
 
     </head>
     <!-- END HEAD -->
@@ -115,35 +114,43 @@ STYLESHEETS
                     </a>
                 </li>
                 <li>
-                    <a href="#value_calculation_normal" data-number="7">
+                    <a href="#division_theory" data-number="7">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Dzielenie wielomianu przez dwumian</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#value_calculation_normal" data-number="8">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Wartość wielomianu</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#value_calculation_tables" data-number="8">
+                    <a href="#value_calculation_tables" data-number="9">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Wartość wielomianu - tabelka</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#equations" data-number="9">
+                    <a href="#factorization" data-number="10">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">Rozkład</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#equations" data-number="11">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Równania</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#inequalities" data-number="10">
+                    <a href="#inequalities" data-number="12">
                         <span class="cd-dot"></span>
                         <span class="cd-label">Nierówności</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#division_theory" data-number="11">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">Dzielenie wielomianu przez dwumian</span>
-                    </a>
-                </li>
+
+
             </ul>
         </nav>
 
@@ -202,7 +209,11 @@ HEADER
                                 </li>
                                 <li><a href="kalkulator.html">kalkulator</a>
                                 </li>
-                                <li><a href="game.html">zagraj</a>
+                                <li>
+                                    <a href="game.html">zagraj</a>
+                                </li>
+                                <li>
+                                    <a href="info.html"o stronie</a>
                                 </li>
                             </ul>
                         </div>
@@ -225,7 +236,7 @@ HEADER
                     <!-- /END LOGO ON HEADER -->
 
 
-                    <div class="row">
+                    <div class="container">
                         <div class="col-md-8 col-md-offset-2">
 
                             <!-- HEADING AND BUTTONS -->
@@ -233,64 +244,74 @@ HEADER
 
                                 <!-- WELCOM MESSAGE -->
                                 <i class="icon-collapse"></i>
-                                <h1 class="intro">Poznaj schemat Hornera.</h1>
+                                <h1 class="intro">Zapoznaj się ze schematem Hornera.</h1>
                                 <hr>
                                 <h5>Nauka w nowym stylu.</h5>
 
 
                                 <!-- BUTTON -->
-                                <div class="buttons" id="download-button">
-                                    <a href="#introduction" class="btn btn-default btn-lg standard-button"><i class="icon-scroll"></i>Przejdź dalej</a>
+                                <a href="#introduction">
+                                    <div class="scroll_icon">
+                                        <p class="text">SCROLL</p>
 
-                                </div>
-
+                                        <div class="mouse"><div class="wheel"></div></div>
+                                        <div><span class=" span_class unu"></span> <span class=" span_class doi"></span>
+                                            <span class=" span_class trei"></span></div>
+                                    </div>
+                                </a>
                                 <!-- /END BUTTONS -->
 
                             </div>
+
                             <!-- /END HEADNING AND BUTTONS -->
 
                         </div>
                     </div>
+
+
                     <!-- /END ROW -->
 
+
                 </div>
-                <!-- /END CONTAINER -->
             </div>
-            <!-- /END COLOR OVERLAY -->
+            <!-- /END CONTAINER -->
+            </div>
+
+        <!-- /END COLOR OVERLAY -->
         </header>
-        <!-- /END HEADER -->
-        <!-- Linia oddzielająca sekcje
+    <!-- /END HEADER -->
+    <!-- Linia oddzielająca sekcje
 <section class="separation_line">
 <div class="sep_line"></div>
 </section>
 -->
-        <!-- /END Oddzielenie -->
-        <!--
+    <!-- /END Oddzielenie -->
+    <!--
 WPROWADZENIE
 ============================== -->
-        <section class="app-brief deep-dark-bg change-dot" id="introduction">
+    <section class="app-brief deep-dark-bg change-dot" id="introduction">
 
-            <div class="container">
+        <div class="container">
 
-                <div class="row">
+            <div class="row">
 
-                    <!-- ZESZYT -->
-                    <div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-                        <div class="graphics">
-                            <img src="images/zeszyt2.png" alt="">
-                        </div>
+                <!-- ZESZYT -->
+                <div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                    <div class="graphics">
+                        <img src="images/zeszyt2.png" alt="">
                     </div>
+                </div>
 
-                    <!-- RIGHT SIDE WITH BRIEF -->
-                    <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <!-- RIGHT SIDE WITH BRIEF -->
+                <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
-                        <!-- SECTION TITLE -->
-                        <h2 class="white-text">Schemat Hornera</h2>
+                    <!-- SECTION TITLE -->
+                    <h2 class="white-text">Schemat Hornera</h2>
 
-                        <div class="colored-line-left">
-                        </div>
-                        <p>
-                    Wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz z zastosowaniem go w zadaniach, stąd pomysł na jego przybliżenie.
+                    <div class="colored-line-left">
+                    </div>
+                    <p>
+                        Wielu uczniów ma problemy z prawidłowym zrozumieniem tego terminu oraz z zastosowaniem go w zadaniach, stąd pomysł na jego przybliżenie.
                     </br>
                 </br>
             W zadaniach maturalnych często występują zadania, w których należy zastosować ten schemat. Dzięki tej stronie nie będziesz miał problemu z ich rozwiązywaniem.
@@ -370,9 +391,9 @@ FEATURES
 
                     <!-- FEATURE HEADING AND DESCRIPTION -->
                     <div class="fetaure-details">
-                        <h4 class="main-color">Autor</h4>
+                        <h4 class="main-color">W.G. Horner</h4>
                         <p>
-                            Dowiedz się czegoś o Williamie George'u Hornerze, twórcy schematu.
+                            Dowiedz się kim był William George Horner, autor schematu.
                         </p>
                     </div>
 
@@ -529,31 +550,32 @@ TŁO ODDZIELAJĄCE
             <!-- BRIEF -->
             <div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
+
                 <!-- SECTION TITLE -->
                 <h2 class="white-text">Definicja</h2>
-                <p class="def">Schemat Hornera - jest to sposób obliczania wartości wielomianu dla danej wartości argumentu <span class="simple-tooltip" title="t - argument, dla której podany wielomian osiąga jakąś wartość"> x=t.</span> wykorzystujący <span class="simple-tooltip" title="W postaci 'zwykłej' jest to ok. O &bull; (n^2) mnożeń,w postaci Hornera jest to n mnożeń.">minimalną liczbę mnożeń,</span> jest to również algorytm dzielenia wielomianu W(x) przez  <span class="simple-tooltip" title="Dwumian - wyrażenie algebraiczne składające się z dwóch jednomianów połączonych znakiem dodawania lub odejmowania. (np. x-3)">dwumian x-t</span></p>
-                <br>
-                <div class="colored-line-left">
-                </div>
-                <br>
-                <h2 class="white-text">Zastosowanie</h2>
-
-                <ul class="def" style="list-style-type:disc">
-                    <li>Wyznaczaniu wartości wielomianu dla podanego argumentu.</li>
-                    <li>Rozkład wielomianu.</li>
-                    <li>Metoda szukania rozwiązań równań i nierówności.</li>
-                    <li>Sprawdzenie krotności pierwiastka wielomianu.</li>
-                    <li>Dzielenie wielomianu przez dwumian.</li>
-                    <li>Zmiana systemu pozycyjnego liczby (informatyka).</li>
-                </ul>
-
-            </div>
-            <!-- /ENDBRIEF -->
+                <p class="def">Schemat Hornera - jest to sposób obliczania wartości wielomianu dla danego argumentu<span class="simple-tooltip" title="t - argument, dla której podany wielomian osiąga jakąś wartość"> x=t.</span></br>Algorytm ten wykorzystuje <span class="trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="W zwykłej postaci jest to ok. O&bull;(n<sup>2</sup>) mnożeń, dzięki zastosowaniu schematu Hornera jest to tylko n mnożeń." title="b<sub>0</sub>=b<sub>1</sub>t+a<sub>0</sub>">minimalną liczbę mnożeń.</span>Jest to również algorytm dzielenia wielomianu W(x) przez  <span class="simple-tooltip" title="Dwumian - wyrażenie algebraiczne składające się z dwóch jednomianów połączonych znakiem dodawania lub odejmowania. (np. x-5)">dwumian w postaci (x-t)</span></p>
+        <br>
+        <div class="colored-line-left">
         </div>
-        <!-- /END ROW -->
+        <br>
+        <h2 class="white-text">Zastosowanie</h2>
+
+        <ul class="def" style="list-style-type:disc">
+            <li>Dzielenie wielomianu przez dwumian.</li>
+            <li>Wyznaczaniu wartości wielomianu dla podanego argumentu.</li>
+            <li>Rozkład wielomianu.</li>
+            <li>Metoda szukania rozwiązań równań i nierówności.</li>
+            <li>Sprawdzenie krotności pierwiastka wielomianu.</li>
+            <li>Zmiana systemu pozycyjnego liczby (informatyka).</li>
+        </ul>
 
     </div>
-    <!-- /END CONTAINER -->
+    <!-- /ENDBRIEF -->
+    </div>
+<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
 
 </section>
 <!-- /END DEFINICJA SECTION-->
@@ -578,7 +600,7 @@ AUTOR SECTION
                 </div>
 
                 <p class="def">
-                    Brytyjski matematyk. W wieku 14 lat był asystentem nauczyciela w szkole w Bristolu, następnie w 1809 założył własną szkołę w Bath. Przypisuje się mu opracowanie schematu pozwalającego łatwo obliczać wartość wielomianu, jednak był już znany Newtonowi, Ruffiniemu i matematykom chińskim w XII wieku. W 1834 opatentował zoetrop.
+                    Brytyjski matematyk. W wieku 14 lat został asystentem nauczyciela w szkole w Bristolu. W 1809 założył własną szkołę w Bath. Przypisuje się mu opracowanie algorytmu nazywanego dziś schematem Hornera pozwalającego łatwo obliczać wartość wielomianu, który znany był Chińczykom pięćset lat wcześniej. W 1834 opatentował  <span class="trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" title="Zoetrop" data-content="<img src='images/zoetrop.jpg'></br>Zoetrop - urządzenie, wykorzystujące efekt stroboskopowy.  Wewnątrz cylindra z naciętymi szczelinami zawarte są kolejne etapy ruchu (przedmiotu lub stworzenia). Po wprawieniu cylindra w ruch widok sprawia wrażenie ruchomej scenki.">zoetrop.</span>
                 </p>
             </div>
             <!-- /ENDBRIEF -->
@@ -586,7 +608,7 @@ AUTOR SECTION
             <!-- HORNER IMAGE -->
             <div class=" col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
                 <div class="horner-image">
-                    <img src="images/horner.png" title="William George Horner">
+                    <img src="images/horner.jpg" title="William George Horner">
                 </div>
             </div>
             <!-- /END PHONES IMAGE -->
@@ -602,37 +624,48 @@ AUTOR SECTION
 <!-- =========================
 DIVISION THEOREM
 ===========================-->
-<section id="horner_theory" class="change-dot app-brief deep-dee-dark-bg">
+<section id="horner_theory" class="change-dot app-brief deep-dark-bg">
     <div class="container">
         <!-- BRIEF -->
         <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
             <!-- SECTION TITLE -->
-            <h2 class="white-text">Niezb<span class="pl_znaki">ę</span>dna teoria.</h2>
-            <p>Aby móc nauczyć się rozwiązywać równania i nierówności oraz dzielić wielomian przez dwumian metodą schematu Hornera musisz najpierw poznać trochę teorii.
+            <h2 class="white-text">Niezbędna teoria.</h2>
+            <p>Aby nauczyć się rozwiązywać równania i nierówności oraz dzielić wielomian przez dwumian metodą schematu Hornera musisz najpierw poznać trochę teorii.
             </p>
             <hr class="yellow margin-top">
             <div class="definition_bg">
                 <div class="definition_text">
-                    <h3 class="green-text"></br>Podzieloność wielomianów</h3>
+                    <h3 class="green-text"></br>Pierwiastek wielomianu</h3>
 
                 <p>
-                    Wielomian <img src="images/division_images/divisibility/p(x).svg"> jest podzielny przez wielomian <img src="images/division_images/divisibility/q(x).svg"> (który jest różny od <span class="trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Wielomian zerowy - wielomian, który dla danego argumentu x przyjmuje wartość 0.</br>
-                        W(x)=0" title="Wielomian zerowy">wielomianu zerowego</span>), gdy istnieje taki wielomian <img src="images/division_images/divisibility/s(x).svg">, że:</br> <img src="images/division_images/divisibility/p(x)=q(x)*s(x).svg">
-            . </p>
-    </div>
+                    Pierwiastkiem wielomianu <span class="math_marks">W(x)</span>nazywamy liczbę rzeczywistą a, dla której <span class="math_marks">W(a)=0.</span></p>
+            </div>
 
-    <div class="colored-line-left margin-top yellow">
-    </div>
-    </div>
+            <div class="colored-line-left margin-top yellow">
+            </div>
+        </div>
+        <hr class="yellow margin-top">
+        <div class="definition_bg">
+            <div class="definition_text">
+                <h3 class="green-text"></br>Podzieloność wielomianów</h3>
+
+            <p>
+                Wielomian <span class="math_marks">W(x)</span> jest podzielny przez wielomian <span class="math_marks">P(x)</span> (który jest różny od <span class="trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Wielomian zerowy - wielomian, który dla danego argumentu x przyjmuje wartość 0.</br>
+                    W(x)=0" title="Wielomian zerowy">wielomianu zerowego</span>) wtedy i tylko wtedy, gdy istnieje taki wielomian <span class="math_marks">Q(x)</span>, że:</br><span class="math_marks">W(x)=P(x)&bull;Q(x).</br></span> Wówczas wielomian <span class="math_marks">Q(x) </span>nazywamy ilorazem wielomianu <span class="math_marks">W(x)</span> przez <span class="math_marks">P(x)</span>. </br>Wielomian <span class="math_marks">P(x)</span> jest dzielnikiem wielomianu <span class="math_marks">W(x)</span>. </p>
+</div>
+
+<div class="colored-line-left margin-top yellow">
+</div>
+</div>
 <h3 class="white-text">
     </br></br>Przykładowe zadanie</h3>
-<p>ZADANIE</br>Udowodnij, że jeśli <img src="images/division_images/divisibility/pw_s(x).svg">, to wielomian <img src="images/division_images/divisibility/pw_rownanie.svg"> jest podzielny przez wielomian <img src="images/division_images/divisibility/pw_q(x).svg">
+<p>ZADANIE</br>Udowodnij, że wielomian <span class="math_marks">Q(x)=x<sup>2</sup>-4</span>, jest ilorazem wielomianu <span class="math_marks">W(x)=x<sup>3</sup>+x<sup>2</sup>-4x-4</span> przez <span class="math_marks">P(x)=x+1</span>.
 </br></br>Rozwiązanie:</br>
-Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był podzielny przez Q(x) musi być spełniony warunek:</br><img src="images/division_images/divisibility/p(x)=q(x)*s(x).svg">
-</br>Zatem:</br>
-<img src="images/division_images/divisibility/wynik.svg">
-</br>cnd.
+Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był podzielny przez Q(x) musi być spełniony warunek:</br><span class="math_marks">W(x)=P(x)&bull;Q(x)</span>
+</br>Zatem:</br><span class="math_marks">P(x)&bull;Q(x)=(x+1)(x<sup>2</sup>-4)=x<sup>3</sup>-4x+x<sup>2</sup>-4=x<sup>3</sup>+x<sup>2</sup>-4x-4=W(x)</span>
+
+</br>c.n.d.
 </p>
 <hr class="yellow margin-top">
 <div class="definition_bg">
@@ -645,60 +678,97 @@ Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był po
 <div class="colored-line-left margin-top yellow">
 </div>
 <h3 class="white-text"> </br></br>Przykładowe zadanie</h3>
-<p>ZADANIE</br>Sprawdź czy wielomian <img src="images/division_images/tw_bezoutea/bezout_rown.svg"> jest podzielny przez dwumian <img src="images/division_images/tw_bezoutea/x-1.svg">.
+<p>ZADANIE</br>Sprawdź, czy wielomian <span class="math_marks">W(x)=x<sup>3</sup>-2x<sup>2</sup>+3x-2</span> jest podzielny przez dwumian <span class="math_marks">x-1</span>.
 </br></br>Rozwiązanie:</br>
 Zgodnie z twierdzeniem Bézouta jeśli wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span> to liczba <span class="math_marks">1</span> jest pierwiastkiem wielomianu (wielomian przyjmuje dla argumentu x=1 wartość 0). </br>Sprawdźmy to:
 </br>
-<img src="images/division_images/tw_bezoutea/sprawdzenie.svg"></br>
+<span class="math_marks">W(1)=1<sup>3</sup>-2&bull;1<sup>2</sup>+3&bull;1-2=1-2+3-2=0</span></br>
 Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span>.
 </p>
 
+
+<hr class="yellow margin-top">
+<div class="definition_bg">
+    <div class="definition_text">
+        <h3 class="green-text"></br>Twierdzenie o pierwiastkach wymiernych wielomianu</h3>
+    <p>Jeżeli wielomian <img src="images/equation1.svg"/>, gdzie <span class="math_marks">a<sub>n</sub>&ne;0</span> i <span class="math_marks">a<sub>0</sub>&ne;0</span>, o współczynnikach całkowitych ma pierwiastek wymierny, który można zapisać w postaci ułamka nieskracalnego, to licznik tego ułamka jest dzielnikiem wyrazu wolnego <span class="math_marks">a<sub>0</sub></span>, natomiast mianownik - dzielnikiem współczynnika <span class="math_marks">a<sub>n</sub></span> przy najwyższej potędze zmiennej.
+    </p>
+</div>
+</div>
+<div class="colored-line-left margin-top yellow">
+</div>
 </div>
 </div>
 <!-- /END CONTAINER -->
 </section>
-<!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
+<!-- /END THEORY SECTION -->
 
 
-<!-- VALUE CALCULATION SECTION
-==============================
--->
-<section id="value_calculation">
+<!-- DZIELENIE -->
+<section id="division_polynomial_by_binomial">
 
-    <!-- VALUE CALCULATION NORMAL SECTION -->
-    <section id="value_calculation_normal" class="change-dot app-brief deep-dark-bg">
+    <!-- DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
+    <section id="division_theory" class="change-dot app-brief dark-bg">
         <div class="container">
             <!-- BRIEF -->
             <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
 
                 <!-- SECTION TITLE -->
-                <h2 class="white-text">Obliczanie warto<span class="pl_znaki">ś</span>ci wielomianu.</h2>
-                <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego
-                    <span class="math_marks trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="t-dowolny argument, dla którego chcemy obliczyć wartość wielomianu => W(t). " title="Argument t">x=t.</span>
+                <h2 class="white-text">Dzielenie wielomianu przez dwumian.</h2>
+                <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego   </p>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/llHOtLxsTzI" frameborder="0" allowfullscreen></iframe>
+                <p>(Film stworzony przez InfoPlus. Umieszczony na podstawie standardowej licencji YouTube).</p>
 
-                <div class="math-image">
-                    <img src="images/equation1.svg"/>
-                </div>
-                Powyższy wielomian można przedstawić w postaci:
-                <div class="math-image">
-                    <img src="images/equation2.svg"/>
-                </div>
-                zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu (w punkcie) dla danego argumentu <span class="math_marks">x=t</span>  oraz redukuje ilość potrzebnych mnożeń.
-                </p>
+            </div>
+
+            <!-- /ENDBRIEF -->
         </div>
-        <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-            <h3 class="white-text">Przykład i wyjaśnienie</h3>
-            <img class="method_explanation" src="images/method_explanation.svg"/>
-            <p class="explanation">
-                Obliczanie wartości wielomianu dla argumentu t=1.
+        <!-- /END CONTAINER -->
+    </section>
+    <!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
+
+
+
+
+    <!-- VALUE CALCULATION SECTION
+==============================
+-->
+    <section id="value_calculation">
+
+        <!-- VALUE CALCULATION NORMAL SECTION -->
+        <section id="value_calculation_normal" class="change-dot app-brief deep-dark-bg">
+            <div class="container">
+                <!-- BRIEF -->
+                <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+                    <!-- SECTION TITLE -->
+                    <h2 class="white-text">Obliczanie wartości wielomianu.</h2>
+                    <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego
+                        <span class="math_marks trigger mark" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="t-dowolny argument, dla którego chcemy obliczyć wartość wielomianu => W(t). " title="Argument t">x=t.</span>
+
+                    <div class="math-image">
+                        <img src="images/equation1.svg"/>
+                    </div>
+                    Powyższy wielomian można przedstawić w postaci:
+                    <div class="math-image">
+                        <img src="images/equation2.svg"/>
+                    </div>
+                    zapis ten może wyglądać na skomplikowany, jednak pozwala na łatwe obliczenie wartości wielomianu (w punkcie) dla danego argumentu <span class="math_marks">x=t</span>  oraz redukuje ilość potrzebnych mnożeń.
+                    </p>
+            </div>
+            <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                <h3 class="white-text">Przykład i wyjaśnienie</h3>
+                <img class="method_explanation" src="images/method_explanation.svg"/>
+                <p class="explanation">
+                    Obliczanie wartości wielomianu dla argumentu t=1.
+                </br>
+            1) Wyłączamy wspólny czynnik przed nawias, w tym przypadku jest to x.
             </br>
-        1) Wyłączamy wspólny czynnik przed nawias, w tym przypadku jest to x.
+        2) Wyłączamy wspólny czynnik z trzech pierwszych elementów w nawiasie.
         </br>
-    2) Wyłączamy wspólny czynnik z trzech pierwszych elementów w nawiasie.
-    </br>
-3) Podstawiamy za x podaną wartość t, czyli 1.</br>Otrzymujemy wynik.<span class="icon-what trigger question_mark" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Dzięki zastosowaniu schematu Hornera uzyskujemy znaczną redukcję mnożeń. </br> W zwykłej postaci: </br>W(x)=7&bull;x&bull;x&bull;x&bull;x+3&bull;x&bull;x&bull;x+5&bull;x&bull;x+9&bull;x+1,</br> jest to 10 mnożeń i 4 dodawania.
-    </br></br>W postaci schematu Hornera:</br>
-    W(x)=((7&bull;x+3)&bull;x+5)&bull;x+9)&bull;x+1,</br> są to 4 mnożenia i 4 dodawania.</br> To samo dzięki regule przemienności mnożenia możemy zapisać również w ten sposób: </br>W(x)=x&bull;(x&bull;(x&bull;(7x+3)+5)+9)+1. " title="Korzyści"></span>
+    3) Podstawiamy za x podaną wartość t, czyli 1.</br>Otrzymujemy wynik.<span class="icon-what trigger question_mark" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Dzięki zastosowaniu schematu Hornera uzyskujemy znaczną redukcję mnożeń. </br> W zwykłej postaci: </br>W(x)=7&bull;x&bull;x&bull;x&bull;x+3&bull;x&bull;x&bull;x+5&bull;x&bull;x+9&bull;x+1,</br> jest to 10 mnożeń i 4 dodawania.
+        </br></br>W postaci schematu Hornera:</br>
+        W(x)=((7&bull;x+3)&bull;x+5)&bull;x+9)&bull;x+1,</br> są to 4 mnożenia i 4 dodawania.</br> To samo dzięki regule przemienności mnożenia możemy zapisać również w ten sposób: </br>W(x)=x&bull;(x&bull;(x&bull;(7x+3)+5)+9)+1. " title="Korzyści"></span>
 </p>
 </div>
 <p>Częściej spotykany jest jednak zapis w tabelce, który znajdziesz niżej.</h3>
@@ -811,26 +881,47 @@ Jak widać wynik wyszedł taki sam jak poprzednio.
 
 
 
+
+<!-- FACTORIZATION SECTION -->
+<section id="factorization" class="change-dot app-brief deep-dark-bg">
+    <div class="container">
+        <!-- BRIEF -->
+        <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <h2 class="white-text">Rozkładanie wielomianu na czynniki</h2>
+            <p>Lista kroków:</p>
+            <ul style="list-style-type:disc">
+                <li>
+                    1. Korzystając z twierdzenia o pierwiastkach wymiernych szukamy jego pierwiastka, np. x<sub>0</sub>.
+                </li>
+                <li>
+                    2. W oparciu o twierdzenie Bézoute'a dzielimy wielomian przez dwumian (x-x<sub>0</sub>) posługując się schematem Hornera.
+                </li>
+                <li>3. Przedstawiamy wielomian w postaci iloczynowej <span class="math_marks">W(x)=Q(x)&bull;(x-x<sub>0</sub></span> </li>
+                <li>4. Postępując według punktu 1 sprawdzamy, czy wielomian Q(x) ma pierwiastki. Jeśli tak, postępujemy jak w 3 kroku.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- /END FACTORIZATION SECTION -->
+
+
+
+
 <section id="equations_inequalities">
 
 
-    <section id="equations" class="change-dot app-brief deep-dark-bg">
+    <section id="equations" class="change-dot app-brief dark-bg">
         <div class="container">
             <!-- BRIEF -->
             <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-                <h2 class="white-text">Rozwi<span class="pl_znaki">ą</span>zywanie równa<span class="pl_znaki">ń</span> schematem Hornera</h2>
+                <h2 class="white-text">Rozwiązywanie równań schematem Hornera</h2>
                 <p>Lista kroków:</p>
                 <ul style="list-style-type:disc">
                     <li>
-                        1. Korzystając z twierdzenia Bézouta znaleźć pierwiastek wielomianu (argument, dla którego wartość wynosi 0). Należy sprawdzić podzielniki wyrazu wolnego obliczając dla nich wartość np. W(1),W(2) itd. dopóki nie znajdziemy pierwiastka wielomianu.
+                        1.Rozkładamy wielomian na czynniki.
                     </li>
-                    <li>
-                        2. Z otrzymanego pierwiastka tworzymy dwumian i wykonujemy dzielenie w tabelce.
-                        np. Jeżeli pierwiastkiem wielomianu jest x=1 (W(1)=0), to dzielimy przez dwumian (x-1).
+                    <li>2.Wypisujemy wszystkie pierwiastki i podajemy odpowiedź.</li>
 
-                    </li>
-                    <li>3. Tworzymy równanie - postać iloczynowa: <span class="math_marks">(wynik z dzielenia) &bull; (dwumian)=0</span> </li>
-                    <li>4. Rozwiązujemy równanie.</li>
                 </ul>
                 <div class="colored-line-left margin-top">
                 </div>
@@ -903,35 +994,26 @@ I mamy wynik! Pierwiastkami wielomianu <span class="math_marks">x<sup>3</sup>−
 <!-- ========================
 INEQUATIONS SECTION
 ========================= -->
-<section id="inequalities" class="change-dot app-brief dark-bg">
-<div class="container">
-    <!-- BRIEF -->
-    <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-        <h2 class="white-text">Rozwi<span class="pl_znaki">ą</span>zywanie nierówno<span class="pl_znaki">ś</span>ci schematem Hornera</h2>
-        <p>Lista kroków:</p>
-        <ul style="list-style-type:disc">
-            <li>
-                1. Korzystając z twierdzenia Bézouta znaleźć pierwiastek wielomianu (argument, dla którego wartość wynosi 0). Należy sprawdzić podzielniki wyrazu wolnego obliczając dla nich wartość np. W(1),W(2) itd. dopóki nie znajdziemy pierwiastka wielomianu.
-            </li>
-            <li>
-                2. Z otrzymanego pierwiastka tworzymy dwumian i wykonujemy dzielenie w tabelce.
-                np. Jeżeli pierwiastkiem wielomianu jest x=1 (W(1)=0), to dzielimy przez dwumian (x-1).
-
-            </li>
-            <li>3. Tworzymy równanie - postać iloczynowa: <span class="math_marks">(wynik z dzielenia) &bull; (dwumian)>0</span> (znak nierówności w zależności od polecenia   <, <=, >, >= ) </li>
-            <li>4. Rozwiązujemy nierówność.</li>
-            <li>5. Rysujemy przybliżony wykres tego wielomianu:
-            </br>   - zaznaczamy kropkami pierwiastki na osi (przy znakach >= i <= zamalowujemy kropkę),
-    </br>   - określamy znak współczynnika kierunkowego, jeżeli jest dodatni, to zaczynamy rysować od góry, z prawej strony, jeżeli ujemny, to z prawej strony od dołu,
-    </br>   - przy pierwiastkach parzystokrotnych (np. dwukrotnym, odbijamy wykres).
+<section id="inequalities" class="change-dot app-brief deep-dark-bg">
+    <div class="container">
+        <!-- BRIEF -->
+        <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <h2 class="white-text">Rozwiązywanie nierówności schematem Hornera</h2>
+            <p>Lista kroków:</p>
+            <ul style="list-style-type:disc">
+                <li>
+                    1. Wyznaczamy pierwiastki wielomianu korzystając z opisu na rozkład wielomianu na czynniki.
+                </li>
+                <li>2. Rysujemy przybliżony wykres tego wielomianu:                                                                    </br>   - Określamy znak współczynnika przy najwyższej potędze zmiennej. Jeżeli jest dodatni, to zaczynamy rysować od góry, z prawej strony, jeżeli ujemny, to z prawej strony od dołu,
+            </br>   - Przy pierwiastkach parzystokrotnych (np. dwukrotnym, odbijamy wykres).
         </li>
-    <li>6. Wypisać z wykresu przedział/-y spełniający warunek.
+    <li>3. Na podstawie szkicu wykresu wielomianu W(x) odczytujemy przedziały spełniające nierówność i podajemy odpowiedź.
     </li>
-        </ul>
-        <div class="colored-line-left margin-top">
-        </div>
-        <h3 class="white-text"></br>Przykładowe zadanie</h3>
-    <p>ZADANIE</br>
+    </ul>
+<div class="colored-line-left margin-top">
+</div>
+<h3 class="white-text"></br>Przykładowe zadanie</h3>
+<p>ZADANIE</br>
 Rozwiąż nierówność:</br>
 <span class="math_marks">x<sup>3</sup>+5x<sup>2</sup>+8x+4>0</span>
 </br></br>
@@ -1011,28 +1093,6 @@ Pozostaje nam odczytać zaznaczony przedział i mamy wynik.</br>
 
 
 
-<!-- DZIELENIE -->
-<section id="division_polynomial_by_binomial">
-
-    <!-- DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
-    <section id="division_theory" class="change-dot app-brief deep-dark-bg">
-        <div class="container">
-            <!-- BRIEF -->
-            <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-                <!-- SECTION TITLE -->
-                <h2 class="white-text">Dzielenie wielomianu przez dwumian.</h2>
-                <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego   </p>
-                <iframe width="560" height="315" src="//www.youtube.com/embed/llHOtLxsTzI" frameborder="0" allowfullscreen></iframe>
-                <p>(Film stworzony przez InfoPlus. Umieszczony na podstawie standardowej licencji YouTube).</p>
-
-            </div>
-
-            <!-- /ENDBRIEF -->
-        </div>
-        <!-- /END CONTAINER -->
-    </section>
-    <!-- /END DIVISION POLYNOMIALS BY BINOMIAL SECTION -->
 
 
 
@@ -1044,31 +1104,31 @@ Pozostaje nam odczytać zaznaczony przedział i mamy wynik.</br>
 
 
 
-    <a href="#home" class="cd-top">Top</a>
+<a href="#home" class="cd-top">Top</a>
 
-    <!-- =========================
+<!-- =========================
 SCRIPTS
 ============================== -->
-    <script src="js/vendor/modernizr.js"></script>
-    <script src="js/vendor/jquery-2.1.1.js"></script>
-    <script src="js/dot-nav.js"></script>
-    <script src="js/popover.js"></script>
-    <script src="js/back-to-top.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/plugins/smoothscroll.js"></script>
-    <script src="js/vendor/plugins/jquery.scrollTo.min.js"></script>
-    <script src="js/vendor/plugins/jquery.localScroll.min.js"></script>
-    <script src="js/vendor/plugins/owl.carousel.min.js"></script>
-    <script src="js/vendor/plugins/nivo-lightbox.min.js"></script>
-    <script src="js/vendor/plugins/simple-expand.min.js"></script>
-    <script src="js/vendor/plugins/wow.min.js"></script>
-    <script src="js/vendor/plugins/jquery.stellar.min.js"></script>
-    <script src="js/vendor/plugins/retina.min.js"></script>
-    <script src="js/vendor/plugins/jquery.nav.js"></script>
-    <script src="js/vendor/plugins/matchMedia.js"></script>
-    <script src="js/vendor/plugins/jquery.ajaxchimp.min.js"></script>
-    <script src="js/vendor/plugins/jquery.fitvids.js"></script>
-    <script src="js/vendor/plugins/custom.js"></script>
-    </body>
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/vendor/jquery-2.1.1.js"></script>
+<script src="js/dot-nav.js"></script>
+<script src="js/popover.js"></script>
+<script src="js/back-to-top.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/plugins/smoothscroll.js"></script>
+<script src="js/vendor/plugins/jquery.scrollTo.min.js"></script>
+<script src="js/vendor/plugins/jquery.localScroll.min.js"></script>
+<script src="js/vendor/plugins/owl.carousel.min.js"></script>
+<script src="js/vendor/plugins/nivo-lightbox.min.js"></script>
+<script src="js/vendor/plugins/simple-expand.min.js"></script>
+<script src="js/vendor/plugins/wow.min.js"></script>
+<script src="js/vendor/plugins/jquery.stellar.min.js"></script>
+<script src="js/vendor/plugins/retina.min.js"></script>
+<script src="js/vendor/plugins/jquery.nav.js"></script>
+<script src="js/vendor/plugins/matchMedia.js"></script>
+<script src="js/vendor/plugins/jquery.ajaxchimp.min.js"></script>
+<script src="js/vendor/plugins/jquery.fitvids.js"></script>
+<script src="js/vendor/plugins/custom.js"></script>
+</body>
 
 </html>

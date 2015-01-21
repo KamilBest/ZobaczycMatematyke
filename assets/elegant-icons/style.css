@@ -1227,9 +1227,7 @@ h3 {
     min-height: 100vh;
 }
 
-.container {
 
-}
 
 .result {
     font-size: 1.5em;
@@ -1237,7 +1235,7 @@ h3 {
 }
 
 .horner-image {
-   margin-bottom:50px;
+   margin-bottom:35px;
 }
 
 .horner-image-container {
@@ -1246,7 +1244,7 @@ h3 {
 }
 
 #division_theory {
-    min-height: 300vh;
+    min-height: 100vh;
 }
 
 

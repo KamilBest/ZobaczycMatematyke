@@ -261,7 +261,7 @@ ol {
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url( /images/preloader.gif);
+    background-image: url( ../images/preloader.gif);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -278,9 +278,8 @@ Typography
 
 /* FONT FACE LOADER */
 @font-face {
-    font-family: 'Lane';
-    src: url('../fonts/lanenar_Lane.eot');
-    src: url('../fonts/lanenar_Lane.eot?#iefix') format('embedded-opentype'), url('../fonts/lanenar_Lane.woff') format('woff'), url('../fonts/lanenar_Lane.ttf') format('truetype'), url('../fonts/lanenar_Lane.svg#Lane') format('svg');
+    font-family: 'champagne_limousines';
+    src: url('../fonts/champagne_limousines.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -288,8 +287,8 @@ Typography
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 
     @font-face {
-        font-family: 'Lane';
-        src: url('../fonts/lanenar_Lane.svg#Lane') format('svg');
+        font-family: 'champagne_limousines';
+        src: url('../fonts/champagne_limousines.ttf')
     }
 }
 
@@ -297,7 +296,7 @@ Typography
 
 h1,
 h2 {
-    font-family: 'Lane', sans-serif;
+    font-family: 'champagne_limousines', 'raleway-thin';
     font-weight: normal;
 }
 
@@ -450,60 +449,56 @@ SECTION:  HOME
 -----------------------------------------*/
 
 header {
+
   background: url(../images/background.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
             background-size: cover;
 }
 
 header .color-overlay {
-    min-height:100vh;
+    min-height:900px;
 }
 
 header .full-screen {
     width: 100%;
-    min-height: 100vh;
+    height: 100px;
 }
 
 /* TOP BAR WITH NAVIGATION */
 
 .sticky-navigation {
-    min-height: 60px;
-    background: #111111;
-    border-bottom: 1px solid #fff;
-    padding: 0 !important;
-    margin-bottom: 0 !important;
-    -webkit-backface-visibility: hidden;
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+  min-height: 60px;
+  background: #111111;
+  border: none;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
 }
 
-/*POLOŻENIE LOGO NA PASKU NAWIGACJI*/
 .sticky-navigation .navbar-header img {
-    position: relative;
-    bottom:1.4vh;
-    max-height: 50px; /*Rozmiar logo*/
-    max-width: 300px;
-    -webkit-backface-visibility: hidden;
+  max-height: 30px;
+  -webkit-backface-visibility: hidden;
 }
-
 
 .sticky-navigation .main-navigation .current a {
-    color: #FFFFFF;
-    position: relative;
-    outline: none;
+  color: #FFFFFF;
+  position: relative;
+  outline: none;
 }
 
 .sticky-navigation .main-navigation li a {
-    line-height: 30px;
-    font-weight: 400;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #c8c8c8;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #c8c8c8;
 }
 
 header .only-logo .navbar {
     background: none;
-    padding-top: 50px;
+    padding: 60px;
 }
 
 header .only-logo .navbar .navbar-header {
@@ -513,6 +508,7 @@ header .only-logo .navbar .navbar-header {
 /* INTRO */
 
 header .intro-section {
+    display: block;
     margin: auto;
     padding-top: 15%;
 }
@@ -524,18 +520,149 @@ header .intro-section .intro {
 
 header .intro-section h5 {
     color: #ffffff;
-    margin-bottom:100px;
 }
 
-header .intro-section .buttons {
-    margin-bottom: 35px;
+header .intro-section .mouse- {
+    margin-top: 35px;
 }
 
-/* 2 SLAJD */
-.wow h3{
-    margin-top: 50px
+/* SCROLL ICON */
+.scroll_icon .text{
+    position: absolute;
+    left:20%;
+    color:#E0EB25;
+    visibility:hidden;
 }
-/* 2 SLAJD */
+.scroll_icon:hover .text
+{
+    visibility: visible;
+}
+.span_class
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 2px solid #E0EB25;
+  border-bottom: 2px solid #E0EB25;
+  margin: 0 0 3px 6px;
+}
+
+.unu
+{
+  margin-top: 6px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+}
+
+
+
+
+.mouse
+{
+height: 25px;
+width: 15px;
+  border-radius: 10px;
+  transform: none;
+  border: 2px solid #E0EB25;
+  top: 170px;
+}
+
+.wheel
+{
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #E0EB25;
+  position: relative;
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+/* END SCROLL ICON*/
+
+
 /*---------------------------------------
 SECTION:  FEATURES
 -----------------------------------------*/
@@ -659,7 +786,9 @@ SECTION:  BRIEF
 SECTION:  separation_bg
 -----------------------------------------*/
 .separation_bg {
-    background: url( /images/background.jpg) no-repeat center fixed;
+    min-height: 100px;
+    max-height: 300px;
+    background: url( ../images/separation_background.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     background-size: cover;
     color: #ffffff;
@@ -1111,9 +1240,7 @@ td:hover{
 
 
 
-.pl_znaki {
-    font-family: "dual_300" ;
-}
+
 
 
 .mark {
@@ -1131,7 +1258,7 @@ td:hover{
 
 
 .definition_bg {
-      background: #161616;
+      background: #0b0b0b;
 
     font-size: 1.2rem;
     color:#fff;
@@ -1160,3 +1287,28 @@ sup {
 }
 
 
+
+.intro {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+
+.scroll_icon {
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    margin-top: 15px;
+    position: relative;
+    left: 50%;
+}
+
+#canvas {
+    margin-top: 50px;
+    position: absolute;
+   right:50%;
+}

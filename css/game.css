@@ -86,8 +86,6 @@ SECTION:  game
 }
 
 
-
-
 input:checked{
     color:#161616;
 }
@@ -111,10 +109,7 @@ input:checked{
 
 }
 
-span{
-    font-weight: bold;
-    color: #F0F2F2;
-}
+
 
 /*  TABELA DO SCHEMATU HORNERA*/
 
@@ -151,3 +146,7 @@ td:hover{
 }
 
 
+
+#playAgain {
+    color:#161616;
+}

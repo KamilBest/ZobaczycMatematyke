@@ -35,11 +35,13 @@ STYLESHEETS
         <link rel="stylesheet" href="css/back-to-top.css">
         <!-- Gem style -->
 
-      <!-- WEB FONTS -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
-         <!-- DOT_NAVIGATION -->
+        <!-- DOT_NAVIGATION -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/dot-nav.css">
         <!-- Resource style -->
+
+        <!-- WEB FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
 
         <!-- CAROUSEL AND LIGHTBOX -->
         <link rel="stylesheet" href="css/owl.theme.css">
@@ -70,21 +72,28 @@ BODY
 
 ############################
 -->
-    <body>
+    <body  cz-shortcut-listen="true">
         <nav id="cd-vertical-nav">
             <ul>
                 <li>
                     <a href="#home" data-number="1">
                         <span class="cd-dot"></span>
-                        <span class="cd-label">Początek</span>
+                        <span class="cd-label">aaa</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#game" data-number="2">
+                    <a href="#znajdz_pierwiastki" data-number="2">
                         <span class="cd-dot"></span>
-                        <span class="cd-label">Gra</span>
+                        <span class="cd-label">bbb</span>
                     </a>
                 </li>
+                <li>
+                    <a href="#zmien_system" data-number="3">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">ccc</span>
+                    </a>
+                </li>
+
             </ul>
         </nav>
 
@@ -111,7 +120,7 @@ HEADER
                         <div class="navbar-header">
 
                             <!-- LOGO ON STICKY NAV BAR -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navigation">
+                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navigation">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -129,13 +138,12 @@ HEADER
                                 </li>
                             <li><a href="index.html">Strona główna - powrót</a>
                             </li>
-
                             <li>
-                                <a href="kalkulator.html">Kalkulator</a>
+                                <a href="#znajdz_pierwiastki">bbb</a>
                             </li>
-
-                            <li>
-                                <a href="info.html">o stronie</a>
+                            <li><a href="#zmien_system">ccc</a>
+                            </li>
+                             <li><a href="kalkulator.html">Kalkulator</a>
                             </li>
 
 
@@ -175,15 +183,10 @@ HEADER
 
 
                             <!-- BUTTON -->
-                            <a href="#game">
-<div class="scroll_icon">
-        <p class="text">SCROLL</p>
+                            <div class="buttons" id="download-button">
+                                <a href="#znajdz_pierwiastki" class="btn btn-default btn-lg standard-button"><i class="icon-scroll"></i>Przejdź dalej</a>
 
-                                    <div class="mouse"><div class="wheel"></div></div>
-                                    <div><span class=" span_class unu"></span> <span class=" span_class doi"></span>
-    <span class=" span_class trei"></span></div>
-    </div>
-                                     </a>
+                            </div>
 
                             <!-- /END BUTTONS -->
 
@@ -207,101 +210,84 @@ Obliczanie pierwiastkow SECTION
 ============================== -->
     <section class="app-brief deep-dark-bg change-dot" id="game">
         <div class="container">
-
-
-
-            <div id="gameContainer">
-                <h2 class="white-text">GRA</h2>
-                <p>Uzupełnij tabelkę dzielenia wielomianu <span class="math_marks">W(X)=x<sup>3</sup>+5x<sup>2</sup>+8x+4</span> przez dwumian <span class="math_marks">P(x)=(x+1)</span></br>przenosząc pola z cyframi w odpowiednie pola tabeli.</p>
-        <div class="col-sm-8">
-            <div id="droppable">
-                <table class="game-table">
-                    <tr>
-                        <td class="up">SCHEMAT HORNERA</td>
-                        <td class="up"></td>
-                        <td class="up"></td>
-                        <td class="up"></td>
-                        <td class="up"></td>
-                    </tr>
-                    <tr>
-                        <td class="up"></td>
-                        <td class="down"></td>
-                        <td class="down"></td>
-                        <td class="down"></td>
-                        <td class="down"></td>
-                    </tr>
-                </table>
+            <h2 class="white-text">GRA</h2>
+            <p>Uzupełnij tabelkę dzielenia wielomianu przez dwumian, dla wielomianu </br>przenosząc pola z cyframi w odpowiednie pola.</p>
+              <div class="col-sm-8">
+      <table class="game-table">
+    <tr>
+        <td class="up">SCHEMAT HORNERA</td>
+        <td class="up makeMeDroppable">(Upuść tutaj)</td>
+        <td class="up">(Upuść tutaj)</td>
+        <td class="up">(Upuść tutaj)</td>
+        <td class="up">(Upuść tutaj)</td>
+    </tr>
+    <tr>
+        <td class="up">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+        <td class="down">(Upuść tutaj)</td>
+    </tr>
+</table>
             </div>
-
-        </div>
-
         <div class="col-sm-4">
-            <div id="items">
+<table id="Cyfry">
+    <tr>
+        <td class="makeMeDraggable">-1</td>
+        <td class="makeMeDraggable">-2</td>
+        <td class="makeMeDraggable">0</td>
+        <td class="makeMeDraggable">1</td>
+    </tr>
+    <tr>
+        <td class="makeMeDraggable">2</td>
+        <td class="makeMeDraggable">3</td>
+        <td class="makeMeDraggable">4</td>
+        <td class="makeMeDraggable">5</td>
+    </tr>
+    <tr>
+        <td class="makeMeDraggable">6</td>
+        <td class="makeMeDraggable">7</td>
+        <td class="makeMeDraggable">8</td>
+        <td class="makeMeDraggable">9</td>
+    </tr>
 
-                <table id="Cyfry">
-                    <tr>
-                        <td class="draggable correct">-1</td>
-                        <td class="draggable correct">-2</td>
-                        <td class="draggable correct">0</td>
-                        <td class="draggable correct">1</td>
-                    </tr>
-                    <tr>
-                        <td class="draggable correct">2</td>
-                        <td class="draggable correct">3</td>
-                        <td class="draggable correct">4</td>
-                        <td class="draggable correct">5</td>
-                    </tr>
-                    <tr>
-                        <td class="draggable correct">6</td>
-                        <td class="draggable correct">7</td>
-                        <td class="draggable correct">8</td>
-                        <td class="draggable correct">9</td>
-                    </tr>
-                </table>
-
-            </div>
+</table>
+                    </div>
         </div>
-        <div id="results">
-            <div id="correctResult">
-                <input id="playAgain" type="button" value="Zagraj jeszcze raz" />
-            </div>
-            <div id="incorrectResult"> </div>
-        </div>
-        </div>
-    </div>
-</div>
+           </div>
 
-</section>
 
-<a href="#home" class="cd-top">Top</a>
+    </section>
 
-<!-- =========================
+    <a href="#home" class="cd-top">Top</a>
+
+    <!-- =========================
 SCRIPTS
 ============================== -->
-
-<script src="js/vendor/modernizr.js"></script>
-<script src="js/vendor/jquery-2.1.1.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/vendor/mathlib.js"></script>
-<script src="js/vendor/jquery-ui.js"></script>
-<script src="js/game.js"></script>
-<script src="js/dot-nav.js"></script>
-<script src="js/popover.js"></script>
-<script src="js/back-to-top.js"></script>
-<script src="js/vendor/plugins/smoothscroll.js"></script>
-<script src="js/vendor/plugins/jquery.scrollTo.min.js"></script>
-<script src="js/vendor/plugins/jquery.localScroll.min.js"></script>
-<script src="js/vendor/plugins/owl.carousel.min.js"></script>
-<script src="js/vendor/plugins/nivo-lightbox.min.js"></script>
-<script src="js/vendor/plugins/simple-expand.min.js"></script>
-<script src="js/vendor/plugins/wow.min.js"></script>
-<script src="js/vendor/plugins/jquery.stellar.min.js"></script>
-<script src="js/vendor/plugins/retina.min.js"></script>
-<script src="js/vendor/plugins/jquery.nav.js"></script>
-<script src="js/vendor/plugins/matchMedia.js"></script>
-<script src="js/vendor/plugins/jquery.ajaxchimp.min.js"></script>
-<script src="js/vendor/plugins/jquery.fitvids.js"></script>
-<script src="js/vendor/plugins/custom.js"></script>
-</body>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery-2.1.1.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/mathlib.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/dot-nav.js"></script>
+    <script src="js/popover.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/vendor/plugins/smoothscroll.js"></script>
+    <script src="js/vendor/plugins/jquery.scrollTo.min.js"></script>
+    <script src="js/vendor/plugins/jquery.localScroll.min.js"></script>
+    <script src="js/vendor/plugins/owl.carousel.min.js"></script>
+    <script src="js/vendor/plugins/nivo-lightbox.min.js"></script>
+    <script src="js/vendor/plugins/simple-expand.min.js"></script>
+    <script src="js/vendor/plugins/wow.min.js"></script>
+    <script src="js/vendor/plugins/jquery.stellar.min.js"></script>
+    <script src="js/vendor/plugins/retina.min.js"></script>
+    <script src="js/vendor/plugins/jquery.nav.js"></script>
+    <script src="js/vendor/plugins/matchMedia.js"></script>
+    <script src="js/vendor/plugins/jquery.ajaxchimp.min.js"></script>
+    <script src="js/vendor/plugins/jquery.fitvids.js"></script>
+    <script src="js/vendor/plugins/custom.js"></script>
+    </body>
 
 </html>
