@@ -1326,3 +1326,11 @@ sup {
 width:50%;
 }
 .inner_block img { width:100%; height:auto; vertical-align:middle; }
+
+.footer {
+    width:100%;
+}
+
+.end {
+    height: 50px;
+}

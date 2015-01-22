@@ -397,14 +397,14 @@ FEATURES
                 </div>
                 <!-- /END SINGLE FEATURE -->
 
-                <!-- FEATURE -->
+                 <!-- FEATURE -->
                 <div class="feature">
 
                     <!-- ICON -->
-                    <a href="kalkulator.html">
+                    <a href="#horner_theory">
                         <div class="icon-container">
                             <div class="icon">
-                                <span class="icon-calculator"></span>
+                                <span class="icon-checkbox1"></span>
                             </div>
                         </div>
                     </a>
@@ -413,14 +413,15 @@ FEATURES
 
                     <!-- FEATURE HEADING AND DESCRIPTION -->
                     <div class="fetaure-details">
-                        <h4 class="main-color">Kalkulator</h4>
+                        <h4 class="main-color">Teoria</h4>
                         <p>
-                            Sprawdź jaką wartość ma podany wielomian.
-                        </p>
+Poznaj teorię dotyczącą schematu Hornera.                        </p>
                     </div>
 
                 </div>
                 <!-- /END SINGLE FEATURE -->
+
+
 
             </div>
             <!-- /END FEATURES LEFT -->
@@ -480,27 +481,33 @@ FEATURES
 
                 <!-- /END SINGLE FEATURE -->
 
-                <!-- FEATURE -->
+                <!--calculator -->
+ <!-- FEATURE -->
                 <div class="feature">
 
                     <!-- ICON -->
-                    <a href="game.html">
+                    <a href="kalkulator.html">
                         <div class="icon-container">
                             <div class="icon">
-                                <span class="icon-checkbox"></span>
+                                <span class="icon-calculator"></span>
                             </div>
                         </div>
                     </a>
+
+
+
                     <!-- FEATURE HEADING AND DESCRIPTION -->
                     <div class="fetaure-details">
-                        <h4 class="main-color">Zagraj</h4>
+                        <h4 class="main-color">Kalkulator</h4>
                         <p>
-                            Sprawdź, czy potrafisz już dzielić wielomian przez dwumian grając.
+                            Sprawdź rozwiązanie równania trzeciego stopnia.
                         </p>
                     </div>
 
                 </div>
                 <!-- /END SINGLE FEATURE -->
+
+
 
             </div>
             <!-- /END FEATURES RIGHT -->
@@ -677,6 +684,16 @@ Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był po
 </br>c.n.d.
 </p>
 <hr class="yellow margin-top">
+        <div class="definition_bg">
+            <div class="definition_text">
+                <h3 class="green-text"></br>Twierdzenie o dzieleniu wielomianów z resztą</h3>
+
+            <p>
+                Jeśli <span class="math_marks">W(x)</span> oraz <span class="math_marks">P(x)</span> są wielomianami i <span class="math_marks">P(x)</span> nie jest wielomianem zerowym, to istnieją takie dwa wielomiany <span class="math_marks">Q(x)</span> oraz <span class="math_marks">R(x)</span>, że: <span class="math_marks">W(x)=P(x)&bull;Q(x)+R(x)</span>, gdzie stopień wielomianu <span class="math_marks">R(x) </span>jest mniejszy od stopnia wielomianu <span class="math_marks">P(x)</span>. </br>Jeżeli wielomian <span class="math_marks">W(x)</span> jest podzielny przez wielomian  <span class="math_marks">P(x)</span>, to <span class="math_marks">R(x)</span> jest wielomianem zerowym. </p>
+</div>
+</div>
+
+<hr class="yellow margin-top">
 <div class="definition_bg">
     <div class="definition_text">
         <h3 class="green-text"></br>Twierdzenie Bézoute'a</h3>
@@ -689,7 +706,7 @@ Z twierdzenia o podzielności wielomianów wiemy, że aby wielomian P(x) był po
 <h3 class="white-text"> </br></br>Przykładowe zadanie</h3>
 <p>ZADANIE</br>Sprawdź, czy wielomian <span class="math_marks">W(x)=x<sup>3</sup>-2x<sup>2</sup>+3x-2</span> jest podzielny przez dwumian <span class="math_marks">x-1</span>.
 </br></br>Rozwiązanie:</br>
-Zgodnie z twierdzeniem Bézouta jeśli wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span> to liczba <span class="math_marks">1</span> jest pierwiastkiem wielomianu (wielomian przyjmuje dla argumentu x=1 wartość 0). </br>Sprawdźmy to:
+Zgodnie z twierdzeniem Bézoute'a jeśli wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span>, to liczba <span class="math_marks">1</span> jest pierwiastkiem wielomianu (wielomian przyjmuje dla argumentu x=1 wartość 0). </br>Sprawdźmy to:
 </br>
 <span class="math_marks">W(1)=1<sup>3</sup>-2&bull;1<sup>2</sup>+3&bull;1-2=1-2+3-2=0</span></br>
 Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny przez dwumian <span class="math_marks">x-1</span>.
@@ -724,9 +741,109 @@ Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny
 
                 <!-- SECTION TITLE -->
                 <h2 class="white-text">Dzielenie wielomianu przez dwumian.</h2>
-                <p class="def">Podstawowym zastosowaniem schematu Hornera jest obliczanie wartości wielomianów dla ustalonego   </p>
+             <p>
+                 Poniższa tabelka przedstawia jak uzupełnia się pola dla wielomianu W<sub>n</sub>(x) i argumencie x=t (zapis ogólny).</p>
+
+<table class="overall_record">
+    <tr class="up">
+        <td class="empty-cell">Schemat Hornera</td>
+        <td>a<sub>n</sub>
+        </td>
+        <td>a<sub>n-1</sub>
+        </td>
+        <td>...</td>
+        <td>a<sub>1</sub></td>
+        <td>a<sub>0</sub></td>
+    </tr>
+    <tr class="down">
+        <td class="up">a</td>
+        <td>
+            b<sub>n</sub>=a<sub>n</sub>
+        </td>
+        <td>                        b<sub>n-1</sub>=b<sub>n</sub>&bull;a+a<sub>n-1</sub></td>
+        <td>
+            ...
+        </td>
+        <td>
+            b<sub>1</sub>=b<sub>n-2,3...</sub>&bull;a+a<sub>1</sub>
+        </td>
+        <td>
+            b<sub>0</sub>=b<sub>1</sub>&bull;a+a<sub>0</sub>
+
+        </td>
+    </tr>
+</table>
+<!-- /END TABLE -->
+<p>liczby a<sub>n</sub>,a<sub>n-1</sub>,........,a<sub>0</sub> - współczynniki wielomianu,</br>
+współczynnikiem a<sub>n</sub>  nazywamy wyraz przy najwyższej potędze zmiennej wielomianu,</br>
+n - stopień wielomianu,</br>
+    a - pierwiastek dwumianu</p>
+<div class="colored-line-left margin-top">
+</div>
+
+<ul class="def" style="list-style-type:disc">
+    Jak ułożyć tabelkę?  wielomianu przez dwumian:
+    <li>    W górnym wierszu wstawiamy kolejne współczynniki wielomianu zaczynając od tego przy najwyższej potędze.</li>
+    <li>    W pierwszej komórce, w dolnym wierszu wstawiamy pierwiastek dwumianu (a).</li>
+    <li>    W drugiej komórce, w dolnym wierszu przepisujemy wartość współczynnika przy najwyższej potędze (przepisujemy liczbę z góry).</li>
+    <li>    Resztę komórek dolnego wiersza uzupełniamy wykonując obliczenia.</li>
+</ul>
+</br>
+                <p>Filmik instruktażowy wypełniania tabelki:</p>
+				<div class="video">
                 <iframe width="560" height="315" src="//www.youtube.com/embed/llHOtLxsTzI" frameborder="0" allowfullscreen></iframe>
+</div>
                 <p>(Film stworzony przez InfoPlus. Umieszczony na podstawie standardowej licencji YouTube).</p>
+<div class="colored-line-left margin-top yellow">
+</div>
+                <h3 class="white-text"></br></br>Przykładowe zadanie</h3>
+<p>Za pomocą schematu Hornera podziel wielomian <span class="math_marks">W(x)=x<sup>4</sup>+3x<sup>3</sup>+x-3</span> przez dwumian <span class="math_marks">x+2</span>.</p>
+
+<!-- START HORNERS METHOD TABLE -->
+<table class="horners_method">
+    <tr class="up">
+        <td class="empty-cell">W(x)</td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy najwyższej potędze. </br> a<sub>n</sub>=1, ponieważ współczynnik przy najwyższej potędze, czyli w tym przypadku x<sup>4</sup> wynosi 1." title="a<sub>n</sub> - współczynnik przy najwyższej potędze">1
+        </td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej najwyższej potędze. </br>  a<sub>n-1</sub>=3, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>4</sup>, to x<sup>3</sup>, czyli w tym przypadku 3x<sup>3</sup> wynosi 3." title="a<sub>n-1</sub>">3
+        </td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Współczynnik przy kolejnej potędze. </br>  a<sub>n-2</sub>=0, ponieważ współczynnik przy kolejnej najwyższej potędze po x<sup>3</sup>, to x<sup>2</sup>, czyli w tym przypadku 0, bo nie ma współczynnika przy x<sup>2</sup>." title="a<sub>n-2</sub>">0
+        </td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Przedostatni element ciągu jest nim współczynnik stojący przy x. </br>a<sub>1</sub>=1, ponieważ współczynnik przy x wynosi 1." title="a<sub>1</sub>">1</td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content="Wyraz wolny = -3." title="a<sub>0</sub> - wyraz wolny wielomianu">-3</td>
+    </tr>
+    <!-- DOLNY WIERSZ -->
+    <tr class="down">
+        <td class="up trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Miejsce zerowe dwumianu." title="a">-2</td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Przepisujemy wartość z górnej komórki tabeli." title="b<sub>n</sub>=a<sub>n</sub>">1
+        </td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="-2&bull;1+3=1" title="b<sub>n-1</sub>=b<sub>n</sub>t+a<sub>n-1</sub>">1
+        </td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="-2&bull;1+0" title=" b<sub>n-2</sub>=b<sub>n-1</sub>t+a<sub>n-2</sub>">-2
+        </td>
+        <td class="trigger" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="-2&bull;(-2)+1=5" title="b<sub>1</sub>=b<sub>n-2</sub>t+a<sub>1</sub>">5
+        </td>
+        <td class="trigger result" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="Reszta z dzielenia: -2&bull;5+(-3)=-13" title="b<sub>0</sub>=b<sub>1</sub>t+a<sub>0</sub>">-13
+        </td>
+    </tr>
+</table>
+<!-- /END TABLE -->
+
+<p>Wynik:</br>
+Po podzieleniu wielomianu  <span class="math_marks">W(x)</span>przez dwumian <span class="math_marks">x+2</span> otrzymujemy:
+
+Wielomian <span class="math_marks">P(x)</span> o stopień niższy niż wielomian <span class="math_marks">W(x)</span> i resztę z dzielenia tego wielomianu. </br>Odczytujemy z tabeli współczynniki wielomianu <span class="math_marks">P(x)</span> oraz resztę z dzielenia:</br>
+<span class="math_marks">P(x)=x<sup>3</sup>+x<sup>2</sup>-2x+5</span>.</br>
+Reszta z dzielenia wielomianu <span class="math_marks">W(x)</span> przez dwumian <span class="math_marks">x+2</span> wynosi: <span class="math_marks">R=-13.</span>
+</br>
+Zatem możemy zapisać, że: <span class="math_marks">W(x)=P(x)(x+2)+R</span>, czyli:</br>
+<span class="math_marks">W(x)=(x<sup>3</sup>+x<sup>2</sup>-2x+5)(x+2)-13.</span>
+
+
+
+
+
+
 
             </div>
 
@@ -794,54 +911,9 @@ Widzimy więc, że wielomian <span class="math_marks">W(x)</span> jest podzielny
     <div class="container">
         <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
             <h3 class="white-text">Tabelka do obliczania wartości wielomianu</h3>
-            <p class="def">Najczęściej jednak do obliczania wartości wielomianu o argumencie x=t używa się zapisu w tabelce, dzięki której obliczymy wartość wielomianu o wiele szybciej. </br></br>
+            <p class="def">Najczęściej jednak do obliczania wartości wielomianu o argumencie x=t używa się zapisu w tabelce (tego samego, którego używamy podczas dzielenia wielomianu przez dwumian), dzięki której obliczymy wartość wielomianu o wiele szybciej. </br></br>
 
-    Poniższa tabelka przedstawia jak uzupełnia się pola dla wielomianu W<sub>n</sub>(x) i argumencie x=t (zapis ogólny).</p>
 
-<table class="overall_record">
-    <tr class="up">
-        <td class="empty-cell">Schemat Hornera</td>
-        <td>a<sub>n</sub>
-        </td>
-        <td>a<sub>n-1</sub>
-        </td>
-        <td>...</td>
-        <td>a<sub>1</sub></td>
-        <td>a<sub>0</sub></td>
-    </tr>
-    <tr class="down">
-        <td class="up">x=t</td>
-        <td>
-            b<sub>n</sub>=a<sub>n</sub>
-        </td>
-        <td>                        b<sub>n-1</sub>=b<sub>n</sub>&bull;t+a<sub>n-1</sub></td>
-        <td>
-            ...
-        </td>
-        <td>
-            b<sub>1</sub>=b<sub>n-2,3...</sub>&bull;t+a<sub>1</sub>
-        </td>
-        <td>
-            b<sub>0</sub>=b<sub>1</sub>&bull;t+a<sub>0</sub>
-
-        </td>
-    </tr>
-</table>
-<!-- /END TABLE -->
-<p>liczby a<sub>n</sub>,a<sub>n-1</sub>,........,a<sub>0</sub> - współczynniki wielomianu</br>
-współczynnikiem a<sub>n</sub>  nazywamy wyraz przy najwyższej potędze zmiennej wielomianu</br>
-n - stopień wielomianu.</br>b<sub>0</sub> jest wartością wielomianu dla argumentu t (wynik) </p>
-<div class="colored-line-left margin-top">
-</div>
-
-<ul class="def" style="list-style-type:disc">
-    Jak ułożyć tabelkę? Podobnie, jak w przypadku dzielenia wielomianu przez dwumian:
-    <li>    W górnym wierszu wstawiamy kolejne współczynniki wielomianu zaczynając od tego przy najwyższej potędze.</li>
-    <li>    W pierwszej komórce, w dolnym wierszu wstawiamy wartość podanego argumentu t.</li>
-    <li>    W drugiej komórce, w dolnym wierszu przepisujemy wartość współczynnika przy najwyższej potędze (przepisujemy liczbę z góry).</li>
-    <li>    Resztę komórek dolnego wiersza uzupełniamy wykonując obliczenia.</li>
-</ul>
-</br>
 <h3 class="white-text">Przykład</h3>
 <p>Obliczanie wartości wielomianu  <img src='images/example_equation_color.svg'/> dla t=1.</br> (Kliknij na pole, aby dowiedzieć się więcej).</p>
 
@@ -1106,23 +1178,27 @@ Pozostaje nam odczytać zaznaczony przedział i mamy wynik.</br>
 
 
 <!-- /END equations and inequalities SECTION-->
+<!-- =========================
+     FOOTER
+============================== -->
+<footer class="dark-bg end">
+<img class="footer" src="images/footer.svg">
+<div class="container">
 
 
+	<!-- LOGO -->
+	<img src="images/logo.png" alt="LOGO" class="responsive-img">
 
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright" >
+		©2015 Kamil Best, kamil.besst@gmail.com
+	</p>
 
+</div>
+<!-- /END CONTAINER -->
 
-
-
-
-
-
-
-
-
-
-
-
-
+</footer>
+<!-- /END FOOTER -->
 
 
 
