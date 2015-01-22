@@ -1,0 +1,32 @@
+/*---------------------------------------
+SECTION:  HOME
+-----------------------------------------*/
+
+header {
+  background: url(../images/info_bg.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+header .color-overlay {
+        min-height: 100vh;
+}
+
+header .full-screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.inf ul{
+    list-style-type: circle;
+}
+i {
+    font-style:italic;
+}
+
+.inf a {
+    color:#fff;
+}
+.inf a:hover{
+    color:#81D727;
+}
