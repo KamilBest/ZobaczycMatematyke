@@ -14,7 +14,7 @@
    id="svg2985"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="axis.svg">
+   sodipodi:docname="axis_graph.svg">
   <defs
      id="defs2987" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.75"
-     inkscape:cx="412.97803"
-     inkscape:cy="27.18697"
+     inkscape:zoom="4.2426407"
+     inkscape:cx="312.32423"
+     inkscape:cy="54.450479"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,13 +58,20 @@
        id="path2999"
        inkscape:connector-curvature="0" />
     <path
+       style="fill:none;stroke:#76c424;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 611.67393,63.663588 c 0,0 -116.69918,0.57191 -210.03728,74.111012 -93.33809,73.53911 -164.99158,0 -164.99158,0 0,0 -24.75805,37.78749 -128.43117,33.80713"
+       id="path3945"
+       inkscape:connector-curvature="0"
+       transform="translate(0,286)"
+       sodipodi:nodetypes="cscc" />
+    <path
        style="fill:none;stroke:#ffffff;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 612.80275,423.43331 -19.26827,11.12456"
        id="path3001-4"
        inkscape:connector-curvature="0" />
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#e0eb25;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e0eb25;stroke:#e0eb25;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
        id="path3057"
        sodipodi:cx="208.66667"
        sodipodi:cy="107.33334"
@@ -74,7 +81,7 @@
        transform="translate(27.333333,315.33333)" />
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#e0eb25;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e0eb25;stroke:#e0eb25;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
        id="path3057-3"
        sodipodi:cx="208.66667"
        sodipodi:cy="107.33334"
