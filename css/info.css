@@ -17,16 +17,15 @@ header .full-screen {
     min-height: 100vh;
 }
 
-.inf ul{
-    list-style-type: circle;
-}
-i {
-    font-style:italic;
-}
+
 
 .inf a {
     color:#fff;
 }
 .inf a:hover{
     color:#81D727;
+}
+
+.coursive{
+    font-style: italic;
 }
